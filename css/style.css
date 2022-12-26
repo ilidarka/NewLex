@@ -1,0 +1,181 @@
+:root {
+    --main-purple: #505ACC;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+html, body, header, main, footer, section {
+    width: 100%;
+}
+h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
+}
+.buttons {
+    background-color: var(--main-purple);
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    width: 182px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 16px;
+    color: #fff;
+}
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+}
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 46px;
+}
+header .wrapper {
+    flex-direction: column;
+}
+header .head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header nav {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header li {
+    list-style-type: none;
+}
+header a {
+    color: #11243E;
+    text-decoration: none;
+}
+header a:checked {
+    color: #11243E;
+    text-decoration: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+.services {
+    margin-top: 64px;
+}
+.services .servicesList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.services .upperItems, .services .bottomItems {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.services .serviceItem {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: #11243E;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.services .serviceItem img {
+    width: 38px;
+    height: 38px;
+}
+.consultation {
+    margin-top: 64px;
+}
+.consultation .wrapper {
+    background-image: url("../img/consultationBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    padding: 70px 90px;
+    border-radius: 20px;
+}
+.consultation span {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+.consultation .contactButtons {
+    margin-top: 42px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.consultation .getConsultationButton {
+    width: 285px;
+    height: 61px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+}
+.consultation .orderServiceButton {
+    width: 212px;
+    height: 61px;
+    background: #FDD21B;
+    box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+}
+.howDoWeWork {
+    margin-top: 64px;
+}
+.howDoWeWork span {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140%;
+    color: var(--main-purple);
+}
+.howDoWeWork li {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    color: var(--main-purple);
+    list-style-type: none;
+    margin-top: 10px;
+}
+.howDoWeWork p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #11243E;
+}
+.howDoWeWork .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.howDoWeWork .columns {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.howDoWeWork .leftColumn {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
