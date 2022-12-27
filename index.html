@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/inputStyle.css">
+    <link rel="stylesheet" href="./css/radioButtonStyle.css">
+    <script src="./scripts/inputScript.js" defer></script>
+    <script src="./scripts/ratesButtonsScript.js" defer></script>
 </head>
 <body>
     <header>
@@ -116,6 +120,193 @@
                             <li>Консультации</li>
                             <p>Подскажем Вам ответы на любые вопросы по налогам и бухгалтерскому учету. Проведем оценку налоговых рисков</p>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="calculator">
+            <div class="wrapper">
+                <h3>Калькулятор для расчёта стоимости бухгалтерского обслуживания</h3>
+                <div class="left-right-columns">
+                    <div class="leftColumn">
+                        <div class="nalog">
+                            <span>Система налогообложения</span>
+                            <input type="range" name="nalog" max="2">
+                            <div class="values">
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>УСН 6%</span>
+                                </div>
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>УСН 15%</span>
+                                </div>
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>ОСНО</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employees">
+                            <span>Количество сотрудников</span>
+                            <input id="employeesText" class="inputText" value="25" type="text" name="employeesText" disabled>
+                            <input id="employeesRange" type="range" name="employees" min="0" max="50" oninput="changeEmployeesText(this.value)">
+                            <div class="values">
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>0</span>
+                                </div>
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>10</span>
+                                </div>
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>20</span>
+                                </div>
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>30</span>
+                                </div>
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>40</span>
+                                </div>
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>50+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="documents">
+                            <span>Количество документов в месяц</span>
+                            <input id="documentsText" class="inputText" value="25" type="text" name="documentsText" disabled>
+                            <input id="documentsRange" type="range" name="documents" min="0" max="50" oninput="changeDocumentsText(this.value)">
+                            <div class="values">
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>0</span>
+                                </div>
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>10</span>
+                                </div>
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>20</span>
+                                </div>
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>30</span>
+                                </div>
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>40</span>
+                                </div>
+                                <div class="value">
+                                    <span>|</span>
+                                    <span>50+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="bottomItem">
+                                <div class="cross"><span>&#9587;</span></div>
+                                <span class="bottomItemText">ККМ, эквайринг</span>
+                            </div>                            
+                            <div class="bottomItem">
+                                <div class="cross"><span>&#9587;</span></div>
+                                <span class="bottomItemText">Договоры комиссии / агентов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightColumn">
+                        <span>Форма бизнеса</span>
+                        <div class="control-group">
+                            <label class="control control-radio">
+                                <span>---- ООО</span>
+                                <input type="radio" name="radio" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                            <label class="control control-radio">
+                                <span>---- ИП</span>
+                                <input type="radio" name="radio" />
+                                <div class="control_indicator"></div>
+                            </label>
+                            <label class="control control-radio">
+                                <span>---- НКО</span>
+                                <input type="radio" name="radio" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="cost">
+                            <span>Стоимость:</span>
+                            <span class="price">≈10 200</span>
+                            <span class="currency">рублей в месяц</span>
+                        </div>
+                        <button class="requestButton">Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rates">
+            <div class="wrapper">
+                <div class="ratesTitle">
+                    <h3>Тарифы на бухгалтерское обслуживание</h3>
+                    <div class="ratesButtons">
+                        <button class="rateButton active">УСН 6%</button>
+                        <button class="rateButton">УСН 15%</button>
+                        <button class="rateButton">ОСН</button>
+                    </div>
+                </div>
+                <div class="ratesPrices">
+                    <div class="ratePrice">
+                        <span>Бухгалтерские услуги для ИП</span>
+                        <span>от 6 000 руб/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Ведение учета организаций в сфере услуг</span>
+                        <span>от 8 000 руб/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Ведение учета организаций в сфере аренды</span>
+                        <span>от 9 000 руб/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Ведение бухгалтерского учета в торговле</span>
+                        <span>от 9 000 руб/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Ведение бухгалтерского и налогового учета турагентств</span>
+                        <span>от 10 000 руб/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Ведение бухгалтерии кафе, ресторанов</span>
+                        <span>от 10 000 руб/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
+                        <span>от 12 000 руб/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерское обслуживание издательств и типографий</span>
+                        <span>от 12 000 руб/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерское сопровождение интернет-магазинов</span>
+                        <span>от 12 000 руб/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерское обслуживание компаний в сфере транспорта и логистики</span>
+                        <span>от 12 000 руб/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерское сопровождение производственных компаний</span>
+                        <span>от 18 000 руб/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Аутсорсинг бухгалтерии строительных компаний</span>
+                        <span>от 18 000 руб/мес</span>
                     </div>
                 </div>
             </div>

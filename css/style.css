@@ -179,3 +179,198 @@ section {
     justify-content: center;
     align-items: center;
 }
+.calculator {
+    margin-top: 64px;
+}
+.calculator .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.calculator .left-right-columns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 50px;
+}
+.calculator .leftColumn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/calculatorBackground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 32px 56px;
+    gap: 40px;
+    border-radius: 20px;
+}
+.calculator .rightColumn span, .calculator .leftColumn span {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.calculator .nalog, .calculator .employees, .calculator .documents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.calculator .values {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.calculator .value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calculator .inputText {
+    width: 32px;
+    text-align: center;
+}
+.calculator .inputText:disabled {
+    background-color: #fff;
+}
+.calculator .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.calculator .bottomItem {
+    background-color: #fff;
+    width: fit-content;
+    padding: 7px 9px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.calculator .cross {
+    background-color: var(--main-purple);
+    padding: 6px;
+    width: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.calculator .bottomItemText {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    color: #11243E !important;
+}
+.calculator .rightColumn {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/calculatorBackground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 32px 56px;
+}
+.calculator .control-group {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+.calculator .control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calculator .control_indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator .cost {
+    margin-top: 160px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.calculator .price {
+    font-weight: 600 !important;
+    font-size: 42px !important;
+}
+.calculator .currency {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+}
+.calculator .requestButton {
+    margin-top: 70px;
+    width: 216px;
+    height: 61px;
+    background: #FDD21B;
+    box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+}
+.rates {
+    margin-top: 64px;
+}
+.rates .ratesTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rates .ratesButtons {
+    width: 40%;
+    display: flex;
+    gap: 25px;
+}
+.rates .rateButton {
+    padding: 10px 12px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 140%;
+    color: #000000;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid var(--main-purple);
+}
+.rates .active {
+    background-color: var(--main-purple);
+    color: #fff;
+}
+.rates .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.rates .ratesPrices {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rates .ratePrice {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #515CCD;
+}
+.rates .ratePrice span {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #000000;
+}
