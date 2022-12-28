@@ -198,11 +198,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     background-image: url("../img/calculatorBackground.svg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 32px 56px;
-    gap: 40px;
     border-radius: 20px;
 }
 .calculator .rightColumn span, .calculator .leftColumn span {
@@ -374,3 +374,7 @@ section {
     line-height: 140%;
     color: #000000;
 }
+.slider-wrapper{
+    width: 100%;
+    margin: 50px auto;
+  }

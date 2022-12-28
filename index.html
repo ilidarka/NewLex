@@ -9,9 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/inputStyle.css">
     <link rel="stylesheet" href="./css/radioButtonStyle.css">
-    <script src="./scripts/inputScript.js" defer></script>
+    <link rel="stylesheet" href="./css/nouislider.css">
+    <script src="./scripts/nouislider.min.js" defer></script>
+    <script src="./scripts/inputEmployeesScript.js" defer></script>
+    <script src="./scripts/inputDocumentsScript.js" defer></script>
+    <script src="./scripts/inputNalogScript.js" defer></script>
     <script src="./scripts/ratesButtonsScript.js" defer></script>
 </head>
 <body>
@@ -131,82 +134,20 @@
                     <div class="leftColumn">
                         <div class="nalog">
                             <span>Система налогообложения</span>
-                            <input type="range" name="nalog" max="2">
-                            <div class="values">
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>УСН 6%</span>
-                                </div>
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>УСН 15%</span>
-                                </div>
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>ОСНО</span>
-                                </div>
+                            <div class="slider-wrapper">
+                                <div id="nalog"></div>
                             </div>
                         </div>
                         <div class="employees">
                             <span>Количество сотрудников</span>
-                            <input id="employeesText" class="inputText" value="25" type="text" name="employeesText" disabled>
-                            <input id="employeesRange" type="range" name="employees" min="0" max="50" oninput="changeEmployeesText(this.value)">
-                            <div class="values">
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>0</span>
-                                </div>
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>10</span>
-                                </div>
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>20</span>
-                                </div>
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>30</span>
-                                </div>
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>40</span>
-                                </div>
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>50+</span>
-                                </div>
+                            <div class="slider-wrapper">
+                                <div id="employees"></div>
                             </div>
                         </div>
                         <div class="documents">
                             <span>Количество документов в месяц</span>
-                            <input id="documentsText" class="inputText" value="25" type="text" name="documentsText" disabled>
-                            <input id="documentsRange" type="range" name="documents" min="0" max="50" oninput="changeDocumentsText(this.value)">
-                            <div class="values">
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>0</span>
-                                </div>
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>10</span>
-                                </div>
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>20</span>
-                                </div>
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>30</span>
-                                </div>
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>40</span>
-                                </div>
-                                <div class="value">
-                                    <span>|</span>
-                                    <span>50+</span>
-                                </div>
+                            <div class="slider-wrapper">
+                                <div id="documents"></div>
                             </div>
                         </div>
                         <div class="bottom">
