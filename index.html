@@ -18,6 +18,10 @@
     <script src="./scripts/inputDocumentsScript.js" defer></script>
     <script src="./scripts/inputNalogScript.js" defer></script>
     <script src="./scripts/ratesButtonsScript.js" defer></script>
+    <script src="./scripts/directorsSelectScript.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="./scripts/slider.js" defer></script>
 </head>
 <body>
     <header>
@@ -444,6 +448,34 @@
                                                 </p>
                                             </div>
                                         </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-content">
+                                                <div class="slideUpper">
+                                                    <img src="./img/sliderImage1.svg" alt="sliderImage1">
+                                                    <div class="slider-info">
+                                                        <span class="name">Елена</span>
+                                                        <div class="stars">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                        </div>
+                                                        <span class="date">15 октября 2022 год</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    С фирмой NewLex сотрудничали 2 года. 
+                                                    Компания проводила проверку финансового состояния нашей компании. 
+                                                    Аудитор очень основательно проверил все вопросы бухгалтерского и 
+                                                    налогового учёта. Проверка проводилась компетентными специалистами, 
+                                                    и был предоставлен подробный отчёт. 
+                                                    По выявленных нарушениям давались консультации со ссылкой на законодательство. 
+                                                    Также радуют консультации, которые можно получить в течение года 
+                                                    у аудитора по вопросам возникающим в процессе работы
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                     
                                     <div class="swiper-controll">
@@ -455,9 +487,7 @@
                                             <div class="swiper-button-prev"><img src="./img/arrowLeft.svg" alt=""></div>
                                             <div class="swiper-button-next"><img src="./img/arrowRight.svg" alt=""></div>
                                         </div>
-                    
                                     </div>
-                    
                                 </div>
                             </div>
                         </div>
@@ -465,12 +495,214 @@
                 </div>
             </div>
         </section>
+        <section class="clients">
+            <div class="wrapper">
+                <h3>Клиенты</h3>
+                <div class="clientsList">
+                    <img src="./img/sber.svg" alt="sber">
+                    <img src="./img/tinkof.svg" alt="tinkof">
+                    <img src="./img/sber.svg" alt="sber">
+                    <img src="./img/tinkof.svg" alt="tinkof">
+                </div>
+            </div>
+        </section>
+        <section class="directors">
+            <div class="wrapper">
+                <h3>Руководители направлений нашей команды</h3>
+                <ul>
+                    <li data-btn="1" class="directorItem activeItem">Управляющий партнер</li>
+                    <li data-btn="2" class="directorItem">Руководитель по бухгалтескому направлению</li>
+                    <li data-btn="3" class="directorItem">Руководитель по юридическому направлению</li>
+                    <li data-btn="4" class="directorItem">Главный специалист по судебной работе</li>
+                    <li data-btn="5" class="directorItem">Руководитель по корпоративному праву</li>
+                    <li data-btn="6" class="directorItem">Руководитель отдела маркетинга и продаж</li>
+                </ul>
+                <div data-content="1" class="left-right-column">
+                    <div class="left-column">
+                        <img src="./img/directorFoto.svg" alt="directorFoto" class="directorFoto">
+                    </div>
+                    <div class="right-column">
+                        <div class="upper">
+                            <span>“1Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                        </div>
+                        <div class="bottom">
+                            <span>Ключевые навыки:</span>
+                            <ul>
+                                <li>опыт руководящей работы;</li>
+                                <li>cамостоятельность;</li>
+                                <li>аналитический склад ума;</li>
+                                <li>умение работать с большим объемом информации;</li>
+                                <li>умение работать в режиме многозадачности;</li>
+                                <li>требовательность к себе и подчиненным;</li>
+                                <li>умение аргументировать и отстаивать свою позицию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div data-content="2" class="left-right-column hideContent">
+                    <div class="left-column">
+                        <img src="./img/directorFoto.svg" alt="directorFoto" class="directorFoto">
+                    </div>
+                    <div class="right-column">
+                        <div class="upper">
+                            <span>“2Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                        </div>
+                        <div class="bottom">
+                            <span>Ключевые навыки:</span>
+                            <ul>
+                                <li>опыт руководящей работы;</li>
+                                <li>cамостоятельность;</li>
+                                <li>аналитический склад ума;</li>
+                                <li>умение работать с большим объемом информации;</li>
+                                <li>умение работать в режиме многозадачности;</li>
+                                <li>требовательность к себе и подчиненным;</li>
+                                <li>умение аргументировать и отстаивать свою позицию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div data-content="3" class="left-right-column hideContent">
+                    <div class="left-column">
+                        <img src="./img/directorFoto.svg" alt="directorFoto" class="directorFoto">
+                    </div>
+                    <div class="right-column">
+                        <div class="upper">
+                            <span>“3Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                        </div>
+                        <div class="bottom">
+                            <span>Ключевые навыки:</span>
+                            <ul>
+                                <li>опыт руководящей работы;</li>
+                                <li>cамостоятельность;</li>
+                                <li>аналитический склад ума;</li>
+                                <li>умение работать с большим объемом информации;</li>
+                                <li>умение работать в режиме многозадачности;</li>
+                                <li>требовательность к себе и подчиненным;</li>
+                                <li>умение аргументировать и отстаивать свою позицию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div data-content="4" class="left-right-column hideContent">
+                    <div class="left-column">
+                        <img src="./img/directorFoto.svg" alt="directorFoto" class="directorFoto">
+                    </div>
+                    <div class="right-column">
+                        <div class="upper">
+                            <span>“4Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                        </div>
+                        <div class="bottom">
+                            <span>Ключевые навыки:</span>
+                            <ul>
+                                <li>опыт руководящей работы;</li>
+                                <li>cамостоятельность;</li>
+                                <li>аналитический склад ума;</li>
+                                <li>умение работать с большим объемом информации;</li>
+                                <li>умение работать в режиме многозадачности;</li>
+                                <li>требовательность к себе и подчиненным;</li>
+                                <li>умение аргументировать и отстаивать свою позицию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div data-content="5" class="left-right-column hideContent">
+                    <div class="left-column">
+                        <img src="./img/directorFoto.svg" alt="directorFoto" class="directorFoto">
+                    </div>
+                    <div class="right-column">
+                        <div class="upper">
+                            <span>“5Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                        </div>
+                        <div class="bottom">
+                            <span>Ключевые навыки:</span>
+                            <ul>
+                                <li>опыт руководящей работы;</li>
+                                <li>cамостоятельность;</li>
+                                <li>аналитический склад ума;</li>
+                                <li>умение работать с большим объемом информации;</li>
+                                <li>умение работать в режиме многозадачности;</li>
+                                <li>требовательность к себе и подчиненным;</li>
+                                <li>умение аргументировать и отстаивать свою позицию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div data-content="6" class="left-right-column hideContent">
+                    <div class="left-column">
+                        <img src="./img/directorFoto.svg" alt="directorFoto" class="directorFoto">
+                    </div>
+                    <div class="right-column">
+                        <div class="upper">
+                            <span>“6Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                        </div>
+                        <div class="bottom">
+                            <span>Ключевые навыки:</span>
+                            <ul>
+                                <li>опыт руководящей работы;</li>
+                                <li>cамостоятельность;</li>
+                                <li>аналитический склад ума;</li>
+                                <li>умение работать с большим объемом информации;</li>
+                                <li>умение работать в режиме многозадачности;</li>
+                                <li>требовательность к себе и подчиненным;</li>
+                                <li>умение аргументировать и отстаивать свою позицию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="requestConsultation">
+            <div class="wrapper">
+                <div class="left-right-columns">
+                    <div class="left-column">
+                        <span class="title">У Вас остались вопросы?</span>
+                        <span class="lower-title">Свяжитесь с нами</span>
+                        <div class="inputQuestion">
+                            <input type="text" name="questionInputName" class="questionInputName" value="Имя">
+                            <input type="text" name="questionInputPhone" class="questionInputPhone" value="Телефон">
+                        </div>
+                        <div class="questionButton">
+                            <button class="requestQuestionButton">Получить консультацию</button>
+                            <img src="./img/consultationImage.svg" alt="consultationImage">
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <img src="./img/questionsImage.svg" alt="questionsImage">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
+        <div class="wrapper">
+            <div class="footer-upper">
+                <div class="footer-logo">
+                    <img src="./img/siteLogo.svg" alt="siteLogo">
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Бухгалтерские услуги</a></li>
+                        <li><a href="#">Юридические услуги для бизнеса</a></li>
+                        <li><a href="#">Юридические услуги для физических лиц</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="consultation-contacts">
+                    <button class="footer-button">Получить консультацию</button>
+                    <span class="footer-phone">+7 (999) 999-99-99</span>
+                </footer>
+            </div>
+            <div class="footer-bottom">
 
+            </div>
+        </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./scripts/slider.js"></script>
 </body>
 </html>
