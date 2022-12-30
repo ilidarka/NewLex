@@ -1,6 +1,6 @@
 @media (max-width: 1250px) {
     section {
-        padding: 0 30px;
+        padding: 0 30px !important;
     }
 }
 @media (max-width: 1100px) {
@@ -20,5 +20,45 @@
     }
     .consultation .contactButtons img {
         display: none;
+    }
+    .howDoWeWork .leftColumn img {
+        display: none;
+    }
+    .howDoWeWork .leftColumn {
+        background-image: url("../img/howDoWeWorkAdaptiveImage.svg");
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
+    .clients .clientsList {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .directors .left-right-column {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .directors .right-column {
+        width: 100%;
+        gap: 20px;
+    }
+    .directors .directorSwitcher {
+        display: none;
+    }
+    .directors .directorSwitcherAdaptive {
+        display: flex;
+    }
+}
+@media (max-width: 760px) {
+    .feedback .left-right-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedback .left-column {
+        width: 100%;
+    }
+    .feedback .right-column {
+        width: 100%;
     }
 }

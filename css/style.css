@@ -584,6 +584,9 @@ section {
     align-items: center;
     gap: 18px;
 }
+.feedback .stars img {
+    width: 20px
+}
 .feedback .maps {
     width: 100%;
     display: flex;
@@ -636,7 +639,7 @@ section {
     flex-direction: column;
     align-items: flex-start;
 }
-.directors ul {
+.directors .directorSwitcher {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -723,6 +726,30 @@ section {
     font-size: 18px;
     line-height: 140%;
     color: #000000;
+}
+.directors .directorsName {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #505ACC;
+    display: none;
+}
+.directors .directorSwitcherAdaptive {
+    margin-top: 10px;
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.activeDirectorName {
+    display: block !important;
+}
+.directorArrowLeft {
+    transform: rotate(180deg);
+}
+.directorSwitcherControll {
+    display: flex;
+    gap: 20px;
 }
 .hideContent {
     display: none !important;

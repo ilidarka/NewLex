@@ -531,8 +531,22 @@
         <section class="directors">
             <div class="wrapper">
                 <h3>Руководители направлений нашей команды</h3>
-                <ul>
-                    <li data-btn="1" class="directorItem activeItem">Управляющий партнер</li>
+                <div class="directorSwitcherAdaptive">
+                    <div class="directosNameList">
+                        <span data-directors="1" class="directorsName activeDirectorName">Управляющий партнер</span>
+                        <span data-directors="2" class="directorsName">Руководитель по бухгалтескому направлению</span>
+                        <span data-directors="3" class="directorsName">Руководитель по юридическому направлению</span>
+                        <span data-directors="4" class="directorsName">Главный специалист по судебной работе</span>
+                        <span data-directors="5" class="directorsName">Руководитель по корпоративному праву</span>
+                        <span data-directors="6" class="directorsName">Руководитель отдела маркетинга и продаж</span>
+                    </div>
+                    <div class="directorSwitcherControll">
+                        <img class="directorArrowLeft" src="./img/directorsArrowRight.svg" alt="directorsArrowRight">
+                        <img class="directorArrowRight" src="./img/directorsArrowRight.svg" alt="directorsArrowRight">
+                    </div>
+                </div>
+                <ul class="directorSwitcher">
+                    <li data-btn="1" class="directorItem">Управляющий партнер</li>
                     <li data-btn="2" class="directorItem">Руководитель по бухгалтескому направлению</li>
                     <li data-btn="3" class="directorItem">Руководитель по юридическому направлению</li>
                     <li data-btn="4" class="directorItem">Главный специалист по судебной работе</li>
