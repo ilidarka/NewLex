@@ -1,0 +1,32 @@
+.plans {
+    margin-top: 64px;
+}
+.plans .wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+.plans .servicesTitle {
+    padding: 10px 15px;
+    border: 1px solid #505ACC;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plans .servicesTitle .titleItem {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #11243E;
+}
+.activeServiceTitle {
+    background: #505ACC;
+    box-shadow: 2px 5px 21px rgba(80, 90, 204, 0.46);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF !important;
+    padding: 10px 40px;
+}
