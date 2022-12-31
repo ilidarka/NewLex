@@ -4,6 +4,7 @@
 .plans .wrapper {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 .plans .servicesTitle {
     padding: 10px 15px;
@@ -29,4 +30,113 @@
     line-height: 27px;
     color: #FFFFFF !important;
     padding: 10px 40px;
+}
+.plans .firstService, .plans .secondService, .plans .thirdService {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../img/plansBackground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px 40px;
+    border-radius: 50px;
+}
+.plans .name {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.plans .price {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+.plans .month {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.plans .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-align: left;
+}
+.plans .secondblock span, .plans .thirdblock span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.plans .firstblock, .plans .secondblock, .plans .thirdblock {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plans .firstblock {
+    gap: 50px;
+}
+.plans .thirdblock {
+    gap: 30px;
+    align-items: flex-end;
+}
+.plans .thirdblock-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.plans .thirdblock span {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.plans .requestServiceButton {
+    width: 210px;
+    height: 61px;
+    background: #FDD21B;
+    box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+}
+.plans .price-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.plans .secondblock {
+    align-items: flex-start;
+    gap: 30px;
+    padding-right: 30px;
+}
+.plans .not-item {
+    margin-left: 43px;
+}
+.plans .secondblock, .plans .firstblock {
+    border-right: 1px dashed #fff;
+}
+.plans .secondblock span {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #fff;
+}
+.plans .secondblock span:last-child {
+    border: none;
+}
+.sticky-content {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
 }
