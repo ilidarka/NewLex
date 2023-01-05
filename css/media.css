@@ -1,6 +1,11 @@
 @media (max-width: 1250px) {
-    section {
+    header, section, footer {
         padding: 0 30px !important;
+    }
+}
+@media (max-width: 1135px) {
+    .workWithUs h3 {
+        height: 140px;
     }
 }
 @media (max-width: 1100px) {
@@ -17,6 +22,16 @@
         flex-direction: column;
         align-items: center;
         gap: 30px;
+    }
+    .consultation .leftColumn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .consultation .counsultationHeader {
+        width: 100%;
+        text-align: center;
     }
     .consultation .contactButtons img {
         display: none;
@@ -49,6 +64,70 @@
     .directors .directorSwitcherAdaptive {
         display: flex;
     }
+    .directors .left-column img {
+        width: 100%;
+    }
+    .services .upperItems, .services .bottomItems {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .services .servicesList {
+        flex-direction: row;
+    }
+    .requestConsultation img {
+        display: none;
+    }
+    .requestConsultation .left-column {
+        width: 100%;
+        align-items: center;
+    }
+    .requestConsultation .inputQuestion, .requestConsultation .questionButton {
+        justify-content: center;
+        align-items: center;
+    }
+    footer .footer-upper {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    footer .footer-links {
+        width: 100%;
+    }
+    footer .consultation-contacts {
+        width: 100%;
+        align-items: center;
+    }
+}
+@media (max-width: 1000px) {
+    .workWithUs .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .workWithUs .leftColumn, .workWithUs .rightColumn {
+        width: 100%;
+    }
+}
+@media (max-width: 930px) {
+    .calculator .left-right-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .calculator .rightColumn {
+        width: 100%;
+    }
+    .calculator .bottom {
+        margin-top: 40px;
+    }
+    .calculator .control-group {
+        align-items: center;
+    }
+    .requestConsultation .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profit .profitImage, .profit .hideContent {
+        display: none;
+    }
 }
 @media (max-width: 760px) {
     .feedback .left-right-columns {
@@ -59,6 +138,52 @@
         width: 100%;
     }
     .feedback .right-column {
+        width: 100%;
+    }
+    .rates .ratesTitle {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .rates .ratesButtons {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .calculator .bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    footer .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    footer .politics {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    footer .footer-links {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+@media (max-width: 590px) {
+    .consultation .contactButtons {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .requestConsultation .inputQuestion {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profit .profitsList {
+        width: 100%;
+    }
+    .profit .profitsList ul {
         width: 100%;
     }
 }

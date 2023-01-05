@@ -17,6 +17,27 @@ h3 {
     line-height: 49px;
     color: #000000;
 }
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #000;
+}
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-purple);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 .buttons {
     background-color: var(--main-purple);
     height: 38px;
@@ -59,6 +80,9 @@ header li {
 header a {
     color: #11243E;
     text-decoration: none;
+}
+header a:hover {
+    transition: all .3s;
 }
 header a:checked {
     color: #11243E;
