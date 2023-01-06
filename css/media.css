@@ -87,7 +87,7 @@
     }
     footer .footer-upper {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 40px;
     }
     footer .footer-links {
@@ -154,6 +154,22 @@
         align-items: center;
         gap: 30px;
     }
+    .rates .ratePrice span {
+        font-size: 15px;
+    }
+    .profit h3 {
+        font-size: 35px !important;
+    }
+    .services .serviceItem {
+        font-size: 13px;
+    }
+    .howDoWeWork .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .howDoWeWork .leftColumn {
+        height: 250px;
+    }
     footer .footer-bottom {
         flex-direction: column;
         align-items: flex-start;
@@ -185,5 +201,30 @@
     }
     .profit .profitsList ul {
         width: 100%;
+    }
+    .howDoWeWork h3 {
+        font-size: 30px;
+    }
+    .workWithUs .benefitItem img { 
+        width: 40%;
+    }
+    .workWithUs .benefitItem span {
+        font-size: 15px;
+    }
+    .workWithUs .benefitItem p {
+        font-size: 12px;
+    }
+    .workWithUs .negativeItem span {
+        font-size: 15px;
+    }
+    .workWithUs .negativeItem p {
+        font-size: 11px;
+    }
+    .workWithUs .rightColumn h3 {
+        height: fit-content;
+    }
+    footer .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
