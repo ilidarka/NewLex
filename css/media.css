@@ -22,6 +22,7 @@
         flex-direction: column;
         align-items: center;
         gap: 30px;
+        border-radius: 50px;
     }
     .consultation .leftColumn {
         display: flex;
@@ -84,6 +85,12 @@
     .requestConsultation .inputQuestion, .requestConsultation .questionButton {
         justify-content: center;
         align-items: center;
+    }
+    .requestConsultation .wrapper {
+        border-radius: 50px;
+    }
+    .directors .left-column {
+        width: 100%;
     }
     footer .footer-upper {
         flex-direction: column;
@@ -222,6 +229,41 @@
     }
     .workWithUs .rightColumn h3 {
         height: fit-content;
+    }
+    .consultation .counsultationHeader {
+        font-size: 30px;
+    }
+    .consultation .getConsultationButton {
+        width: 260px;
+    }
+    .consultation .rightColumn img {
+        width: 100%;
+    }
+    .calculator span {
+        text-align: center;
+    }
+    .calculator .nalog {
+        gap: unset;
+    }
+    .calculator .leftColumn {
+        gap: 20px;
+    }
+    .workWithUs .wrapper {
+        gap: 30px;
+    }
+    .directors .upper {
+        flex-direction: column-reverse;
+        padding: 40px 20px 0 20px;
+        align-items: flex-start;
+    }
+    .directors .upper span {
+        font-size: 14px;
+    }
+    .requestConsultation .title {
+        text-align: center;
+    }
+    .second .wrapper {
+        padding: 90px 20px;
     }
     footer .footer-links {
         flex-direction: column;

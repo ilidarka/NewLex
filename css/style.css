@@ -712,16 +712,18 @@ section {
 }
 .directors .upper {
     width: 100%;
-    background-image: url("../img/directorImage.svg");
+    background-image: url("../img/backgroundWave.svg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-.directors .upper {
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
     color: #11243E;
-    padding: 40px 25px 40px 217px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 20px;
 }
 .directors .bottom {
     width: 100%;
