@@ -7,6 +7,9 @@
     position: relative;
     overflow-x: hidden; 
 }
+.swiper-wrapper {
+    padding: 10px;
+}
 .swiper-scrollbar {
     background: #E8E8E8;
 }

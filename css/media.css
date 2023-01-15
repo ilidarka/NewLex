@@ -92,6 +92,9 @@
     .directors .left-column {
         width: 100%;
     }
+    .plans .name {
+        font-size: 30px !important;
+    }
     footer .footer-upper {
         flex-direction: column;
         align-items: flex-start;
@@ -112,6 +115,36 @@
     }
     .workWithUs .leftColumn, .workWithUs .rightColumn {
         width: 100%;
+    }
+    .plans .secondblock {
+        display: none !important;
+    }
+    .plans .servicesTitle {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plans .firstblock {
+        border-right: none !important;
+        width: 100% !important;
+    }
+    .plans .thirdblock {
+        width: 100% !important;
+        align-items: center !important;
+    }
+    .plans .thirdblock .thirdblock-list {
+        display: none;
+    }
+    .plans .description {
+        text-align: center !important;
+    }
+    .plans .requestHelpButton {
+        display: block !important;
+    }
+    .plans .firstService, .plans .secondService, .plans .thirdService {
+        width: 80% !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 }
 @media (max-width: 930px) {
@@ -155,6 +188,10 @@
     .rates .ratesButtons {
         width: 100%;
         justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #fff;
     }
     .calculator .bottom {
         flex-direction: column;
@@ -264,6 +301,15 @@
     }
     .second .wrapper {
         padding: 90px 20px;
+    }
+    .plans .titleItem {
+        text-align: center;
+    }
+    .plans .price {
+        font-size: 35px !important;
+    }
+    .plans .name {
+        font-size: 25px !important;
     }
     footer .footer-links {
         flex-direction: column;

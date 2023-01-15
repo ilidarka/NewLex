@@ -1,5 +1,9 @@
 .plans {
     margin-top: 64px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px !important;
+    gap: 20px;
 }
 .plans .wrapper {
     flex-direction: column;
@@ -20,6 +24,10 @@
     font-size: 20px;
     line-height: 27px;
     color: #11243E;
+    padding: 10px 65px;
+}
+.plans .servicesTitle .titleItem:last-child {
+    padding: 10px 30px;
 }
 .activeServiceTitle {
     background: #505ACC;
@@ -34,7 +42,6 @@
 .plans .firstService, .plans .secondService, .plans .thirdService {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     background-image: url("../img/plansBackground.svg");
     background-repeat: no-repeat;
@@ -99,6 +106,14 @@
     display: flex;
     align-items: flex-start;
     gap: 20px;
+}
+.plans .requestHelpButton {
+    display: none;
+    width: 180px;
+    height: 61px;
+    background: #FDD21B;
+    box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
 }
 .plans .requestServiceButton {
     width: 210px;

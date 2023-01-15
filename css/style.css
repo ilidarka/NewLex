@@ -22,6 +22,14 @@ h3 {
     position: relative;
     color: #000;
 }
+.calculator .rightColumn .rotated {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.horizontalLine {
+    transform: rotate(90deg);
+}
 .hover-underline-animation::after {
     content: '';
     position: absolute;
@@ -151,6 +159,7 @@ section {
 .consultation .getConsultationButton {
     width: 285px;
     height: 61px;
+    border: none;
     background: #FFFFFF;
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
@@ -158,6 +167,7 @@ section {
 .consultation .orderServiceButton {
     width: 212px;
     height: 61px;
+    border: none;
     background: #FDD21B;
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
@@ -269,7 +279,7 @@ section {
 .calculator .bottomItem {
     background-color: #fff;
     width: fit-content;
-    padding: 7px 9px;
+    padding: 7px 15px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -315,6 +325,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 94px;
 }
 .calculator .control_indicator {
     display: flex;
@@ -341,6 +352,7 @@ section {
     margin-top: 70px;
     width: 216px;
     height: 61px;
+    border: none;
     background: #FDD21B;
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
@@ -370,7 +382,7 @@ section {
     background-color: #fff;
     border: 1px solid var(--main-purple);
 }
-.rates .active {
+.rates .active , .rates .rateButton:hover {
     background-color: var(--main-purple);
     color: #fff;
 }
@@ -423,6 +435,7 @@ section {
     width: 285px;
     height: 61px;
     background: #FFFFFF;
+    border: none;
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
     font-weight: 500;
@@ -636,6 +649,7 @@ section {
     width: 209px;
     height: 61px;
     background: #FFFFFF;
+    border: none;
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
 }
@@ -684,7 +698,7 @@ section {
     align-items: center;
     padding: 23px 22px;
 }
-.activeItem {
+.activeItem, .directors .directorItem:hover {
     background: #505ACC;
     box-shadow: 2px 5px 21px rgba(80, 90, 204, 0.46);
     border-radius: 5px;
@@ -837,6 +851,7 @@ section {
     width: 285px;
     height: 61px;
     background: #FFFFFF;
+    border: none;
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
     font-weight: 500;

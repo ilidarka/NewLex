@@ -15,7 +15,7 @@
     }
 .control_indicator {
     position: absolute;
-    top: 2px;
+    top: 20%;
     left: 0;
     height: 20px;
     width: 20px;
@@ -59,7 +59,7 @@
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background: #505ACC;
+    background: #FDD21B;
     transition: background 250ms;
 }
 .control-radio input:disabled ~ .control_indicator:after {
