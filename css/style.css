@@ -126,12 +126,37 @@ section {
     color: #11243E;
     width: 20%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 8px;
+    height: 120px;
 }
-.services .serviceItem img {
+.services .serviceItem .serviceItemImage {
     width: 38px;
     height: 38px;
+}
+.services .serviceItem span {
+    text-align: center;
+    width: 190px;
+}
+.activeServiceItem {
+    background-color: var(--main-purple);
+    padding: 10px;
+    color: #fff !important;
+    font-size: 19px !important;
+    border-radius: 10px;
+}
+.activeServiceItem .serviceItemImage {
+    filter: brightness(10);
+}
+.services .serviceItem:hover {
+    background-color: var(--main-purple);
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+}
+.services .serviceItem:hover .serviceItemImage {
+    filter: brightness(10);
 }
 .consultation {
     margin-top: 64px;
@@ -155,6 +180,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 .consultation .getConsultationButton {
     width: 285px;

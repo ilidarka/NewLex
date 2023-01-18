@@ -14,6 +14,12 @@
     justify-content: center;
     gap: 10px;
 }
+.services .serviceItem:hover .dropdownMenuButton {
+    background-color: var(--main-purple);
+}
+.serviceItem:hover .dropdownArrow {
+    filter: brightness(100);
+}
 .services .serviceItem .dropdownMenuButton img:nth-child(2) {
     width: 20%;
 }
