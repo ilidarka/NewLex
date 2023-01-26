@@ -70,10 +70,19 @@
     }
     .services .upperItems, .services .bottomItems {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     .services .servicesList {
         flex-direction: row;
+    }
+    .services .serviceItem {
+        width: 50%;
+    }
+    .services .serviceItem span {
+        width: unset;
+    }
+    .activeServiceItem {
+        font-size: 15px !important;
     }
     .requestConsultation img {
         display: none;
@@ -310,6 +319,12 @@
     }
     .plans .name {
         font-size: 25px !important;
+    }
+    .services .serviceItem {
+        width: 100%;
+    }
+    .rates .rateButton {
+        font-size: 10px;
     }
     footer .footer-links {
         flex-direction: column;

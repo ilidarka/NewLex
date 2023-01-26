@@ -223,59 +223,114 @@
                 <div class="ratesTitle">
                     <h3>Тарифы на бухгалтерское обслуживание</h3>
                     <div class="ratesButtons">
-                        <button class="rateButton active">УСН 6%</button>
-                        <button class="rateButton">УСН 15%</button>
-                        <button class="rateButton">ОСН</button>
+                        <button data-rateButton="1" class="rateButton active">УСН 6%</button>
+                        <button data-rateButton="2" class="rateButton">УСН 15%</button>
+                        <button data-rateButton="3" class="rateButton">ОСНО</button>
+                        <button data-rateButton="4" class="rateButton">АУСН 6%, 20%</button>
                     </div>
                 </div>
-                <div class="ratesPrices">
+                <div data-ratesPrices="1" class="ratesPrices">
+                    <div class="ratePrice">
+                        <span>Ведение учёта организацией в сфере услуг</span>
+                        <span>от 3 000 ₽/мес</span>
+                    </div>
                     <div class="ratePrice">
                         <span>Бухгалтерские услуги для ИП</span>
-                        <span>от 6 000 руб/мес</span>
+                        <span>от 1 500 ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Ведение учета организаций в сфере услуг</span>
-                        <span>от 8 000 руб/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Ведение учета организаций в сфере аренды</span>
-                        <span>от 9 000 руб/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Ведение бухгалтерского учета в торговле</span>
-                        <span>от 9 000 руб/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Ведение бухгалтерского и налогового учета турагентств</span>
-                        <span>от 10 000 руб/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Ведение бухгалтерии кафе, ресторанов</span>
-                        <span>от 10 000 руб/мес</span>
+                        <span>Ведение бухгалтерского учёта в торговле</span>
+                        <span>от 3 500 ₽/мес</span>
                     </div>
                     <div class="ratePrice">
                         <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
-                        <span>от 12 000 руб/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерское обслуживание издательств и типографий</span>
-                        <span>от 12 000 руб/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерское сопровождение интернет-магазинов</span>
-                        <span>от 12 000 руб/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерское обслуживание компаний в сфере транспорта и логистики</span>
-                        <span>от 12 000 руб/мес</span>
+                        <span>от 4 000 ₽/мес</span>
                     </div>
                     <div class="ratePrice">
                         <span>Бухгалтерское сопровождение производственных компаний</span>
-                        <span>от 18 000 руб/мес</span>
+                        <span>от 5 000 ₽/мес</span>
                     </div>
                     <div class="ratePrice">
                         <span>Аутсорсинг бухгалтерии строительных компаний</span>
-                        <span>от 18 000 руб/мес</span>
+                        <span>от 3 500 ₽/мес</span>
+                    </div>
+                </div>
+                <div data-ratesPrices="2" class="ratesPrices unactiveRate">
+                    <div class="ratePrice">
+                        <span>Ведение учёта организацией в сфере услуг</span>
+                        <span>от 5 000 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерские услуги для ИП</span>
+                        <span>от 3 500 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Ведение бухгалтерского учёта в торговле</span>
+                        <span>от 5 500 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
+                        <span>от 6 000 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерское сопровождение производственных компаний</span>
+                        <span>от 7 000 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Аутсорсинг бухгалтерии строительных компаний</span>
+                        <span>от 5 500 ₽/мес</span>
+                    </div>
+                </div>
+                <div data-ratesPrices="3" class="ratesPrices unactiveRate">
+                    <div class="ratePrice">
+                        <span>Ведение учёта организацией в сфере услуг</span>
+                        <span>от 5 500 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерские услуги для ИП</span>
+                        <span>от 5 000 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Ведение бухгалтерского учёта в торговле</span>
+                        <span>от 6 500 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
+                        <span>от 6 500 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерское сопровождение производственных компаний</span>
+                        <span>от 7 500 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Аутсорсинг бухгалтерии строительных компаний</span>
+                        <span>от 8 000 ₽/мес</span>
+                    </div>
+                </div>
+                <div data-ratesPrices="4" class="ratesPrices unactiveRate">
+                    <div class="ratePrice">
+                        <span>Ведение учёта организацией в сфере услуг</span>
+                        <span>от 3 500 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерские услуги для ИП</span>
+                        <span>от 3 000 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Ведение бухгалтерского учёта в торговле</span>
+                        <span>от 3 000 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
+                        <span>от 6 500 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Бухгалтерское сопровождение производственных компаний</span>
+                        <span>от 4 500 ₽/мес</span>
+                    </div>
+                    <div class="ratePrice">
+                        <span>Аутсорсинг бухгалтерии строительных компаний</span>
+                        <span>от 5 000 ₽/мес</span>
                     </div>
                 </div>
             </div>
@@ -501,10 +556,7 @@
                                     </div>
                     
                                     <div class="swiper-controll">
-                                        <!-- scrollbar -->
                                         <div class="swiper-scrollbar"></div>
-                    
-                                        <!-- buttons -->
                                         <div class="swiper-buttons">
                                             <div class="swiper-button-prev"><img src="./img/arrowLeft.svg" alt=""></div>
                                             <div class="swiper-button-next"><img src="./img/arrowRight.svg" alt=""></div>
