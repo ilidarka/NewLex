@@ -25,6 +25,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
     <script src="./scripts/slider.js" defer></script>
+    <script src="./scripts/changeIFrameScript.js" defer></script>
 </head>
 <body>
     <div id="menu">
@@ -399,7 +400,19 @@
         <section class="feedback">
             <div class="wrapper">
                 <h3>Отзывы</h3>
-                <div class="left-right-columns">
+
+                <div style="width:100%;height:800px;overflow:hidden;position:relative;">
+                    <iframe id="iframeFeedback" style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" 
+                            src="https://yandex.ru/maps-reviews-widget/125440147305?comments">
+                    </iframe>
+                    <a href="https://yandex.ru/maps/org/nyu_leks/125440147305/" 
+                       target="_blank" 
+                       style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">
+                        Нью Лекс на карте Москвы — Яндекс Карты
+                    </a>
+                </div>
+
+<!--                <div class="left-right-columns">
                     <div class="left-column">
                         <span class="rating">4.8 из 5</span>
                         <div class="stars">
@@ -517,7 +530,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </section>
         <section class="clients">

@@ -57,6 +57,7 @@
     font-size: 35px;
     line-height: 48px;
     color: #FFFFFF;
+    text-align: center;
 }
 .plans .price {
     font-weight: 500;
@@ -96,6 +97,7 @@
 }
 .plans .thirdblock {
     gap: 30px;
+    width: 60%;
     align-items: flex-end;
 }
 .plans .thirdblock-list {
@@ -151,6 +153,31 @@
 .plans .secondblock span:last-child {
     border: none;
 }
+.plans .aditionalInfoBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.plans .aditionalInfo {
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+    text-align: center;
+    width: 70%;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+}
+.plans .aditionalInfo:last-child {
+    border-bottom: none;
+}
+.plans .allPricesSpan {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+}
 .sticky-content {
     width: 100%;
     position: sticky;
@@ -158,12 +185,57 @@
     z-index: 10;
     background-color: #fff;
 }
-.services .serviceItem {
+.pricesTableSection {
+    margin-top: 64px;
+}
+.pricesTableSection .wrapper {
     flex-direction: column;
     align-items: center;
-    position: relative;
+    gap: 20px;
+    padding: 20px;
 }
-.services .serviceItem span {
-    width: 190px;
+.pricesTableSection h3 {
+    width: 100%;
     text-align: center;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 140%;
+    border-bottom: 1px solid #515CCD;
+    padding-bottom: 10px;
+}
+.pricesTableSection span {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    border-bottom: 1px solid #515CCD;
+}
+.pricesTableSection .priceName {
+    padding: 0 0 10px 5px;
+    width: 68%;
+}
+.pricesTableSection .price {
+    width: 10%;
+    text-align: center;
+}
+.pricesTableSection .employee {
+    width: 18%;
+    text-align: center;
+}
+.pricesTableSection .pricesTable {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.pricesTableSection .pricesTableItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.profit .profitsList {
+    flex-direction: row !important;
+}
+.profit .reversedList {
+    flex-direction: row-reverse !important;
 }

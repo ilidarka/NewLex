@@ -155,6 +155,15 @@
         align-items: center;
         gap: 20px;
     }
+    .pricesTableSection .employee {
+        display: none;
+    }
+    .pricesTableSection .priceName {
+        width: 80% !important;
+    }
+    .pricesTableSection .price {
+        width: 15% !important;
+    }
 }
 @media (max-width: 930px) {
     .calculator .left-right-columns {
@@ -222,6 +231,21 @@
     }
     .howDoWeWork .leftColumn {
         height: 250px;
+    }
+    .pricesTableSection {
+        padding: 0 10px !important;
+    }
+    .pricesTableSection .wrapper {
+        padding: 0 0 !important;
+    }
+    .pricesTableSection span {
+        font-size: 20px !important;
+    }
+    .pricesTableSection .price {
+        width: 30% !important;
+    }
+    .pricesTableSection .priceName {
+        width: 60% !important;
     }
     footer .footer-bottom {
         flex-direction: column;
@@ -315,7 +339,7 @@
         text-align: center;
     }
     .plans .price {
-        font-size: 35px !important;
+        font-size: 30px !important;
     }
     .plans .name {
         font-size: 25px !important;
