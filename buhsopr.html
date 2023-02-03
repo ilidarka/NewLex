@@ -22,7 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
     <script src="./scripts/slider.js" defer></script>
-    <script src="./scripts/serviceTitleScript.js" defer></script>
+    <script src="./scripts/plansSwitcherScript.js" defer></script>
 </head>
 <body>
     <div id="menu">
@@ -51,12 +51,12 @@
                 <button class="buttons"><img src="./img/userIcon.svg" alt="userIcon"><span>Личный кабинет</span></button>
             </div>
             <nav>
-                <li><a href="#">Бухгалтерские услуги</a></li>
-                <li><a href="#">Юридические услуги для бизнеса</a></li>
-                <li><a href="#">Юридические услуги для физических лиц</a></li>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Блог</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a class="hover-underline-animation" href="#">Бухгалтерские услуги</a></li>
+                <li><a class="hover-underline-animation" href="#">Юридические услуги для бизнеса</a></li>
+                <li><a class="hover-underline-animation" href="#">Юридические услуги для физических лиц</a></li>
+                <li><a class="hover-underline-animation" href="#">О компании</a></li>
+                <li><a class="hover-underline-animation" href="#">Блог</a></li>
+                <li><a class="hover-underline-animation" href="#">Контакты</a></li>
             </nav>
         </div>
     </header>
@@ -156,80 +156,322 @@
         <section class="plans">
             <div class="sticky-content">
                 <div class="servicesTitle">
-                    <span class="titleItem activeServiceTitle">УСН 6%</span>
-                    <span class="titleItem">УСН 15%</span>
-                    <span class="titleItem">ОСНО</span>
-                    <span class="titleItem">АУСН</span>
+                    <span data-planNumber="1" class="titleItem activeServiceTitle">УСН 6%</span>
+                    <span data-planNumber="2" class="titleItem">УСН 15%</span>
+                    <span data-planNumber="3" class="titleItem">ОСНО</span>
+                    <span data-planNumber="4" class="titleItem">АУСН</span>
                 </div>
             </div>
             <div class="wrapper">
-                <div class="firstService">
-                    <div class="firstblock">
-                        <span class="name">«Начальный»</span>
-                        <span class="price">4 500 ₽/мес</span>
-                        <div class="aditionalInfoBlock">
-                            <span class="aditionalInfo">УСН 6%</span>
-                            <span class="aditionalInfo">Нет штатных сотрудников</span>
-                            <span class="aditionalInfo">До 15 документов</span>
+                <div data-accessiblePlan="1" class="accessiblePlan activePlan">
+                    <div class="firstService">
+                        <div class="firstblock">
+                            <span class="name">«Начальный»</span>
+                            <span class="price">4 500 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">УСН 6%</span>
+                                <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (акты, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов, предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
                         </div>
                     </div>
-                    <div class="thirdblock">
-                        <div class="thirdblock-list">
-                            <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (акты, накладные, счета);</span>
-                            <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов, предоставленных клиентом;</span>
-                            <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат;</span>
-                            <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                    <div class="secondService">
+                        <div class="firstblock">
+                            <span class="name">«Комплекс»</span>
+                            <span class="price">5 500 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">УСН 6%</span>
+                                <span class="aditionalInfo">До 5 штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
                         </div>
-                        <button class="requestHelpButton">Подробнее</button>
-                        <button class="requestServiceButton">Заказать услугу</button>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="thirdService">
+                        <div class="firstblock">
+                            <span class="name">«Вперед»</span>
+                            <span class="price">10 000 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">УСН 6%</span>
+                                <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
                     </div>
                 </div>
-                <div class="secondService">
-                    <div class="firstblock">
-                        <span class="name">«Комплекс»</span>
-                        <span class="price">5 500 ₽/мес</span>
-                        <div class="aditionalInfoBlock">
-                            <span class="aditionalInfo">УСН 6%</span>
-                            <span class="aditionalInfo">До 5 штатных сотрудников</span>
-                            <span class="aditionalInfo">До 15 документов</span>
+                <div data-accessiblePlan="2" class="accessiblePlan">
+                    <div class="firstService">
+                        <div class="firstblock">
+                            <span class="name">«Начальный»</span>
+                            <span class="price">6 500 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">УСН 15%</span>
+                                <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (акты, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов, предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
                         </div>
                     </div>
-                    <div class="thirdblock">
-                        <div class="thirdblock-list">
-                            <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
-                            <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
-                            <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
-                            <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
-                            <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
-                            <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
-                            <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                    <div class="secondService">
+                        <div class="firstblock">
+                            <span class="name">«Комплекс»</span>
+                            <span class="price">7 500 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">УСН 15%</span>
+                                <span class="aditionalInfo">До 5 штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
                         </div>
-                        <button class="requestHelpButton">Подробнее</button>
-                        <button class="requestServiceButton">Заказать услугу</button>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="thirdService">
+                        <div class="firstblock">
+                            <span class="name">«Вперед»</span>
+                            <span class="price">12 000 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">УСН 15%</span>
+                                <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
                     </div>
                 </div>
-                <div class="thirdService">
-                    <div class="firstblock">
-                        <span class="name">«Вперед»</span>
-                        <span class="price">10 000 ₽/мес</span>
-                        <div class="aditionalInfoBlock">
-                            <span class="aditionalInfo">УСН 6%</span>
-                            <span class="aditionalInfo">Нет штатных сотрудников</span>
-                            <span class="aditionalInfo">До 15 документов</span>
+                <div data-accessiblePlan="3" class="accessiblePlan">
+                    <div class="firstService">
+                        <div class="firstblock">
+                            <span class="name">«Начальный»</span>
+                            <span class="price">7 000 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">ОСНО</span>
+                                <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (акты, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов, предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
                         </div>
                     </div>
-                    <div class="thirdblock">
-                        <div class="thirdblock-list">
-                            <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
-                            <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
-                            <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
-                            <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
-                            <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
-                            <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
-                            <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                    <div class="secondService">
+                        <div class="firstblock">
+                            <span class="name">«Комплекс»</span>
+                            <span class="price">9 500 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">ОСНО</span>
+                                <span class="aditionalInfo">До 5 штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
                         </div>
-                        <button class="requestHelpButton">Подробнее</button>
-                        <button class="requestServiceButton">Заказать услугу</button>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="thirdService">
+                        <div class="firstblock">
+                            <span class="name">«Вперед»</span>
+                            <span class="price">12 500 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">ОСНО</span>
+                                <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-accessiblePlan="4" class="accessiblePlan">
+                    <div class="firstService">
+                        <div class="firstblock">
+                            <span class="name">«Доход»</span>
+                            <span class="price">3 000 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">8%</span>
+                                <span class="aditionalInfo">1 штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (акты, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов, предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="secondService">
+                        <div class="firstblock">
+                            <span class="name">«Доход +»</span>
+                            <span class="price">6 000 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">8%</span>
+                                <span class="aditionalInfo">До 5 штатных сотрудников</span>
+                                <span class="aditionalInfo">До 50 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="thirdService">
+                        <div class="firstblock">
+                            <span class="name">«Просто»</span>
+                            <span class="price">5 000 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">20%</span>
+                                <span class="aditionalInfo">1 штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="fourthService">
+                        <div class="firstblock">
+                            <span class="name">«Просто +»</span>
+                            <span class="price">8 000 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">20%</span>
+                                <span class="aditionalInfo">До 5 штатных сотрудников</span>
+                                <span class="aditionalInfo">До 50 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
                     </div>
                 </div>
                 <span class="allPricesSpan"><span style="color: red">***</span>Все цены указаны без учета стоимости 1С:Бухгалтерия и 1С:Отчестность</span>

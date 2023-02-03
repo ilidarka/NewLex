@@ -149,7 +149,7 @@
     .plans .requestHelpButton {
         display: block !important;
     }
-    .plans .firstService, .plans .secondService, .plans .thirdService {
+    .plans .firstService, .plans .secondService, .plans .thirdService, .plans .fourthService {
         width: 80% !important;
         flex-direction: column;
         align-items: center;
