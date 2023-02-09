@@ -375,6 +375,12 @@
     .howToStartWorkWithUs .lastItem a {
         width: 100% !important;
     }
+    .servicesPrice .servicePriceName, .servicesPrice .servicePriceValue {
+        font-size: 18px;
+    }
+    .services .serviceItem span {
+        width: 125px !important;
+    }
     footer .footer-links {
         flex-direction: column;
         align-items: flex-start;

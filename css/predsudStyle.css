@@ -1,3 +1,39 @@
+.servicesPrice {
+    margin-top: 54px;
+}
+.servicesPrice .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.servicesPrice .servicesPriceItems {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.servicesPrice .servicesPriceItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--main-purple);
+    padding-bottom: 10px;
+}
+.servicesPrice .servicePriceName, .servicesPrice .servicePriceValue {
+    width: 50%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #11243E;
+}
+.servicesPrice .servicePriceValue {
+    text-align: right;
+}
+.servicesPrice .Value {
+    font-weight: 700;
+}
 .profit .profitsList {
     gap: 100px;
 }
