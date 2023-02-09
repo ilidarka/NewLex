@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/sliderStyle.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/burgerMenuStyle.css">
+    <link rel="stylesheet" href="./css/dropdownMenuStyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="./scripts/nouislider.min.js" defer></script>
     <script src="./scripts/inputEmployeesScript.js" defer></script>
@@ -26,6 +27,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
     <script src="./scripts/slider.js" defer></script>
     <script src="./scripts/changeIFrameScript.js" defer></script>
+    <script src="./scripts/dropdownMenuScript.js" defer></script>
 </head>
 <body>
     <div id="menu">
@@ -68,47 +70,95 @@
             <div class="wrapper">
                 <div class="servicesList">
                     <div class="upperItems">
+                        <div class="serviceItem dropdown">
+                            <button data-menuButton="1" class="dropdownMenuButton">
+                                <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                                <img class="dropdownArrow" src="./img/dropdownArrow.svg" alt="dropdownArrow">
+                            </button>
+                            <div data-menu="1" class="dropdownContent hidenDropdownContent">
+                                <a href="#">Услуга 1</a>
+                                <a href="#">Услуга 2</a>
+                                <a href="#">Услуга 3</a>
+                                <a href="#">Услуга 4</a>
+                                <a href="#">Услуга 5</a>
+                                <a href="#">Услуга 6</a>
+                                <a href="#">Услуга 7</a>
+                            </div>
+                            <span>Представительство в суде</span>
+                        </div>
+                        <div class="serviceItem">
+                            <button data-menuButton="2" class="dropdownMenuButton">
+                                <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                                <img class="dropdownArrow" src="./img/dropdownArrow.svg" alt="dropdownArrow">
+                            </button>
+                            <div data-menu="2" class="dropdownContent hidenDropdownContent">
+                                <a href="#">Услуга 1</a>
+                                <a href="#">Услуга 2</a>
+                                <a href="#">Услуга 3</a>
+                                <a href="#">Услуга 4</a>
+                                <a href="#">Услуга 5</a>
+                                <a href="#">Услуга 6</a>
+                                <a href="#">Услуга 7</a>
+                            </div>
+                            <span>Банкротство физических лиц</span>
+                        </div>
                         <div class="serviceItem">
                             <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
-                            <span>Бухгалтерское сопровождение</span>
-                        </div>
-                        <div class="serviceItem activeServiceItem">
-                            <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
-                            <span>Бухгалтерские услуги для ИП</span>
+                            <span>Юрист по наследственным спорам</span>
                         </div>
                         <div class="serviceItem">
                             <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
-                            <span>Бухгалтерские услуги для НКО</span>
+                            <span>Юрист по семейным спорам</span>
                         </div>
                         <div class="serviceItem">
                             <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
-                            <span>Аутсорсинг бухгалтерских услуг</span>
-                        </div>
-                        <div class="serviceItem">
-                            <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
-                            <span>Востановление бухгалтерского учета</span>
+                            <span>Юрист по недвижимости</span>
                         </div>
                     </div>
                     <div class="bottomItems">
                         <div class="serviceItem">
                             <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
-                            <span>Восстановление кадрового учета</span>
+                            <span>Юрист по трудовым спорам</span>
+                        </div>
+                        <div class="serviceItem">
+                            <button data-menuButton="2" class="dropdownMenuButton">
+                                <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                                <img class="dropdownArrow" src="./img/dropdownArrow.svg" alt="dropdownArrow">
+                            </button>
+                            <div data-menu="2" class="dropdownContent hidenDropdownContent">
+                                <a href="#">Услуга 1</a>
+                                <a href="#">Услуга 2</a>
+                                <a href="#">Услуга 3</a>
+                                <a href="#">Услуга 4</a>
+                                <a href="#">Услуга 5</a>
+                                <a href="#">Услуга 6</a>
+                                <a href="#">Услуга 7</a>
+                            </div>
+                            <span>Защита прав потребителей</span>
                         </div>
                         <div class="serviceItem">
                             <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
-                            <span>Нулевая отчетность</span>
+                            <span>Юрист по банковским делам и кредитам</span>
+                        </div>
+                        <div class="serviceItem">
+                            <button data-menuButton="2" class="dropdownMenuButton">
+                                <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                                <img class="dropdownArrow" src="./img/dropdownArrow.svg" alt="dropdownArrow">
+                            </button>
+                            <div data-menu="2" class="dropdownContent hidenDropdownContent">
+                                <a href="#">Услуга 1</a>
+                                <a href="#">Услуга 2</a>
+                                <a href="#">Услуга 3</a>
+                                <a href="#">Услуга 4</a>
+                                <a href="#">Услуга 5</a>
+                                <a href="#">Услуга 6</a>
+                                <a href="#">Услуга 7</a>
+                            </div>
+                            <span>Споры с застройщиками</span>
                         </div>
                         <div class="serviceItem">
                             <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
-                            <span>Аутсорсинг кадрового учета</span>
-                        </div>
-                        <div class="serviceItem">
-                            <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
-                            <span>Консультация бухгалтера</span>
-                        </div>
-                        <div class="serviceItem">
-                            <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
-                            <span>Заполнение декларации 3-НДФЛ</span>
+                            <span>Юрист по исполнительному производству</span>
                         </div>
                     </div>
                 </div>
@@ -400,7 +450,6 @@
         <section class="feedback">
             <div class="wrapper">
                 <h3>Отзывы</h3>
-
                 <div style="width:100%;height:800px;overflow:hidden;position:relative;">
                     <iframe id="iframeFeedback" style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" 
                             src="https://yandex.ru/maps-reviews-widget/125440147305?comments">
@@ -411,126 +460,6 @@
                         Нью Лекс на карте Москвы — Яндекс Карты
                     </a>
                 </div>
-
-<!--                <div class="left-right-columns">
-                    <div class="left-column">
-                        <span class="rating">4.8 из 5</span>
-                        <div class="stars">
-                            <img src="./img/star.svg" alt="star">
-                            <img src="./img/star.svg" alt="star">
-                            <img src="./img/star.svg" alt="star">
-                            <img src="./img/star.svg" alt="star">
-                            <img src="./img/star.svg" alt="star">
-                        </div>
-                        <a href="#"><img src="./img/siteLogo.svg" alt="siteLogo"></a>
-                        <div class="maps">
-                            <img src="./img/yandex.svg" alt="yandexLogo">
-                            <img src="./img/google.svg" alt="google">
-                            <span>Карты</span>
-                        </div>
-                        <span class="marksCountSpan">На основе 198 оценок</span>
-                        <button class="leaveFeedback">Оставить отзыв</button>
-                    </div>
-                    <div class="right-column">
-                        <div id="slider" class="slider_wrapper container">
-                            <div class="slider">
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="slide-content">
-                                                <div class="slideUpper">
-                                                    <img src="./img/sliderImage1.svg" alt="sliderImage1">
-                                                    <div class="slider-info">
-                                                        <span class="name">Елена</span>
-                                                        <div class="stars">
-                                                            <img src="./img/star.svg" alt="star">
-                                                            <img src="./img/star.svg" alt="star">
-                                                            <img src="./img/star.svg" alt="star">
-                                                            <img src="./img/star.svg" alt="star">
-                                                            <img src="./img/star.svg" alt="star">
-                                                        </div>
-                                                        <span class="date">15 октября 2022 год</span>
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    С фирмой NewLex сотрудничали 2 года. 
-                                                    Компания проводила проверку финансового состояния нашей компании. 
-                                                    Аудитор очень основательно проверил все вопросы бухгалтерского и 
-                                                    налогового учёта. Проверка проводилась компетентными специалистами, 
-                                                    и был предоставлен подробный отчёт. 
-                                                    По выявленных нарушениям давались консультации со ссылкой на законодательство. 
-                                                    Также радуют консультации, которые можно получить в течение года 
-                                                    у аудитора по вопросам возникающим в процессе работы
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="slide-content">
-                                                <div class="slideUpper">
-                                                    <img src="./img/sliderImage2.svg" alt="sliderImage1">
-                                                    <div class="slider-info">
-                                                        <span class="name">Михаил</span>
-                                                        <div class="stars">
-                                                            <img src="./img/star.svg" alt="star">
-                                                            <img src="./img/star.svg" alt="star">
-                                                            <img src="./img/star.svg" alt="star">
-                                                            <img src="./img/star.svg" alt="star">
-                                                            <img src="./img/star.svg" alt="star">
-                                                        </div>
-                                                        <span class="date">3 ноября 2022 год</span>
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    Благодарю компанию NewLex за профессиональную работу! 
-                                                    Проводили процедуру ликвидации фирмы. 
-                                                    Обычно официальная ликвидации ООО проводиться намного дольше, 
-                                                    специалисты провели процедуру за 4 месяца. Все прошло без проблем, 
-                                                    от меня требовалось по минимуму, я доволен работой компании!
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="slide-content">
-                                                <div class="slideUpper">
-                                                    <img src="./img/sliderImage1.svg" alt="sliderImage1">
-                                                    <div class="slider-info">
-                                                        <span class="name">Елена</span>
-                                                        <div class="stars">
-                                                            <img src="./img/star.svg" alt="star">
-                                                            <img src="./img/star.svg" alt="star">
-                                                            <img src="./img/star.svg" alt="star">
-                                                            <img src="./img/star.svg" alt="star">
-                                                            <img src="./img/star.svg" alt="star">
-                                                        </div>
-                                                        <span class="date">15 октября 2022 год</span>
-                                                    </div>
-                                                </div>
-                                                <p>
-                                                    С фирмой NewLex сотрудничали 2 года. 
-                                                    Компания проводила проверку финансового состояния нашей компании. 
-                                                    Аудитор очень основательно проверил все вопросы бухгалтерского и 
-                                                    налогового учёта. Проверка проводилась компетентными специалистами, 
-                                                    и был предоставлен подробный отчёт. 
-                                                    По выявленных нарушениям давались консультации со ссылкой на законодательство. 
-                                                    Также радуют консультации, которые можно получить в течение года 
-                                                    у аудитора по вопросам возникающим в процессе работы
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                    
-                                    <div class="swiper-controll">
-                                        <div class="swiper-scrollbar"></div>
-                                        <div class="swiper-buttons">
-                                            <div class="swiper-button-prev"><img src="./img/arrowLeft.svg" alt=""></div>
-                                            <div class="swiper-button-next"><img src="./img/arrowRight.svg" alt=""></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
             </div>
         </section>
         <section class="connectWithUs">

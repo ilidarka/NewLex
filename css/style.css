@@ -435,6 +435,10 @@ section {
     align-items: center;
     border-bottom: 0.5px solid #515CCD;
 }
+.rates .ratePrice span:first-child::before {
+    content: url("../img/pricesIcon.svg");
+    margin-right: 10px;
+}
 .rates .ratePrice span {
     font-weight: 400;
     font-size: 24px;
@@ -911,6 +915,36 @@ section {
     width: 100%;
     display: flex;
     gap: 30px;
+}
+.connectWithUs {
+    margin-top: 54px;
+}
+.connectWithUs .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.connectWithUs .connectWithUsItems {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.connectWithUs .connectWithUsItem {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: 400px;
+}
+.connectWithUs .connectWithUsItem span {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    color: #11243E;
 }
 footer {
     margin-top: 128px;

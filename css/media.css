@@ -186,6 +186,12 @@
     .profit .profitImage, .profit .hideContent {
         display: none;
     }
+    .connectWithUs .connectWithUsItem {
+        height: max-content;
+    }
+    .howToStartWorkWithUs .howToStartWorkWithUsItem {
+        width: 48% !important;
+    }
 }
 @media (max-width: 760px) {
     .feedback .left-right-columns {
@@ -246,6 +252,16 @@
     }
     .pricesTableSection .priceName {
         width: 60% !important;
+    }
+    .howToStartWorkWithUs .howToStartWorkWithUsItems {
+        flex-direction: column;
+        align-items: center;
+    }
+    .howToStartWorkWithUs .howToStartWorkWithUsItem {
+        width: 100% !important;
+    }
+    .howToStartWorkWithUs .howToStartWorkWithUsItems .lastItem {
+        padding-bottom: 100px;
     }
     footer .footer-bottom {
         flex-direction: column;
@@ -349,6 +365,12 @@
     }
     .rates .rateButton {
         font-size: 10px;
+    }
+    .connectWithUs .connectWithUsItem {
+        width: 100%;
+    }
+    .howToStartWorkWithUs .lastItem a {
+        width: 100% !important;
     }
     footer .footer-links {
         flex-direction: column;
