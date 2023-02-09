@@ -9,9 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/radioButtonStyle.css">
-    <link rel="stylesheet" href="./css/nouislider.css">
-    <link rel="stylesheet" href="./css/sliderStyle.css">
+    <link rel="stylesheet" href="./css/predsudStyle.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/burgerMenuStyle.css">
     <link rel="stylesheet" href="./css/dropdownMenuStyle.css">
@@ -121,11 +119,11 @@
                             <span>Юрист по трудовым спорам</span>
                         </div>
                         <div class="serviceItem">
-                            <button data-menuButton="2" class="dropdownMenuButton">
+                            <button data-menuButton="3" class="dropdownMenuButton">
                                 <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
                                 <img class="dropdownArrow" src="./img/dropdownArrow.svg" alt="dropdownArrow">
                             </button>
-                            <div data-menu="2" class="dropdownContent hidenDropdownContent">
+                            <div data-menu="3" class="dropdownContent hidenDropdownContent">
                                 <a href="#">Услуга 1</a>
                                 <a href="#">Услуга 2</a>
                                 <a href="#">Услуга 3</a>
@@ -141,11 +139,11 @@
                             <span>Юрист по банковским делам и кредитам</span>
                         </div>
                         <div class="serviceItem">
-                            <button data-menuButton="2" class="dropdownMenuButton">
+                            <button data-menuButton="4" class="dropdownMenuButton">
                                 <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
                                 <img class="dropdownArrow" src="./img/dropdownArrow.svg" alt="dropdownArrow">
                             </button>
-                            <div data-menu="2" class="dropdownContent hidenDropdownContent">
+                            <div data-menu="4" class="dropdownContent hidenDropdownContent">
                                 <a href="#">Услуга 1</a>
                                 <a href="#">Услуга 2</a>
                                 <a href="#">Услуга 3</a>
@@ -167,7 +165,7 @@
         <section class="consultation">
             <div class="wrapper">
                 <div class="leftColumn">
-                    <span class="counsultationHeader">Бухгалтерские услуги</span>
+                    <span class="counsultationHeader">Представительство в суде</span>
                     <div class="contactButtons">
                         <button class="getConsultationButton">Получить консультацию</button>
                         <button class="orderServiceButton">Заказать услугу</button>
@@ -181,7 +179,8 @@
         </section>
         <section class="howDoWeWork">
             <div class="wrapper">
-                <h3>Компания NEW LEX предоставит Вам, весь спектр бухгалтерских услуг. Профессиональный учет – Наш приоритет!</h3>
+                <h3>Сотрудники NEWLEX обладают большой практикой представительства в судах общей юрисдикции и арбитражных судах<br>
+                    Наша работа- защищать интересы и права клиента </h3>
                 <span class="howDoWeWorkSpan">Как мы работаем</span>
                 <div class="columns">
                     <div class="leftColumn">
@@ -189,199 +188,15 @@
                     </div>
                     <div class="rightColumn">
                         <ul>
-                            <li>Отчетность</li>
-                            <p>Профессионально и четко в срок подготовим для вас всю необходимую отчетность</p>
-                            <li>Налоги</li>
-                            <p>Заранее спланируем, и грамотно рассчитаем. Поможем оптимизировать налоговые расходы</p>
-                            <li>Бухгалтерия</li>
-                            <p>Аккуратно и в срок разнесем по счетам акты хозяйственной деятельности Вашей организации</p>
-                            <li>Кадровый учет</li>
-                            <p>Заранее за Вас составим штатное расписание, графики отпусков, трудовые договора и должностные инструкции</p>
-                            <li>Начисление зарплаты</li>
-                            <p>Начислим зарплату, удержим НДФЛ, рассчитаем страховые взносы. Проконсультируем Ваших сотрудников</p>
-                            <li>Консультации</li>
-                            <p>Подскажем Вам ответы на любые вопросы по налогам и бухгалтерскому учету. Проведем оценку налоговых рисков</p>
+                            <li>Всесторонний анализ проблемной ситуации и перспектив дела</li>
+                            <p>Кропотливая Аналитическая работа рождает стратегию на пути к успешному разрешению ситуации, а также повышает шансы на положительный исход дела</p>
+                            <li>Решение проблем из различных областей права</li>
+                            <p>Мы отлично знаем действующее законодательство РФ, постоянно отслеживаем изменения и всегда в курсе нововведений</p>
+                            <li>Предложение всех возможных вариантов по урегулированию спора</li>
+                            <p>Безвыходных ситуаций нет, поэтому мы всегда стараемся предложить различные варианты при урегулирования спора, в т.ч. и досудебное разрешение спора</p>
+                            <li>Нацеленность на достижение результата</li>
+                            <p>Мы всегда стараемся работать только на результат, а не на формальное оказание услуги, без дальнейшей перспективы</p>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="calculator">
-            <div class="wrapper">
-                <h3>Калькулятор для расчёта стоимости бухгалтерского обслуживания</h3>
-                <div class="left-right-columns">
-                    <div class="leftColumn">
-                        <div class="nalog">
-                            <span>Система налогообложения</span>
-                            <div class="slider-wrapper">
-                                <div id="nalog"></div>
-                            </div>
-                        </div>
-                        <div class="employees">
-                            <span>Количество сотрудников</span>
-                            <div class="slider-wrapper">
-                                <div id="employees"></div>
-                            </div>
-                        </div>
-                        <div class="documents">
-                            <span>Количество документов в месяц</span>
-                            <div class="slider-wrapper">
-                                <div id="documents"></div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <div class="bottomItem">
-                                <div class="cross"><span>&#9587;</span></div>
-                                <span class="bottomItemText">ККМ, эквайринг</span>
-                            </div>                            
-                            <div class="bottomItem">
-                                <div class="cross"><span>&#9587;</span></div>
-                                <span class="bottomItemText">Договоры комиссии / агентов</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rightColumn">
-                        <span>Форма бизнеса</span>
-                        <div class="control-group">
-                            <label class="control control-radio">
-                                <span class="rotated"><div class="horizontalLine"><span>|</span></div> ООО</span>
-                                <input type="radio" name="radio" checked="checked" />
-                                <div class="control_indicator"></div>
-                            </label>
-                            <label class="control control-radio">
-                                <span class="rotated"><div class="horizontalLine"><span>|</span></div> ИП</span>
-                                <input type="radio" name="radio" />
-                                <div class="control_indicator"></div>
-                            </label>
-                            <label class="control control-radio">
-                                <span class="rotated"><div class="horizontalLine"><span>|</span></div> НКО</span>
-                                <input type="radio" name="radio" />
-                                <div class="control_indicator"></div>
-                            </label>
-                        </div>
-                        <div class="cost">
-                            <span>Стоимость:</span>
-                            <span class="price">≈10 200</span>
-                            <span class="currency">рублей в месяц</span>
-                        </div>
-                        <button class="requestButton">Оставить заявку</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="rates">
-            <div class="wrapper">
-                <div class="ratesTitle">
-                    <h3>Тарифы на бухгалтерское обслуживание</h3>
-                    <div class="ratesButtons">
-                        <button data-rateButton="1" class="rateButton active">УСН 6%</button>
-                        <button data-rateButton="2" class="rateButton">УСН 15%</button>
-                        <button data-rateButton="3" class="rateButton">ОСНО</button>
-                        <button data-rateButton="4" class="rateButton">АУСН 6%, 20%</button>
-                    </div>
-                </div>
-                <div data-ratesPrices="1" class="ratesPrices">
-                    <div class="ratePrice">
-                        <span>Ведение учёта организацией в сфере услуг</span>
-                        <span>от 3 000 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерские услуги для ИП</span>
-                        <span>от 1 500 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Ведение бухгалтерского учёта в торговле</span>
-                        <span>от 3 500 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
-                        <span>от 4 000 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерское сопровождение производственных компаний</span>
-                        <span>от 5 000 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Аутсорсинг бухгалтерии строительных компаний</span>
-                        <span>от 3 500 ₽/мес</span>
-                    </div>
-                </div>
-                <div data-ratesPrices="2" class="ratesPrices unactiveRate">
-                    <div class="ratePrice">
-                        <span>Ведение учёта организацией в сфере услуг</span>
-                        <span>от 5 000 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерские услуги для ИП</span>
-                        <span>от 3 500 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Ведение бухгалтерского учёта в торговле</span>
-                        <span>от 5 500 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
-                        <span>от 6 000 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерское сопровождение производственных компаний</span>
-                        <span>от 7 000 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Аутсорсинг бухгалтерии строительных компаний</span>
-                        <span>от 5 500 ₽/мес</span>
-                    </div>
-                </div>
-                <div data-ratesPrices="3" class="ratesPrices unactiveRate">
-                    <div class="ratePrice">
-                        <span>Ведение учёта организацией в сфере услуг</span>
-                        <span>от 5 500 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерские услуги для ИП</span>
-                        <span>от 5 000 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Ведение бухгалтерского учёта в торговле</span>
-                        <span>от 6 500 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
-                        <span>от 6 500 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерское сопровождение производственных компаний</span>
-                        <span>от 7 500 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Аутсорсинг бухгалтерии строительных компаний</span>
-                        <span>от 8 000 ₽/мес</span>
-                    </div>
-                </div>
-                <div data-ratesPrices="4" class="ratesPrices unactiveRate">
-                    <div class="ratePrice">
-                        <span>Ведение учёта организацией в сфере услуг</span>
-                        <span>от 3 500 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерские услуги для ИП</span>
-                        <span>от 3 000 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Ведение бухгалтерского учёта в торговле</span>
-                        <span>от 3 000 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
-                        <span>от 6 500 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Бухгалтерское сопровождение производственных компаний</span>
-                        <span>от 4 500 ₽/мес</span>
-                    </div>
-                    <div class="ratePrice">
-                        <span>Аутсорсинг бухгалтерии строительных компаний</span>
-                        <span>от 5 000 ₽/мес</span>
                     </div>
                 </div>
             </div>
@@ -393,58 +208,6 @@
                 <input type="text" class="phoneInput" value="Телефон">
                 <button class="getConsultationButton">Получить консультацию</button>
                 <img src="./img/consultationImage.svg" alt="consultationImage">
-            </div>
-        </section>
-        <section class="workWithUs">
-            <div class="wrapper">
-                <div class="leftColumn">
-                    <h3>При работе с нами Вы получаете</h3>
-                    <img src="./img/greenSmile.svg" alt="greenSmile">
-                    <div class="benefitsList">
-                        <div class="benefitItem">
-                            <img src="./img/pigImage.svg" alt="pigImage">
-                            <span>Экономию</span>
-                            <p>При работе с нами вы сохраняете свое время, а также экономите деньги</p>
-                        </div>
-                        <div class="benefitItem">
-                            <img src="./img/watchImage.svg" alt="watchImage">
-                            <span>Виртуозную бухгалтерию</span>
-                            <p>Команда профессиональных бухгалтеров найдет решение для любой задачи, которая будет поставлена Вами, в кратчайшие сроки и на высоком уровне</p>
-                        </div>
-                        <div class="benefitItem">
-                            <img src="./img/manImage.svg" alt="manImage">
-                            <span>Широкий круг специалистов</span>
-                            <p>Наличие в команде разносторонних специалистов в области бухгалтерского, налогового и кадрового учета</p>
-                        </div>
-                        <div class="benefitItem">
-                            <img src="./img/womenImage.svg" alt="womenImage">
-                            <span>Возможность заказать дополнительные услуги</span>
-                            <p>Обладая многолетней практикой в различных сферах бизнеса, у нас есть возможность предложить дополнительные услуги</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="rightColumn">
-                    <h3>Работа с штатным бухгалтером или фриланс специалистом</h3>
-                    <img src="./img/redSmile.svg" alt="redSmile">
-                    <div class="negativitiesList">
-                        <div class="negativeItem">
-                            <span>Дополнительные траты</span>
-                            <p>Поскольку грамотный специалист в сфере бухгалтерии стоит больших денег. Также кроме этого, на каждого сотрудника необходимы следующие расходы: оборудовать ему рабочее место, оплатить программное обеспечение, а также иные расходы связанные с трудоустройством.</p>
-                        </div>
-                        <div class="negativeItem">
-                            <span>Человеческий фактор</span>
-                            <p>Когда в компании бухгалтерией заведует штатный бухгалтер, всегда существует риск человеческого фактора, а именно ошибки в расчетах, нахождение сотрудника на больничном, необходимость постоянного мониторинга законодательства, а также обучения.</p>
-                        </div>
-                        <div class="negativeItem">
-                            <span>Ограниченность функционала</span>
-                            <p>Бухгалтер в штате не всегда обладает всем спектром знаний и навыков, которые необходимы для учета в разных сферах деятельности бизнеса, а также постоянно меняющегося законодательства.</p>
-                        </div>
-                        <div class="negativeItem">
-                            <span>Узкая специализация</span>
-                            <p>Узкая специализация с учетом сложившегося опыта работы. Проблемы и ошибки, при открытии компанией новых направлений, видов деятельности, смены систеты налогообложения</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <section class="feedback">
@@ -459,37 +222,6 @@
                        style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">
                         Нью Лекс на карте Москвы — Яндекс Карты
                     </a>
-                </div>
-            </div>
-        </section>
-        <section class="connectWithUs">
-            <div class="wrapper">
-                <h3>Как осуществляется<br>Взаимодействие с бухгалтером</h3>
-                <div class="connectWithUsItems">
-                    <div class="connectWithUsItem">
-                        <img src="./img/connectionWithUsImage.svg" alt="connectionWithUsImage">
-                        <span>
-                            После заключения договора с Вами связывается бухгалтер, который будет осуществлять обслуживание Вашей компании
-                        </span>
-                    </div>
-                    <div class="connectWithUsItem">
-                        <img src="./img/connectionWithUsImage.svg" alt="connectionWithUsImage">
-                        <span>
-                            Сложные вопросы передаются для решения консультантам
-                        </span>
-                    </div>
-                    <div class="connectWithUsItem">
-                        <img src="./img/connectionWithUsImage.svg" alt="connectionWithUsImage">
-                        <span>
-                            Виды связи с бухгалтером: электронная почта, телефон, WatsApp
-                        </span>
-                    </div>
-                    <div class="connectWithUsItem">
-                        <img src="./img/connectionWithUsImage.svg" alt="connectionWithUsImage">
-                        <span>
-                            Время подготовки первичных документов — 1 час
-                        </span>
-                    </div>
                 </div>
             </div>
         </section>
@@ -675,51 +407,60 @@
         </section>
         <section class="profit">
             <div class="wrapper">
-                <h3>Профессиональные бухгалтерские<br>
-                    услуги - максимальная выгода
+                <h3>Профессиональные юридические<br> услуги - максимальная выгода
                 </h3>
-                <p>Ищете, где заказать бухгалтерские услуги в Москве? Компания “NewLex” гарантирует порядок в ваших делах и безопасность вашей компании не по завышенному прейскуранту.</p>
-                <div class="profitsList">
+                <p>
+                    В цивилизованном обществе конфликтные ситуации всегда можно разрешить мирным путем. Если все возможности договориться исчерпаны, а стороны не пришли к согласию в спорном вопросе, тогда остается крайняя мера - судебный спор.
+                    Согласно основному закону РФ — Конституции, каждый гражданин имеет право на защиту в суде, а также на участие профессионального представителя - адвоката или юриста. Стоит помнить, что этот вид защиты носит заявительный характер. Иными словами, если вам необходимо представительство в гражданском суде (суд общей юрисдикции), нужно подать соответствующее заявление.
+                </p>
+                <p class="hide">
+                    Правовая помощь специалиста может дать вам существенные козыри в судебном споре перед вашим оппонентом. Большинство граждан имеет слабое представление о своих правах и еще меньшее о том, как юридически правильно их представить и подтвердить документами и фактами. Это нормальное явление общества специализации - кто на что учился. Если вы ученый, плотник или врач, вам просто не нужно знать юридические тонкости.
+                    К сожалению, суд во многом формализован, и аргументы о «справедливости», «я думаю, что так правильно», «по-человечески», на него не подействуют. Юридический язык сух и последователен, состоит из нормативно-правовых актов. Кроме того, требуется безупречное знание местной судебной практики и особенностей местной правоприменительной практики, а также процессуального и материального права.                
+                </p>
+                <div class="profitsList hide" style="flex-direction: row;">
                     <div class="profitImage">
-                        <img src="./img/profitImage1.svg" alt="profitImage1">
+                        <img src="./img/predSudInfoImage1.svg" alt="predSudInfoImage">
                     </div>
-                    <ul>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Берем на себя решение проблем финансового департамента,</span></li>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Ведем учет с адаптацией к требованиям постоянно меняющегося законодательства Российской Федерации,</span></li>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Грамотно представляем вас перед контролирующими органами,</span></li>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Сопровождаем клиента без перерывов на отпуск и больничный.</span></li>
-                    </ul>
+                    <div class="profitsListText">
+                        <p class="hide">
+                            Человек, столкнувшись с необходимостью принимать важные решения в области, в которой он мало понимает, растерян и может наделать немало дорогостоящих ошибок.
+                        </p>
+                        <p class="hide">
+                            Компания «NewLex» предлагает физическим лицам услуги квалифицированных адвокатов и юристов — представительство в суде в Москве.
+                        </p>
+                        <p class="hide">
+                            Отстаивать ваши права профессионал зачастую начинает еще до суда — необходимо провести значительную подготовительную работу: выстроить линию защиты в суде, подготовить документальную базу – претензию, исковое заявление, ходатайства, жалобы и другое. Досудебная работа начинается с консультации.
+                        </p>
+                    </div>
                 </div>
-                <p>Практика показывает, что работать с нами на 30% выгоднее, чем с наемным бухгалтером и на 100% безопаснее. Передайте на аутсорсинг всю бухгалтерию, чтобы не тратить время и силы на изучение правил и особенностей налогообложения, а также не бояться проверок ИФНС.</p>
-                <p>Оказание комплексных бухгалтерских услуг организациям подразумевает полный спектр обслуживания - от А до Я:</p>
-                <div class="profitsList">
+                <p class="hide">
+                    Она бесплатная, но уже в ходе нее специалист сможет вникнуть в суть вашей проблемы и разработать алгоритм ее решения. Таким образом, ничего не заплатив, вы получите грамотный анализ ситуации и, четко представляя возможные последствия, сможете принять взвешенные решения.
+                </p>
+                <p  class="hide">
+                    Стоимость представительства в суде может быть очень разной. Одно дело представлять интересы человека, который хочет получить с магазина компенсацию за неисправный телевизор, совсем другое — гражданина, совершившего серию убийств. Разный объем и сложность работы подразумевают разную цену на услуги.
+                    Не стоит волноваться по этому поводу - стоимость услуг называется изначально - на первичной бесплатной консультации и далее остается неизменной.
+                </p>
+                <p class="hide">
+                    Безусловным преимущество использования представителя в суде с опытом и наработанной практикой является его связанность профессиональной этикой. Вы можете быть абсолютно откровенны со своим защитником, компания гарантирует сохранение адвокатской тайны.
+                </p>
+                <div class="profitsList hide">
                     <div class="profitImage">
-                        <img src="./img/profitImage2.svg" alt="profitImage1">
+                        <img src="./img/profitImage2.svg" alt="predSudInfoImage">
                     </div>
-                    <ul>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Будем вести бухучет вашей фирмы;</span></li>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Не допустим ошибок и штрафов;</span></li>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Предоставляем полную отчетность;</span></li>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Оптимизируем налогообложение;</span></li>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Проконсультируем по любому вопросу.</span></li>
-                    </ul>
-                </div>
-                <p>Мы работаем со всеми организационно-правовыми формами, будь то ООО, индивидуальный предприниматель (ИП), ПАО, АО или НКО. И крупному, и малому бизнесу в условиях современной экономической реальности может быть невыгодно содержать в штате собственного бухгалтера. К тому же он не может быть специалистом по всем вопросам сразу. А целое предприятие с обширным штатом сотрудников - может.</p>
-                <p>В 90% случаев предоставление услуг в области бухгалтерского учета от сторонней профильной компании выгоднее.</p>
-                <div class="profitsList">
-                    <div class="profitImage">
-                        <img src="./img/profitImage3.svg" alt="profitImage1">
+                    <div class="profitsListText">
+                        <p class="hide">
+                            Также разумно нанять юриста, если встреча с оппонентом по какой-то причине неприятна.
+                        </p>
+                        <p class="hide">
+                            Адвокат (юрист) – лицо эмоционально нейтральное, он будет представлять ваши интересы в суде спокойно и последовательно, его невозможно вывести из себя или запугать. Вы же можете не присутствовать в суде – ваши интересы будут достойно представлены вне зависимости от того, являетесь вы истцом или ответчиком.
+                            Не занимайтесь любительской самодеятельностью – доверьтесь профессионалам. Экономия должна быть разумна. Когда потери многократно превышают выигрыш от экономии – это неудачный расклад.
+
+                        </p>
                     </div>
-                    <ul>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Восстановим учет,</span></li>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Без проблем возместим НДС,</span></li>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Зарегистрируем ООО и ИП,</span></li>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Сдадим за вас нулевую отчетность аккуратно и в срок,</span></li>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Настроим управленческий учет,</span></li>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Вернем долги от контрагентов,</span></li>
-                        <li><img src="./img/arrow.svg" alt="arrow"><span>Будем вести кадровый, налоговый учет и многое другое.</span></li>
-                    </ul>
                 </div>
+                <p class="hide">
+                    Нанять юриста или адвоката, который займется представительством в суде (в том числе, арбитражном), можно в «NewLex».
+                </p>
             </div>
         </section>
         <section class="requestConsultation second">

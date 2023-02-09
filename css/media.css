@@ -263,6 +263,9 @@
     .howToStartWorkWithUs .howToStartWorkWithUsItems .lastItem {
         padding-bottom: 100px;
     }
+    .hide {
+        display: none;
+    }
     footer .footer-bottom {
         flex-direction: column;
         align-items: flex-start;
