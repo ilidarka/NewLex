@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/sliderStyle.css">
     <link rel="stylesheet" href="./css/ursopbizStyle.css">
     <link rel="stylesheet" href="./css/burgerMenuStyle.css">
+    <link rel="stylesheet" href="./css/dropdownMenuStyle.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="./scripts/nouislider.min.js" defer></script>
@@ -23,6 +24,7 @@
     <script src="./scripts/ratesButtonsScript.js" defer></script>
     <script src="./scripts/directorsSelectScript.js" defer></script>
     <script src="./scripts/burgerMenuScript.js" defer></script>
+    <script src="./scripts/dropdownMenuScript.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
     <script src="./scripts/slider.js" defer></script>
@@ -72,12 +74,21 @@
                             <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
                             <span>Юридическое сопровождение бизнеса</span>
                         </div>
-                        <div class="serviceItem">
-                            <div class="serviceItemImages">
+                        <div class="serviceItem dropdown">
+                            <button data-menuButton="1" class="dropdownMenuButton">
                                 <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
-                                <img class="show-list" src="./img/showList.svg" alt="servicesIcon">
+                                <img class="dropdownArrow" src="./img/dropdownArrow.svg" alt="dropdownArrow">
+                            </button>
+                            <div data-menu="1" class="dropdownContent hidenDropdownContent">
+                                <a href="#">Услуга 1</a>
+                                <a href="#">Услуга 2</a>
+                                <a href="#">Услуга 3</a>
+                                <a href="#">Услуга 4</a>
+                                <a href="#">Услуга 5</a>
+                                <a href="#">Услуга 6</a>
+                                <a href="#">Услуга 7</a>
                             </div>
-                            <span>Арбитажный юрист</span>
+                            <span>Арбитражный юрист</span>
                         </div>
                         <div class="serviceItem">
                             <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
@@ -97,10 +108,19 @@
                             <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
                             <span>Юридическая экспертиза договоров</span>
                         </div>
-                        <div class="serviceItem">
-                            <div class="serviceItemImages">
+                        <div class="serviceItem dropdown">
+                            <button data-menuButton="2" class="dropdownMenuButton">
                                 <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
-                                <img class="show-list" src="./img/showList.svg" alt="servicesIcon">
+                                <img class="dropdownArrow" src="./img/dropdownArrow.svg" alt="dropdownArrow">
+                            </button>
+                            <div data-menu="2" class="dropdownContent hidenDropdownContent">
+                                <a href="#">Услуга 1</a>
+                                <a href="#">Услуга 2</a>
+                                <a href="#">Услуга 3</a>
+                                <a href="#">Услуга 4</a>
+                                <a href="#">Услуга 5</a>
+                                <a href="#">Услуга 6</a>
+                                <a href="#">Услуга 7</a>
                             </div>
                             <span>Регистрация бизнеса</span>
                         </div>

@@ -136,6 +136,11 @@
         border-right: none !important;
         width: 100% !important;
     }
+    .plans .aditionalInfoBlock{
+        padding-top: 16px;
+        border-top: 1px dashed #fff;
+
+    }
     .plans .thirdblock {
         width: 100% !important;
         align-items: center !important;
@@ -149,7 +154,7 @@
     .plans .requestHelpButton {
         display: block !important;
     }
-    .plans .firstService, .plans .secondService, .plans .thirdService, .plans .fourthService {
+    .plans .firstService, .plans .secondService, .plans .thirdService, .plans .fourthService, .plans .fifthService {
         width: 80% !important;
         flex-direction: column;
         align-items: center;
@@ -166,6 +171,10 @@
     }
 }
 @media (max-width: 930px) {
+    .plans .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
     .calculator .left-right-columns {
         flex-direction: column;
         align-items: center;
@@ -174,7 +183,11 @@
         width: 100%;
     }
     .calculator .bottom {
+        justify-content: center;
         margin-top: 40px;
+    }
+    .calculator .bottomItem{
+        padding: 7px 10px;
     }
     .calculator .control-group {
         align-items: center;
@@ -194,6 +207,15 @@
     }
 }
 @media (max-width: 760px) {
+    .calculator .wrapper .left-right-columns .rightColumn {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .calculator .wrapper .left-right-columns .rightColumn .cost{
+        flex-direction: column;
+        padding-bottom: 37px;
+    }
     .feedback .left-right-columns {
         flex-direction: column;
         align-items: center;
@@ -263,6 +285,9 @@
     .howToStartWorkWithUs .howToStartWorkWithUsItems .lastItem {
         padding-bottom: 100px;
     }
+    .tooltip {
+        width: 60vw;
+    }
     .hide {
         display: none;
     }
@@ -283,10 +308,23 @@
     }
 }
 @media (max-width: 590px) {
+    .caption-consultation{
+        flex-direction: column;
+        align-items: center;
+    }
     .consultation .contactButtons {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+    }
+    .calculator .leftColumn {
+        padding: 32px 30px;
+    }
+    .howToStartWorkWithUs .headerSpan {
+        font-size: 40px;
+    }
+    .profit h3 {
+        font-size: 33px !important;
     }
     .requestConsultation .inputQuestion {
         flex-direction: column;
@@ -380,6 +418,9 @@
     }
     .services .serviceItem span {
         width: 125px !important;
+    }
+    .tooltip {
+        left: -27vw;
     }
     footer .footer-links {
         flex-direction: column;
