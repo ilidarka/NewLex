@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/radioButtonStyle.css">
+    <link rel="stylesheet" href="./css/nouislider.css">
+    <link rel="stylesheet" href="./css/sliderStyle.css">
+    <link rel="stylesheet" href="./css/ursopbizStyle.css">
+    <link rel="stylesheet" href="./css/burgerMenuStyle.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="./scripts/nouislider.min.js" defer></script>
+    <script src="./scripts/inputConsultationsScript.js" defer></script>
+    <script src="./scripts/inputContractWorkScript.js" defer></script>
+    <script src="./scripts/inputJudicialWorkScript.js" defer></script>
+    <script src="./scripts/ratesButtonsScript.js" defer></script>
+    <script src="./scripts/directorsSelectScript.js" defer></script>
+    <script src="./scripts/burgerMenuScript.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="./scripts/slider.js" defer></script>
+</head>
+<body>
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#">Бухгалтерские услуги</a></li>
+                    <li><a href="#">Юридические услуги для бизнеса</a></li>
+                    <li><a href="#">Юридические услуги для физических лиц</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Личный кабинет</a></li>
+                </ul>
+            </nav> 
+        </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <header>
+        <div class="wrapper">
+            <div class="head">
+                <img src="./img/siteLogo.svg" alt="siteLogo">
+                <button class="buttons"><img src="./img/userIcon.svg" alt="userIcon"><span>Личный кабинет</span></button>
+            </div>
+            <nav>
+                <li><a class="hover-underline-animation" href="#">Бухгалтерские услуги</a></li>
+                <li><a class="hover-underline-animation" href="#">Юридические услуги для бизнеса</a></li>
+                <li><a class="hover-underline-animation" href="#">Юридические услуги для физических лиц</a></li>
+                <li><a class="hover-underline-animation" href="#">О компании</a></li>
+                <li><a class="hover-underline-animation" href="#">Блог</a></li>
+                <li><a class="hover-underline-animation" href="#">Контакты</a></li>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="services">
+            <div class="wrapper">
+                <div class="servicesList">
+                    <div class="upperItems">
+                        <div class="serviceItem activeServiceItem">
+                            <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                            <span>Юридическое сопровождение бизнеса</span>
+                        </div>
+                        <div class="serviceItem">
+                            <div class="serviceItemImages">
+                                <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                                <img class="show-list" src="./img/showList.svg" alt="servicesIcon">
+                            </div>
+                            <span>Арбитажный юрист</span>
+                        </div>
+                        <div class="serviceItem">
+                            <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                            <span>Взыскание дебиторской задолжености</span>
+                        </div>
+                        <div class="serviceItem">
+                            <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                            <span>Корпоративные споры</span>
+                        </div>
+                        <div class="serviceItem">
+                            <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                            <span>Банкротство юридических лиц</span>
+                        </div>
+                    </div>
+                    <div class="bottomItems">
+                        <div class="serviceItem">
+                            <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                            <span>Юридическая экспертиза договоров</span>
+                        </div>
+                        <div class="serviceItem">
+                            <div class="serviceItemImages">
+                                <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                                <img class="show-list" src="./img/showList.svg" alt="servicesIcon">
+                            </div>
+                            <span>Регистрация бизнеса</span>
+                        </div>
+                        <div class="serviceItem">
+                            <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                            <span>Споры по строительному подряду</span>
+                        </div>
+                        <div class="serviceItem">
+                            <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                            <span>Трудовые споры</span>
+                        </div>
+                        <div class="serviceItem">
+                            <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                            <span>Юрист коммерческой недвижимости</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="consultation">
+            <div class="wrapper">
+                <div class="leftColumn">
+                    <span class="counsultationHeader">Юридическое сопровождение бизнеса</span>
+                    <div class="contactButtons">
+                        <button class="getConsultationButton">Получить консультацию</button>
+                        <button class="orderServiceButton">Заказать услугу</button>
+                        <img src="./img/consultationImage.svg" alt="consultationImage">
+                    </div>
+                </div>
+                <div class="rightColumn">
+                    <img src="./img/consultationImageMain.png" alt="consultationImageMain">
+                </div>
+            </div>
+        </section>
+        <section class="howDoWeWork">
+            <div class="wrapper">
+                <h3>Компания NEWLEX готова предоставить профессиональное юридическое сопровождение вашего бизнеса
+                    Задача от Вас = наша. Ваш - бизнес должен процветать!</h3>
+                <span class="howDoWeWorkSpan">Наши преищества</span>
+                <div class="columns">
+                    <div class="leftColumn">
+                        <img src="./img/HowDoWeWorkMain2.svg" alt="HowDoWeWorkMain">
+                    </div>
+                    <div class="rightColumn">
+                        <ul>
+                            <li>Доступность 24/7</li>
+                            <p>Чтобы вопросы решались максимально оперативно, мы всегда на связи, в любое время суток</p>
+                            <li>Гарантия конфиденциальности</li>
+                            <p>Мы в обязательном порядке выполняем требование о нераспространении информации  третьим лицам без вашего на то согласия</p>
+                            <li>Высокое качество и надежность</li>
+                            <p>Профессионализм наших специалистов позволяет выполнять работу качественно, вы можете полностью положиться на нас</p>
+                            <li>Экономия денег</li>
+                            <p>Обращение к нам сэкономит вам денежные средства, поскольку это вам позволит не содержать в штате юриста на постоянной основе</p>
+                            <li>Подбор тарифного плана под особенности вашего бизнеса</li>
+                            <p>Каждый бизнес имеет свою форму коммерческой деятельности, свои индивидуальные особенности, что учитывается нами при составлении тарифного плана</p>
+                            <li>Широкий круг специалистов</li>
+                            <p>В нашей команде сотрудники специализируются в определенных направлениях, что позволяет решать широкий спектр вопросов в рамках одного обращения</p>
+                            <li>Профессионализм и ответственность</li>
+                            <p>Профессионализм предполагает не только наличие знаний, но и ответственность за принимаемые решения</p>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="plans">          
+            <div class="wrapper">
+                <h3>Ценовая политика и условия</h3>
+                <div data-accessiblePlan="1" class="accessiblePlan activePlan">
+                    <div class="firstService">
+                        <div class="firstblock">
+                            <span class="name">«Старт»</span>
+                            <span class="price">10 000 ₽</span>
+                            <!-- <span class="working-hours">5 часов работы юристов</span> -->
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">5 часов работы юристов</span>
+                                <!-- <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span> -->
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Подойдет владельцам бизнеса, которые только начинают путь к успеху, либо тем, кому юрист нужен всего пару раз в месяц.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="secondService">
+                        <div class="firstblock">
+                            <span class="name">«Базовый»</span>
+                            <span class="price">15 000 ₽</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">10 часов работы юристов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Идеально для малого бизнеса, либо тем, кому юрист нужен не чаще, чем раз в неделю.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="thirdService">
+                        <div class="firstblock">
+                            <span class="name">«Расширенный»</span>
+                            <span class="price">33 000 ₽</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">25 часов работы юристов</span>
+                                <!-- <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span> -->
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Подходит тем, у кого периодически возникает необходимость в юридическом сопровождении, но нет надобности в оформлении юриста в штат.</span>
+                                <!-- <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span> -->
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="fourthService">
+                        <div class="firstblock">
+                            <span class="name">«Все включено»</span>
+                            <span class="price">60 000 ₽</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">50 часов работы юристов</span>
+                                <!-- <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span> -->
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Подойдёт тем, у кого объём юридических задач довольно обширный, а также тем, кому обращения к юристу необходимы ежедневно.</span>
+                                <!-- <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span> -->
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="fifthService">
+                        <div class="firstblock">
+                            <span class="name">«Персональный»</span>
+                            <span class="price">от 3 000 ₽</span>
+                            <!-- <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">50 часов работы юристов</span>
+                                <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div> -->
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Данный тариф подойдёт тем, кому необходимо проектное сопровождение, либо тем, кто хочет выбрать тариф на индивидуальных условиях.</span>
+                                <!-- <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span> -->
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-accessiblePlan="2" class="accessiblePlan">
+                    <div class="firstService">
+                        <div class="firstblock">
+                            <span class="name">«Начальный»</span>
+                            <span class="price">6 500 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">УСН 15%</span>
+                                <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (акты, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов, предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="secondService">
+                        <div class="firstblock">
+                            <span class="name">«Комплекс»</span>
+                            <span class="price">7 500 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">УСН 15%</span>
+                                <span class="aditionalInfo">До 5 штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="thirdService">
+                        <div class="firstblock">
+                            <span class="name">«Вперед»</span>
+                            <span class="price">12 000 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">УСН 15%</span>
+                                <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-accessiblePlan="3" class="accessiblePlan">
+                    <div class="firstService">
+                        <div class="firstblock">
+                            <span class="name">«Начальный»</span>
+                            <span class="price">7 000 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">ОСНО</span>
+                                <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (акты, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов, предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="secondService">
+                        <div class="firstblock">
+                            <span class="name">«Комплекс»</span>
+                            <span class="price">9 500 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">ОСНО</span>
+                                <span class="aditionalInfo">До 5 штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="thirdService">
+                        <div class="firstblock">
+                            <span class="name">«Вперед»</span>
+                            <span class="price">12 500 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">ОСНО</span>
+                                <span class="aditionalInfo">Нет штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                </div>
+                <div data-accessiblePlan="4" class="accessiblePlan">
+                    <div class="firstService">
+                        <div class="firstblock">
+                            <span class="name">«Доход»</span>
+                            <span class="price">3 000 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">8%</span>
+                                <span class="aditionalInfo">1 штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (акты, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов, предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="secondService">
+                        <div class="firstblock">
+                            <span class="name">«Доход +»</span>
+                            <span class="price">6 000 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">8%</span>
+                                <span class="aditionalInfo">До 5 штатных сотрудников</span>
+                                <span class="aditionalInfo">До 50 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="thirdService">
+                        <div class="firstblock">
+                            <span class="name">«Просто»</span>
+                            <span class="price">5 000 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">20%</span>
+                                <span class="aditionalInfo">1 штатных сотрудников</span>
+                                <span class="aditionalInfo">До 15 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                    <div class="fourthService">
+                        <div class="firstblock">
+                            <span class="name">«Просто +»</span>
+                            <span class="price">8 000 ₽/мес</span>
+                            <div class="aditionalInfoBlock">
+                                <span class="aditionalInfo">20%</span>
+                                <span class="aditionalInfo">До 5 штатных сотрудников</span>
+                                <span class="aditionalInfo">До 50 документов</span>
+                            </div>
+                        </div>
+                        <div class="thirdblock">
+                            <div class="thirdblock-list">
+                                <span><img src="./img/galka.svg" alt="galka">Формирование первичной документации (активы, накладные, счета);</span>
+                                <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
+                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
+                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы;</span>
+                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
+                            </div>
+                            <button class="requestHelpButton">Подробнее</button>
+                            <button class="requestServiceButton">Заказать услугу</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="calculator">
+            
+            <div class="wrapper">
+                <h3>Калькулятор расчета стоимости юридического обслуживания по количеству услуг в месяц </h3>
+                <div class="left-right-columns">
+                    <div class="leftColumn">
+                        <div class="consultations">
+                            <div class="caption-consultation">
+                                <span>Консультации в месяц (письменные, проверка контрактов и т.д.) </span>
+                                <div class="tooltipContent">
+                                    <img src="./img/showTooltip.svg" alt="" class="show-tooltip">
+                                    <div class="tooltip">
+                                        <span>Обычно существует несколько вариантов решения дела, но из нескольких мы всегда предложим лучшую стратегию, и относительно нее уже определимся с тактикой</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-wrapper">
+                                <div id="consultations"></div>
+                            </div>
+                        </div>
+                        <div class="сontract-work">
+                            <span>Договорная работа (разработка, рецензирование, дополнение, экспертиза и т.д.) </span>
+                            <div class="slider-wrapper">
+                                <div id="сontract-work"></div>
+                            </div>
+                        </div>
+                        <div class="judicial-work">
+                            <span>Судебная работа</span>
+                            <div class="slider-wrapper">
+                                <div id="judicial-work"></div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="bottomItem">
+                                <div class="cross"><span>&#9587;</span></div>
+                                <span class="bottomItemText">Устные консультации</span>
+                            </div>                            
+                            <div class="bottomItem">
+                                <div class="cross"><span>&#9587;</span></div>
+                                <span class="bottomItemText">Проверка контрагентов</span>
+                            </div>
+                            <div class="bottomItem">
+                                <div class="cross"><span>&#9587;</span></div>
+                                <span class="bottomItemText">Мониторинг действующего законодательства в вашей сфере</span>
+                            </div>
+                            <div class="bottomItem">
+                                <div class="cross"><span>&#9587;</span></div>
+                                <span class="bottomItemText">Мониторинг судебных споро и исполнительного производства в отношении клиента</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightColumn">
+                        <div class="cost">
+                            <span>Стоимость:</span>
+                            <span class="price">≈10 200</span>
+                            <span class="currency">рублей в месяц</span>
+                        </div>
+                        <button class="requestButton">Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="requestConsultation">
+            <div class="wrapper">
+                <img src="./img/yellowClouds.svg" alt="yellowClouds">
+                <input type="text" class="nameInput" value="Имя">
+                <input type="text" class="phoneInput" value="Телефон">
+                <button class="getConsultationButton">Получить консультацию</button>
+                <img src="./img/consultationImage.svg" alt="consultationImage">
+            </div>
+        </section>
+        <section class="howToStartWorkWithUs">
+            <div class="wrapper">
+                <span class="headerSpan">Юридическое сопровождение бизнеса (от 1 месяца)</span>
+                <h3>В юридическое сопровождение при использовании нашего сервиса входят следующие блоки:</h3>
+                <div class="howToStartWorkWithUsItems">
+                    <div class="howToStartWorkWithUsItem">
+                        <span class="item-caption">Судебный</span>
+                        <span class="text">
+                            От консультации и выявления шансов на успех, до представительства в суде
+                        </span>
+                    </div>
+                    <div class="howToStartWorkWithUsItem">
+                        <span class="item-caption">Претензионный</span>
+                        <span class="text">
+                            Эффективное составление претензий, досудебное урегулирование, медиация и др.
+                        </span>
+                    </div>
+                    <div class="howToStartWorkWithUsItem">
+                        <span class="item-caption">Корпоративный</span>
+                        <span class="text">
+                            Регистрация, ликвидация юр. лиц, внесение поправок в учредительные документы, урегулирование вопросов управления совместным бизнесом и др.
+                        </span>
+                    </div>
+                    <div class="howToStartWorkWithUsItem">
+                        <span class="item-caption">Договорной</span>
+                        <span class="text">
+                            Разработка договоров, экспертиза документов, сопровождение переговоров, ведение переписки с контрагентами по договорами др.
+                        </span>
+                    </div>
+                    <div class="howToStartWorkWithUsItem">
+                        <span class="item-caption">Международный</span>
+                        <span class="text">
+                            Составление, сопровождение международных контрактов, регистрация компаний за границей, открытие счетов в международных банках и др.
+                        </span>
+                    </div>
+                    <div class="howToStartWorkWithUsItem">
+                        <span class="item-caption">Банкротство</span>
+                        <span class="text">
+                            От консультации и выбора арбитражного управляющего до полного завершения процедуры
+                        </span>
+                    </div>
+                    <div class="howToStartWorkWithUsItem">
+                        <span class="item-caption">Юр. мониторинг и аналитика</span>
+                        <span class="text">
+                            Анализ и мониторинг изменений в области права и анализ существующих правовых подходов                        </span>
+                    </div>
+                    <div class="howToStartWorkWithUsItem">
+                        <span class="item-caption">Правовой аудит</span>
+                        <span class="text">
+                            От анализа налоговой отчетности до анализа ситуации с задолженностями
+                        </span>
+                    </div>
+                    <div class="howToStartWorkWithUsItem">
+                        <span class="item-caption">Минимизация уголовных рисков</span>
+                        <span class="text">
+                            Оказание помощи, при действии/бездействии должностных лиц, уголовные процессы, защита предпринимателей
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        
+        <section class="directors">
+            <div class="wrapper">
+                <h3>Руководители направлений нашей команды</h3>
+                <div class="directorSwitcherAdaptive">
+                    <div class="directosNameList">
+                        <span data-directors="1" class="directorsName activeDirectorName">Управляющий партнер</span>
+                        <span data-directors="2" class="directorsName">Руководитель по бухгалтескому направлению</span>
+                        <span data-directors="3" class="directorsName">Руководитель по юридическому направлению</span>
+                        <span data-directors="4" class="directorsName">Главный специалист по судебной работе</span>
+                        <span data-directors="5" class="directorsName">Руководитель по корпоративному праву</span>
+                        <span data-directors="6" class="directorsName">Руководитель отдела маркетинга и продаж</span>
+                    </div>
+                    <div class="directorSwitcherControll">
+                        <img class="directorArrowLeft" src="./img/directorsArrowRight.svg" alt="directorsArrowRight">
+                        <img class="directorArrowRight" src="./img/directorsArrowRight.svg" alt="directorsArrowRight">
+                    </div>
+                </div>
+                <ul class="directorSwitcher">
+                    <li data-btn="1" class="directorItem activeItem">Управляющий партнер</li>
+                    <li data-btn="2" class="directorItem">Руководитель по бухгалтескому направлению</li>
+                    <li data-btn="3" class="directorItem">Руководитель по юридическому направлению</li>
+                    <li data-btn="4" class="directorItem">Главный специалист по судебной работе</li>
+                    <li data-btn="5" class="directorItem">Руководитель по корпоративному праву</li>
+                    <li data-btn="6" class="directorItem">Руководитель отдела маркетинга и продаж</li>
+                </ul>
+                <div data-content="1" class="left-right-column">
+                    <div class="left-column">
+                        <img src="./img/directorFoto.svg" alt="directorFoto" class="directorFoto">
+                    </div>
+                    <div class="right-column">
+                        <div class="upper">
+                            <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
+                            <span>“1Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                        </div>
+                        <div class="bottom">
+                            <span>Ключевые навыки:</span>
+                            <ul>
+                                <li>опыт руководящей работы;</li>
+                                <li>cамостоятельность;</li>
+                                <li>аналитический склад ума;</li>
+                                <li>умение работать с большим объемом информации;</li>
+                                <li>умение работать в режиме многозадачности;</li>
+                                <li>требовательность к себе и подчиненным;</li>
+                                <li>умение аргументировать и отстаивать свою позицию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div data-content="2" class="left-right-column hideContent">
+                    <div class="left-column">
+                        <img src="./img/directorFoto.svg" alt="directorFoto" class="directorFoto">
+                    </div>
+                    <div class="right-column">
+                        <div class="upper">
+                            <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
+                            <span>“2Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                        </div>
+                        <div class="bottom">
+                            <span>Ключевые навыки:</span>
+                            <ul>
+                                <li>опыт руководящей работы;</li>
+                                <li>cамостоятельность;</li>
+                                <li>аналитический склад ума;</li>
+                                <li>умение работать с большим объемом информации;</li>
+                                <li>умение работать в режиме многозадачности;</li>
+                                <li>требовательность к себе и подчиненным;</li>
+                                <li>умение аргументировать и отстаивать свою позицию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div data-content="3" class="left-right-column hideContent">
+                    <div class="left-column">
+                        <img src="./img/directorFoto.svg" alt="directorFoto" class="directorFoto">
+                    </div>
+                    <div class="right-column">
+                        <div class="upper">
+                            <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
+                            <span>“3Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                        </div>
+                        <div class="bottom">
+                            <span>Ключевые навыки:</span>
+                            <ul>
+                                <li>опыт руководящей работы;</li>
+                                <li>cамостоятельность;</li>
+                                <li>аналитический склад ума;</li>
+                                <li>умение работать с большим объемом информации;</li>
+                                <li>умение работать в режиме многозадачности;</li>
+                                <li>требовательность к себе и подчиненным;</li>
+                                <li>умение аргументировать и отстаивать свою позицию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div data-content="4" class="left-right-column hideContent">
+                    <div class="left-column">
+                        <img src="./img/directorFoto.svg" alt="directorFoto" class="directorFoto">
+                    </div>
+                    <div class="right-column">
+                        <div class="upper">
+                            <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
+                            <span>“4Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                        </div>
+                        <div class="bottom">
+                            <span>Ключевые навыки:</span>
+                            <ul>
+                                <li>опыт руководящей работы;</li>
+                                <li>cамостоятельность;</li>
+                                <li>аналитический склад ума;</li>
+                                <li>умение работать с большим объемом информации;</li>
+                                <li>умение работать в режиме многозадачности;</li>
+                                <li>требовательность к себе и подчиненным;</li>
+                                <li>умение аргументировать и отстаивать свою позицию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div data-content="5" class="left-right-column hideContent">
+                    <div class="left-column">
+                        <img src="./img/directorFoto.svg" alt="directorFoto" class="directorFoto">
+                    </div>
+                    <div class="right-column">
+                        <div class="upper">
+                            <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
+                            <span>“5Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                        </div>
+                        <div class="bottom">
+                            <span>Ключевые навыки:</span>
+                            <ul>
+                                <li>опыт руководящей работы;</li>
+                                <li>cамостоятельность;</li>
+                                <li>аналитический склад ума;</li>
+                                <li>умение работать с большим объемом информации;</li>
+                                <li>умение работать в режиме многозадачности;</li>
+                                <li>требовательность к себе и подчиненным;</li>
+                                <li>умение аргументировать и отстаивать свою позицию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div data-content="6" class="left-right-column hideContent">
+                    <div class="left-column">
+                        <img src="./img/directorFoto.svg" alt="directorFoto" class="directorFoto">
+                    </div>
+                    <div class="right-column">
+                        <div class="upper">
+                            <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
+                            <span>“6Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                        </div>
+                        <div class="bottom">
+                            <span>Ключевые навыки:</span>
+                            <ul>
+                                <li>опыт руководящей работы;</li>
+                                <li>cамостоятельность;</li>
+                                <li>аналитический склад ума;</li>
+                                <li>умение работать с большим объемом информации;</li>
+                                <li>умение работать в режиме многозадачности;</li>
+                                <li>требовательность к себе и подчиненным;</li>
+                                <li>умение аргументировать и отстаивать свою позицию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="wrapper">
+                <h3>Клиенты и партнеры</h3>
+                <div class="clientsList">
+                    <img src="./img/tinkof.svg" alt="tinkof">
+                    <img src="./img/tomoru.svg" alt="tomoru">
+                    <img src="./img/alfabank.svg" alt="alfabank">
+                    <img src="./img/intradesk.svg" alt="intradesk">
+                    <img src="./img/garant.svg" alt="garant">
+                    <img src="./img/novofon.svg" alt="novofon">
+                    <img src="./img/skypoint.svg" alt="skypoint">
+                    <img src="./img/bebrand.svg" alt="bebrand">
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="wrapper">
+                <h3>Отзывы</h3>
+                <div style="width:100%;height:800px;overflow:hidden;position:relative;">
+                    <iframe id="iframeFeedback" style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" 
+                            src="https://yandex.ru/maps-reviews-widget/125440147305?comments">
+                    </iframe>
+                    <a href="https://yandex.ru/maps/org/nyu_leks/125440147305/" 
+                       target="_blank" 
+                       style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">
+                        Нью Лекс на карте Москвы — Яндекс Карты
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="profit">
+            <div class="wrapper">
+                <h3>Профессиональные юридические услуги - максимальная выгода
+                </h3>
+                <!-- <p>
+                    Заказать бухгалтерское сопровождение в Москве в профильной компании - это значит освободить для себя время и силы на развитие вашего предприятия, расширение его зоны влияния, получение новых заказов.
+                    Отдать ведение бухгалтерии на аутсорсинг - значит, доверить специалистам работу, в которой они разбираются лучше всего, имеют опыт и компетенции для успеха вашей фирмы.
+                </p>     -->
+                <!-- <div class="profitsList">
+                    <div class="profitImage">
+                        <img src="./img/profitImage4.svg" alt="profitImage4">
+                    </div>
+                    <ul>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Не надо искать действительно хорошего бухгалтера с квалификацией и опытом работы;</span></li>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Не надо оформлять его по ТК РФ, организовывать рабочее место, платить декретные и отпускные;</span></li>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Не надо тратить силы, время и финансовые ресурсы на обучение нового специалиста.</span></li>
+                    </ul>
+                </div> -->
+                <p>Абонентское юридическое сопровождение бизнеса в Москве – это услуга, помогающая вести бизнес в соответствии с требованиями, установленными законодательством.<br>
+                    <br>
+                    
+                    Юридическое сопровождение организации помогает избежать нарушения нормативно-правовых актов, защищает бизнес от потерь и банкротства. Оно может
+                    оказываться, как одним юристом, так и целой их группой, где каждый работает в определенной правовой сфере.<br>
+                    <br>
+                    Оказание юридического сопровождения предпринимательской деятельности необходимо компаниям, предприятиям, фирмам, ООО, ИП. Особенно в нем нуждается малый бизнес, буквально задушенный налогами и бюрократией, но нередко консультацию заказывают и средние предприятия и даже промышленные гиганты, чтобы высвободить штатных юристов фирмы для других дел. <br>
+                    <br>
+                    Комплексное юридическое обслуживание бизнеса в Москве и Московской области - специализация компании “NewLex”. Первая консультация проводится бесплатно. Любая компания, независимо от своих размеров, в ходе ведения дел вынуждена взаимодействовать не только с компаниями-поставщиками товаров и партнерами по бизнесу, но и с государственными органами, в том числе с проверяющими, такими как налоговая инспекция.
+                    Поскольку ценой ошибки станут крупные финансовые потери, в некоторых случаях и уголовное дело, любой компании нужна помощь и защита профессионального юриста или адвоката.
+                    Возникающую проблему взаимодействия с госорганами и другими контрагентами можно решить двумя путями: создав собственный штат юристов (этим путем обычно идут крупные корпорации) или воспользовавшись комплексным юридическим обслуживанием уже существующей юридической фирмы.
+                    Так как решение правовых вопросов возьмут на себя квалифицированные юристы, руководители компании смогут позволить себе сосредоточиться непосредственно на своей работе – развитии бизнеса, передав правовые вопросы на аутсорсинг.
+                    Проблемы, с которыми может столкнуться предприниматель в ходе своей деятельности, различны: от арбитражного спора с поставщиками до проверки налоговой инспекции. Даже если в штате компании есть юрист, он все равно не сможет одинаково хорошо решить все вопросы – у него для этого может быть недостаточно комплексных знаний о праве. Необходимо привлекать или создавать опытные коллективы юристов, где каждый специализируется на какой-то отдельной области.
+                    </p>
+                <!-- <p>Что еще комплексное бухгалтерское сопровождение от компании “NewLex” дает бизнесу?</p> -->
+                <div class="profitsList">
+                    <div class="profitImage">
+                        <img src="./img/profitImage6.svg" alt="profitImage3">
+                    </div>
+                    <ul>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Проведение консультации по правовым вопросам в устной или письменной форме;</span></li>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Составление документов, проверка на соответствие законодательству существующей документации;</span></li>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Проведение аудита.</span></li>
+                        <!-- <li><img src="./img/arrow.svg" alt="arrow"><span>Возможность быть уверенным в стабильном развитии своей организации.</span></li> -->
+                    </ul>
+                </div>
+                <p> Также в стоимость услуг профессионала входит:
+                </p>
+                <div class="profitsList reversedList">
+                    <div class="profitImage">
+                        <img src="./img/profitImage5.svg" alt="profitImage1">
+                    </div>
+                    <ul>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Сопровождение руководства компании на переговорах, анализ предложенных к подписанию соглашений. Экономические выгоды руководители смогут оценить самостоятельно, в задачу юриста будет входить проверка договора на соответствие законодательству.</span></li>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Участие в корпоративных спорах.</span></li>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Участие в судебных процессах. Как правило, между предпринимателями возникают споры, которые решает Арбитражный суд, где присутствие непосредственно истца или ответчика не обязательно, если у него есть представитель. Получив доверенность, специалист сможет провести все необходимые действия и осуществить представительство в ходе судебного процесса самостоятельно.</span></li>
+                        <!-- <li><img src="./img/arrow.svg" alt="arrow"><span>Подготовка и сдача в установленный срок всевозможных форм отчетности;</span></li>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Консультирование руководства компании по бухучету;</span></li>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Проверка хозяйственной деятельности, прогнозирование доходов и расходов.</span></li> -->
+                    </ul>
+                </div>
+                
+                <!-- <div class="profitsList reversedList">
+                    <div class="profitImage">
+                        <img src="./img/profitImage5.svg" alt="profitImage1">
+                    </div>
+                    <ul>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Ведение первичной документации, бухгалтерского и налогового учета;</span></li>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Начисление ЗП сотрудникам и расчет налогов;</span></li>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Начисление амортизации ОС и НМА, процентов по кредитам;</span></li>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Подготовка и сдача в установленный срок всевозможных форм отчетности;</span></li>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Консультирование руководства компании по бухучету;</span></li>
+                        <li><img src="./img/arrow.svg" alt="arrow"><span>Проверка хозяйственной деятельности, прогнозирование доходов и расходов.</span></li>
+                    </ul>
+                </div> -->
+                <p>Как правило, компании, которые не хотят или не могут себе позволить нанять штатного юриста, покупают абонемент на юридическое сопровождение, заказывая его услуги на определенные периоды времени.
+                    Так как наша компания работает на рынке оказания юридических услуг больше 6 лет, у нас налажены связи с представителями органов госвласти, а также с правоохранительными и налоговыми структурами.</p>
+            </div>
+        </section>
+        
+
+        <section class="requestConsultation second">
+            <div class="wrapper">
+                <div class="left-right-columns">
+                    <div class="left-column">
+                        <span class="title">У Вас остались вопросы?</span>
+                        <span class="lower-title">Свяжитесь с нами</span>
+                        <div class="inputQuestion">
+                            <input type="text" name="questionInputName" class="questionInputName" value="Имя">
+                            <input type="text" name="questionInputPhone" class="questionInputPhone" value="Телефон">
+                        </div>
+                        <div class="questionButton">
+                            <button class="requestQuestionButton">Получить консультацию</button>
+                            <img src="./img/consultationImage.svg" alt="consultationImage">
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <img src="./img/questionsImage.svg" alt="questionsImage">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-upper">
+                <div class="footer-logo">
+                    <img src="./img/siteLogo.svg" alt="siteLogo">
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Бухгалтерские услуги</a></li>
+                        <li><a href="#">Юридические услуги для бизнеса</a></li>
+                        <li><a href="#">Юридические услуги для физических лиц</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="consultation-contacts">
+                    <button class="footer-button">Получить консультацию</button>
+                    <span class="footer-phone">+7 (999) 999-99-99</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="socials">
+                    <a href="#"><img src="./img/instagram.svg" alt="instagram"></a>
+                    <a href="#"><img src="./img/telegram.svg" alt="telegram"></a>
+                    <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
+                </div>
+                <div class="politics">
+                    <span>Политика конфединциальности</span>
+                    <span>Соглашение на обработку персональных данных</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
