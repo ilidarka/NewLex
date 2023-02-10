@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/radioButtonStyle.css" />
+    <link rel="stylesheet" href="./css/nouislider.css" />
+    <link rel="stylesheet" href="./css/sliderStyle.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/burgerMenuStyle.css" />
+    <link rel="stylesheet" href="./css/buhsrvice.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="./scripts/nouislider.min.js" defer></script>
+    <script src="./scripts/inputEmployeesScript.js" defer></script>
+    <script src="./scripts/inputDocumentsScript.js" defer></script>
+    <script src="./scripts/inputConsultBuhScript.js" defer></script>
+    <script src="./scripts/inputDogovorBuhScript.js" defer></script>
+    <script src="./scripts/inputSudBuhScript.js" defer></script>
+    <script src="./scripts/ratesButtonsScript.js" defer></script>
+    <script src="./scripts/directorsSelectScript.js" defer></script>
+    <script src="./scripts/burgerMenuScript.js" defer></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./scripts/slider.js" defer></script>
+    <script src="./scripts/changeIFrameScript.js" defer></script>
+    <script src="./scripts/listScript.js" defer></script>
+  </head>
+  <body>
+    <div id="menu">
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#">Бухгалтерские услуги</a></li>
+          <li><a href="#">Юридические услуги для бизнеса</a></li>
+          <li><a href="#">Юридические услуги для физических лиц</a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Личный кабинет</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <header>
+      <div class="wrapper">
+        <div class="head">
+          <img src="./img/siteLogo.svg" alt="siteLogo" />
+          <button class="buttons">
+            <img src="./img/userIcon.svg" alt="userIcon" /><span
+              >Личный кабинет</span
+            >
+          </button>
+        </div>
+        <nav>
+          <li>
+            <a class="hover-underline-animation" href="#"
+              >Бухгалтерские услуги</a
+            >
+          </li>
+          <li>
+            <a class="hover-underline-animation" href="#"
+              >Юридические услуги для бизнеса</a
+            >
+          </li>
+          <li>
+            <a class="hover-underline-animation" href="#"
+              >Юридические услуги для физических лиц</a
+            >
+          </li>
+          <li><a class="hover-underline-animation" href="#">О компании</a></li>
+          <li><a class="hover-underline-animation" href="#">Блог</a></li>
+          <li><a class="hover-underline-animation" href="#">Контакты</a></li>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="services">
+        <div class="wrapper">
+          <div class="servicesList">
+            <div class="upperItems">
+              <div class="serviceItem">
+                <img
+                  class="serviceItemImage"
+                  src="./img/servicesIcon.svg"
+                  alt="servicesIcon"
+                />
+                <span>Юридическое сопровождение бизнеса</span>
+              </div>
+              <div class="serviceItem activeServiceItem">
+                <img
+                  class="serviceItemImage"
+                  src="./img/servicesIcon.svg"
+                  alt="servicesIcon"
+                />
+                <span>Арбитажный юрист</span>
+              </div>
+              <div class="serviceItem">
+                <img
+                  class="serviceItemImage"
+                  src="./img/servicesIcon.svg"
+                  alt="servicesIcon"
+                />
+                <span>Взыскание дебиторской задолжености</span>
+              </div>
+              <div class="serviceItem">
+                <img
+                  class="serviceItemImage"
+                  src="./img/servicesIcon.svg"
+                  alt="servicesIcon"
+                />
+                <span>Корпоративные споры</span>
+              </div>
+              <div class="serviceItem">
+                <img
+                  class="serviceItemImage"
+                  src="./img/servicesIcon.svg"
+                  alt="servicesIcon"
+                />
+                <span>Банкротство юридических лиц</span>
+              </div>
+            </div>
+            <div class="bottomItems">
+              <div class="serviceItem">
+                <img
+                  class="serviceItemImage"
+                  src="./img/servicesIcon.svg"
+                  alt="servicesIcon"
+                />
+                <span>Юридическая экспертиза договоров</span>
+              </div>
+              <div class="serviceItem">
+                <img
+                  class="serviceItemImage"
+                  src="./img/servicesIcon.svg"
+                  alt="servicesIcon"
+                />
+                <span>Регистрация бизнеса</span>
+              </div>
+              <div class="serviceItem">
+                <img
+                  class="serviceItemImage"
+                  src="./img/servicesIcon.svg"
+                  alt="servicesIcon"
+                />
+                <span>Споры по строительному подряду</span>
+              </div>
+              <div class="serviceItem">
+                <img
+                  class="serviceItemImage"
+                  src="./img/servicesIcon.svg"
+                  alt="servicesIcon"
+                />
+                <span>Трудовые споры</span>
+              </div>
+              <div class="serviceItem">
+                <img
+                  class="serviceItemImage"
+                  src="./img/servicesIcon.svg"
+                  alt="servicesIcon"
+                />
+                <span>Юрист коммерческой недвижимости</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="consultation">
+        <div class="wrapper">
+          <div class="leftColumn">
+            <span class="counsultationHeader"
+              >Юридические услуги для бизнеса</span
+            >
+            <div class="contactButtons">
+              <button class="getConsultationButton">
+                Получить консультацию
+              </button>
+              <button class="orderServiceButton">Заказать услугу</button>
+              <img src="./img/consultationImage.svg" alt="consultationImage" />
+            </div>
+          </div>
+          <div class="rightColumn">
+            <img
+              src="./img/consultationImageMain.png"
+              alt="consultationImageMain"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="howDoWeWork">
+        <div class="wrapper">
+          <h3>
+            Компания NEWLEX оказывает широкий перечень юридических услуг для
+            индивидуальных предпринимателей, НКО, а также коммерческих
+            предприятий.<br />
+            Качество, результат и оперативность – наш приоритет!
+          </h3>
+          <span class="howDoWeWorkSpan">Как мы работаем</span>
+          <div class="columns">
+            <div class="leftColumn">
+              <img src="./img/HowDoWeWorkMain.png" alt="HowDoWeWorkMain" />
+            </div>
+            <div class="rightColumn">
+              <ul>
+                <li>Индивидуальный подход к каждому клиенту</li>
+                <p>
+                  Нет единого шаблона, каждое рассматриваемое обращение
+                  индивидуально, и подход, следовательно, тоже индивидуальный
+                </p>
+                <li>От знакомства до старта работы менее дня</li>
+                <p>
+                  Промедление недопустимо для нас -мы всегда оперативно
+                  включаемся в работу
+                </p>
+                <li>Консультируем на всех этапах сопровождения</li>
+                <p>
+                  Предоставляем консультации не по какому-то ограниченному
+                  регламенту, а тогда, когда у клиента возникает необходимость
+                </p>
+                <li>Честно рассказываем о перспективах и о возможных рисках</li>
+                <p>
+                  Не видим смысла обещать выполнить невыполнимое, мы не
+                  волшебники, но профессионалы, которые способны понимать
+                  перспективы дела и риски, о чем сообщаем клиентам
+                </p>
+                <li>
+                  Всегда помогаем разработать наилучшую стратегию действий
+                </li>
+                <p>
+                  Обычно существует несколько вариантов решения дела, но из
+                  нескольких мы всегда предложим лучшую стратегию, и
+                  относительно нее уже определимся с тактикой
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="list-container">
+        <div class="wrapper">
+          <h3>Услуги и цены</h3>
+          <ul class="list-wrapper">
+            <li>
+              <div class="left-column">
+                <img src="./img/list-arrow.svg" alt="" />
+                <p>Юридическое сопровождение бизнеса</p>
+              </div>
+              <div class="right-column">от <span>3 000</span> ₽/мес</div>
+            </li>
+            <li class="caret">
+              <div class="main-list">
+                <div class="left-column">
+                  <img src="./img/list-arrow.svg" alt="" />
+                  <p>Арбитажный юрист</p>
+                  <div class="rotate-arrow">
+                    <img src="./img/list-child-arrow.svg" alt="" />
+                  </div>
+                </div>
+                <div class="right-column">от <span>5 000</span> ₽/мес</div>
+              </div>
+              <ul class="nested">
+                <li>
+                  <div class="left-column">
+                    <p>Урегулирование сопров в досудебном порядке</p>
+                  </div>
+                  <div class="right-column">от <span>5 500</span> ₽/мес</div>
+                </li>
+                <li>
+                  <div class="left-column">
+                    <p>Таможенные споры</p>
+                  </div>
+                  <div class="right-column">от <span>6 500</span> ₽/мес</div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="left-column">
+                <img src="./img/list-arrow.svg" alt="" />
+                <p>Взыскание дебиторской задолжености</p>
+              </div>
+              <div class="right-column">от <span>5 000</span> ₽/мес</div>
+            </li>
+            <li>
+              <div class="left-column">
+                <img src="./img/list-arrow.svg" alt="" />
+                <p>Корпоративные споры</p>
+              </div>
+              <div class="right-column">от <span>8 000</span> ₽/мес</div>
+            </li>
+            <li>
+              <div class="left-column">
+                <img src="./img/list-arrow.svg" alt="" />
+                <p>Банкротство юридических лиц</p>
+              </div>
+              <div class="right-column">от <span>12 500</span> ₽/мес</div>
+            </li>
+            <li>
+              <div class="left-column">
+                <img src="./img/list-arrow.svg" alt="" />
+                <p>Юридическая экспертиза договоров</p>
+              </div>
+              <div class="right-column">от <span>3 000</span> ₽/мес</div>
+            </li>
+            <li class="caret">
+              <div class="main-list">
+                <div class="left-column">
+                  <img src="./img/list-arrow.svg" alt="" />
+                  <p>Регистрация бизнеса</p>
+                  <div class="rotate-arrow">
+                    <img src="./img/list-child-arrow.svg" alt="" />
+                  </div>
+                </div>
+                <div class="right-column">от <span>1</span> ₽/мес</div>
+              </div>
+              <ul class="nested">
+                <li>
+                  <div class="left-column">
+                    <p>Регистрация ИП</p>
+                  </div>
+                  <div class="right-column">от <span>1</span> ₽/мес</div>
+                </li>
+                <li>
+                  <div class="left-column">
+                    <p>Ликвидация ООО</p>
+                  </div>
+                  <div class="right-column">от <span>6 000</span> ₽/мес</div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="left-column">
+                <img src="./img/list-arrow.svg" alt="" />
+                <p>Споры по строительному подряду</p>
+              </div>
+              <div class="right-column">от <span>4 000</span> ₽/мес</div>
+            </li>
+            <li>
+              <div class="left-column">
+                <img src="./img/list-arrow.svg" alt="" />
+                <p>Трудовые споры</p>
+              </div>
+              <div class="right-column">от <span>4 000</span> ₽/мес</div>
+            </li>
+            <li>
+              <div class="left-column">
+                <img src="./img/list-arrow.svg" alt="" />
+                <p>Юрист коммерческой недвижимости</p>
+              </div>
+              <div class="right-column">от <span>2 000</span> ₽/мес</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="calculator">
+        <div class="wrapper">
+          <h3>
+            Калькулятор расчета стоимости юридического обслуживания по
+            количеству услуг в месяц
+          </h3>
+          <div class="left-right-columns">
+            <div class="leftColumn">
+              <div class="nalog">
+                <div class="top-container">
+                  <span
+                    >Консультации в месяц (письменные, проверка контрактов и
+                    т.д.)
+                  </span>
+                  <div class="modal-container">
+                    <img src="./img/modal-btn.svg" alt="" />
+                    <div class="modal">
+                      Обычно существует несколько вариантов решения дела, но из
+                      нескольких мы всегда предложим лучшую стратегию, и
+                      относительно нее уже определимся с тактикой
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-wrapper">
+                  <div id="consult"></div>
+                </div>
+              </div>
+              <div class="employees">
+                <span
+                  >Договорная работа (разработка, рецензирование, дополнение,
+                  экспертиза и т.д.)
+                </span>
+                <div class="slider-wrapper">
+                  <div id="dogovor"></div>
+                </div>
+              </div>
+              <div class="documents">
+                <span>Судебная работа</span>
+                <div class="slider-wrapper">
+                  <div id="sud"></div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="bottom-top-wrapper">
+                  <div class="bottomItem">
+                    <div class="cross"><span>&#9587;</span></div>
+                    <span class="bottomItemText">Устные консультации</span>
+                  </div>
+                  <div class="bottomItem">
+                    <div class="cross"><span>&#9587;</span></div>
+                    <span class="bottomItemText">Проверка контрагентов</span>
+                  </div>
+                </div>
+                <div class="bottomItem">
+                  <div class="cross"><span>&#9587;</span></div>
+                  <span class="bottomItemText"
+                    >Мониторинг действующего законодательства в вашей
+                    сфере</span
+                  >
+                </div>
+                <div class="bottomItem">
+                  <div class="cross"><span>&#9587;</span></div>
+                  <span class="bottomItemText"
+                    >Мониторинг судебных споро и исполнительного производства в
+                    отношении клиента</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="rightColumn">
+              <div class="cost">
+                <span>Стоимость:</span>
+                <span class="price">≈10 200</span>
+                <span class="currency">рублей в месяц</span>
+              </div>
+              <button class="requestButton">Оставить заявку</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="requestConsultation">
+        <div class="wrapper">
+          <img src="./img/yellowClouds.svg" alt="yellowClouds" />
+          <input type="text" class="nameInput" value="Имя" />
+          <input type="text" class="phoneInput" value="Телефон" />
+          <button class="getConsultationButton">Получить консультацию</button>
+          <img src="./img/consultationImage.svg" alt="consultationImage" />
+        </div>
+      </section>
+      <section class="workWithUs">
+        <div class="wrapper">
+          <h1>5 шагов работы с нами</h1>
+          <div class="workWithUs-item">
+            <img src="./img/steps-1.svg" alt="" />
+            <div class="item-text">
+              <span>Вы ставите перед нами задачу</span>
+              <p>
+                Любым удобным для вас способом: в личном кабинете, по почте,
+                в мессенджере или по телефону
+              </p>
+            </div>
+          </div>
+          <div class="workWithUs-item">
+            <img src="./img/steps-2.svg" alt="" />
+            <div class="item-text">
+              <span>Мы закрепляем за Вами сотрудника</span>
+              <p>В зависимости от поставленной задачи и профиля</p>
+            </div>
+          </div>
+          <div class="workWithUs-item">
+            <img src="./img/steps-3.svg" alt="" />
+            <div class="item-text">
+              <span>Наш специалист оценивает задачу</span>
+              <p>Предлагает оптимальные решения и срок на их выполнение</p>
+            </div>
+          </div>
+          <div class="workWithUs-item">
+            <img src="./img/steps-4.svg" alt="" />
+            <div class="item-text">
+              <span>Статус задачи фиксируется в личном кабинете</span>
+              <p>С указанием времени и статуса выполнения</p>
+            </div>
+          </div>
+          <div class="workWithUs-item">
+            <img src="./img/steps-5.svg" alt="" />
+            <div class="item-text">
+              <span>Вы оперативно получаете готовый результат</span>
+              <p>Вам останется только принять результат работы</p>
+            </div>
+          </div>
+          <button>Подписаться на сервис</button>
+        </div>
+      </section>
+      <section class="directors">
+        <div class="wrapper">
+          <h3>Руководители направлений нашей команды</h3>
+          <div class="directorSwitcherAdaptive">
+            <div class="directosNameList">
+              <span data-directors="1" class="directorsName activeDirectorName"
+                >Управляющий партнер</span
+              >
+              <span data-directors="2" class="directorsName"
+                >Руководитель по бухгалтескому направлению</span
+              >
+              <span data-directors="3" class="directorsName"
+                >Руководитель по юридическому направлению</span
+              >
+              <span data-directors="4" class="directorsName"
+                >Главный специалист по судебной работе</span
+              >
+              <span data-directors="5" class="directorsName"
+                >Руководитель по корпоративному праву</span
+              >
+              <span data-directors="6" class="directorsName"
+                >Руководитель отдела маркетинга и продаж</span
+              >
+            </div>
+            <div class="directorSwitcherControll">
+              <img
+                class="directorArrowLeft"
+                src="./img/directorsArrowRight.svg"
+                alt="directorsArrowRight"
+              />
+              <img
+                class="directorArrowRight"
+                src="./img/directorsArrowRight.svg"
+                alt="directorsArrowRight"
+              />
+            </div>
+          </div>
+          <ul class="directorSwitcher">
+            <li data-btn="1" class="directorItem activeItem">
+              Управляющий партнер
+            </li>
+            <li data-btn="2" class="directorItem">
+              Руководитель по бухгалтескому направлению
+            </li>
+            <li data-btn="3" class="directorItem">
+              Руководитель по юридическому направлению
+            </li>
+            <li data-btn="4" class="directorItem">
+              Главный специалист по судебной работе
+            </li>
+            <li data-btn="5" class="directorItem">
+              Руководитель по корпоративному праву
+            </li>
+            <li data-btn="6" class="directorItem">
+              Руководитель отдела маркетинга и продаж
+            </li>
+          </ul>
+          <div data-content="1" class="left-right-column">
+            <div class="left-column">
+              <img
+                src="./img/directorFoto.svg"
+                alt="directorFoto"
+                class="directorFoto"
+              />
+            </div>
+            <div class="right-column">
+              <div class="upper">
+                <img
+                  src="./img/directorsUpperImage.svg"
+                  alt="directorsUpperImage"
+                />
+                <span
+                  >“1Корректно рассчитаю и вовремя уплачу за вас налоги. Без
+                  рисков, просрочек и штрафов”</span
+                >
+              </div>
+              <div class="bottom">
+                <span>Ключевые навыки:</span>
+                <ul>
+                  <li>опыт руководящей работы;</li>
+                  <li>cамостоятельность;</li>
+                  <li>аналитический склад ума;</li>
+                  <li>умение работать с большим объемом информации;</li>
+                  <li>умение работать в режиме многозадачности;</li>
+                  <li>требовательность к себе и подчиненным;</li>
+                  <li>умение аргументировать и отстаивать свою позицию.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div data-content="2" class="left-right-column hideContent">
+            <div class="left-column">
+              <img
+                src="./img/directorFoto.svg"
+                alt="directorFoto"
+                class="directorFoto"
+              />
+            </div>
+            <div class="right-column">
+              <div class="upper">
+                <img
+                  src="./img/directorsUpperImage.svg"
+                  alt="directorsUpperImage"
+                />
+                <span
+                  >“2Корректно рассчитаю и вовремя уплачу за вас налоги. Без
+                  рисков, просрочек и штрафов”</span
+                >
+              </div>
+              <div class="bottom">
+                <span>Ключевые навыки:</span>
+                <ul>
+                  <li>опыт руководящей работы;</li>
+                  <li>cамостоятельность;</li>
+                  <li>аналитический склад ума;</li>
+                  <li>умение работать с большим объемом информации;</li>
+                  <li>умение работать в режиме многозадачности;</li>
+                  <li>требовательность к себе и подчиненным;</li>
+                  <li>умение аргументировать и отстаивать свою позицию.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div data-content="3" class="left-right-column hideContent">
+            <div class="left-column">
+              <img
+                src="./img/directorFoto.svg"
+                alt="directorFoto"
+                class="directorFoto"
+              />
+            </div>
+            <div class="right-column">
+              <div class="upper">
+                <img
+                  src="./img/directorsUpperImage.svg"
+                  alt="directorsUpperImage"
+                />
+                <span
+                  >“3Корректно рассчитаю и вовремя уплачу за вас налоги. Без
+                  рисков, просрочек и штрафов”</span
+                >
+              </div>
+              <div class="bottom">
+                <span>Ключевые навыки:</span>
+                <ul>
+                  <li>опыт руководящей работы;</li>
+                  <li>cамостоятельность;</li>
+                  <li>аналитический склад ума;</li>
+                  <li>умение работать с большим объемом информации;</li>
+                  <li>умение работать в режиме многозадачности;</li>
+                  <li>требовательность к себе и подчиненным;</li>
+                  <li>умение аргументировать и отстаивать свою позицию.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div data-content="4" class="left-right-column hideContent">
+            <div class="left-column">
+              <img
+                src="./img/directorFoto.svg"
+                alt="directorFoto"
+                class="directorFoto"
+              />
+            </div>
+            <div class="right-column">
+              <div class="upper">
+                <img
+                  src="./img/directorsUpperImage.svg"
+                  alt="directorsUpperImage"
+                />
+                <span
+                  >“4Корректно рассчитаю и вовремя уплачу за вас налоги. Без
+                  рисков, просрочек и штрафов”</span
+                >
+              </div>
+              <div class="bottom">
+                <span>Ключевые навыки:</span>
+                <ul>
+                  <li>опыт руководящей работы;</li>
+                  <li>cамостоятельность;</li>
+                  <li>аналитический склад ума;</li>
+                  <li>умение работать с большим объемом информации;</li>
+                  <li>умение работать в режиме многозадачности;</li>
+                  <li>требовательность к себе и подчиненным;</li>
+                  <li>умение аргументировать и отстаивать свою позицию.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div data-content="5" class="left-right-column hideContent">
+            <div class="left-column">
+              <img
+                src="./img/directorFoto.svg"
+                alt="directorFoto"
+                class="directorFoto"
+              />
+            </div>
+            <div class="right-column">
+              <div class="upper">
+                <img
+                  src="./img/directorsUpperImage.svg"
+                  alt="directorsUpperImage"
+                />
+                <span
+                  >“5Корректно рассчитаю и вовремя уплачу за вас налоги. Без
+                  рисков, просрочек и штрафов”</span
+                >
+              </div>
+              <div class="bottom">
+                <span>Ключевые навыки:</span>
+                <ul>
+                  <li>опыт руководящей работы;</li>
+                  <li>cамостоятельность;</li>
+                  <li>аналитический склад ума;</li>
+                  <li>умение работать с большим объемом информации;</li>
+                  <li>умение работать в режиме многозадачности;</li>
+                  <li>требовательность к себе и подчиненным;</li>
+                  <li>умение аргументировать и отстаивать свою позицию.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div data-content="6" class="left-right-column hideContent">
+            <div class="left-column">
+              <img
+                src="./img/directorFoto.svg"
+                alt="directorFoto"
+                class="directorFoto"
+              />
+            </div>
+            <div class="right-column">
+              <div class="upper">
+                <img
+                  src="./img/directorsUpperImage.svg"
+                  alt="directorsUpperImage"
+                />
+                <span
+                  >“6Корректно рассчитаю и вовремя уплачу за вас налоги. Без
+                  рисков, просрочек и штрафов”</span
+                >
+              </div>
+              <div class="bottom">
+                <span>Ключевые навыки:</span>
+                <ul>
+                  <li>опыт руководящей работы;</li>
+                  <li>cамостоятельность;</li>
+                  <li>аналитический склад ума;</li>
+                  <li>умение работать с большим объемом информации;</li>
+                  <li>умение работать в режиме многозадачности;</li>
+                  <li>требовательность к себе и подчиненным;</li>
+                  <li>умение аргументировать и отстаивать свою позицию.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="clients">
+        <div class="wrapper">
+          <h3>Клиенты и партнеры</h3>
+          <div class="clientsList">
+            <img src="./img/tinkof.svg" alt="tinkof" />
+            <img src="./img/tomoru.svg" alt="tomoru" />
+            <img src="./img/alfabank.svg" alt="alfabank" />
+            <img src="./img/intradesk.svg" alt="intradesk" />
+            <img src="./img/garant.svg" alt="garant" />
+            <img src="./img/novofon.svg" alt="novofon" />
+            <img src="./img/skypoint.svg" alt="skypoint" />
+            <img src="./img/bebrand.svg" alt="bebrand" />
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="wrapper">
+          <h3>Отзывы</h3>
+
+          <div
+            style="
+              width: 100%;
+              height: 800px;
+              overflow: hidden;
+              position: relative;
+            "
+          >
+            <iframe
+              id="iframeFeedback"
+              style="
+                width: 100%;
+                height: 100%;
+                border: 1px solid #e6e6e6;
+                border-radius: 8px;
+                box-sizing: border-box;
+              "
+              src="https://yandex.ru/maps-reviews-widget/125440147305?comments"
+            >
+            </iframe>
+            <a
+              href="https://yandex.ru/maps/org/nyu_leks/125440147305/"
+              target="_blank"
+              style="
+                box-sizing: border-box;
+                text-decoration: none;
+                color: #b3b3b3;
+                font-size: 10px;
+                font-family: YS Text, sans-serif;
+                padding: 0 20px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+                left: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+                max-height: 14px;
+                white-space: nowrap;
+                padding: 0 16px;
+                box-sizing: border-box;
+              "
+            >
+              Нью Лекс на карте Москвы — Яндекс Карты
+            </a>
+          </div>
+
+          <!--                <div class="left-right-columns">
+                    <div class="left-column">
+                        <span class="rating">4.8 из 5</span>
+                        <div class="stars">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                            <img src="./img/star.svg" alt="star">
+                        </div>
+                        <a href="#"><img src="./img/siteLogo.svg" alt="siteLogo"></a>
+                        <div class="maps">
+                            <img src="./img/yandex.svg" alt="yandexLogo">
+                            <img src="./img/google.svg" alt="google">
+                            <span>Карты</span>
+                        </div>
+                        <span class="marksCountSpan">На основе 198 оценок</span>
+                        <button class="leaveFeedback">Оставить отзыв</button>
+                    </div>
+                    <div class="right-column">
+                        <div id="slider" class="slider_wrapper container">
+                            <div class="slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="slide-content">
+                                                <div class="slideUpper">
+                                                    <img src="./img/sliderImage1.svg" alt="sliderImage1">
+                                                    <div class="slider-info">
+                                                        <span class="name">Елена</span>
+                                                        <div class="stars">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                        </div>
+                                                        <span class="date">15 октября 2022 год</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    С фирмой NewLex сотрудничали 2 года. 
+                                                    Компания проводила проверку финансового состояния нашей компании. 
+                                                    Аудитор очень основательно проверил все вопросы бухгалтерского и 
+                                                    налогового учёта. Проверка проводилась компетентными специалистами, 
+                                                    и был предоставлен подробный отчёт. 
+                                                    По выявленных нарушениям давались консультации со ссылкой на законодательство. 
+                                                    Также радуют консультации, которые можно получить в течение года 
+                                                    у аудитора по вопросам возникающим в процессе работы
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-content">
+                                                <div class="slideUpper">
+                                                    <img src="./img/sliderImage2.svg" alt="sliderImage1">
+                                                    <div class="slider-info">
+                                                        <span class="name">Михаил</span>
+                                                        <div class="stars">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                        </div>
+                                                        <span class="date">3 ноября 2022 год</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Благодарю компанию NewLex за профессиональную работу! 
+                                                    Проводили процедуру ликвидации фирмы. 
+                                                    Обычно официальная ликвидации ООО проводиться намного дольше, 
+                                                    специалисты провели процедуру за 4 месяца. Все прошло без проблем, 
+                                                    от меня требовалось по минимуму, я доволен работой компании!
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slide-content">
+                                                <div class="slideUpper">
+                                                    <img src="./img/sliderImage1.svg" alt="sliderImage1">
+                                                    <div class="slider-info">
+                                                        <span class="name">Елена</span>
+                                                        <div class="stars">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                            <img src="./img/star.svg" alt="star">
+                                                        </div>
+                                                        <span class="date">15 октября 2022 год</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    С фирмой NewLex сотрудничали 2 года. 
+                                                    Компания проводила проверку финансового состояния нашей компании. 
+                                                    Аудитор очень основательно проверил все вопросы бухгалтерского и 
+                                                    налогового учёта. Проверка проводилась компетентными специалистами, 
+                                                    и был предоставлен подробный отчёт. 
+                                                    По выявленных нарушениям давались консультации со ссылкой на законодательство. 
+                                                    Также радуют консультации, которые можно получить в течение года 
+                                                    у аудитора по вопросам возникающим в процессе работы
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-controll">
+                                        <div class="swiper-scrollbar"></div>
+                                        <div class="swiper-buttons">
+                                            <div class="swiper-button-prev"><img src="./img/arrowLeft.svg" alt=""></div>
+                                            <div class="swiper-button-next"><img src="./img/arrowRight.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+        </div>
+      </section>
+
+      <section class="profit">
+        <div class="wrapper">
+          <h3>
+            Профессиональные юридические<br />
+            услуги - максимальная выгода
+          </h3>
+          <p>
+            Юридические услуги для бизнеса в Москве – обширное понятие, которое
+            включает в себя не только защиту интересов в суде, но и
+            сопровождение сделок, составление правовых документов, помощь в
+            земельных вопросах и вопросах, связанных с недвижимостью. Поэтому в
+            нашей стране даже самая мирная фирма, избегающая конфликтов, рано
+            или поздно сталкивается с необходимостью обратиться за юридическими
+            услугами. Если в жизни вашего учреждения возникла ситуация, при
+            которой необходимы юридические услуги для юридических лиц и
+            индивидуальных предпринимателей, внимательно подойдите к выбору
+            юриста.
+          </p>
+          <p>
+            Компания «NewLex» много лет на рынке юридических услуг оказывает
+            предпринимателям Москвы и Московской области, а также бизнесменам из
+            других регионов России, квалифицированную юридическую помощь.
+          </p>
+          <p>
+            Позвоните по номеру телефона, указанного в шапке сайта, и вам
+            определят юриста, который проведет первую бесплатную консультацию.
+            Наша юридическая компания специализируется на комплексном
+            обслуживании ООО, ИП и учреждений с другими формами. Однако вы также
+            можете обратиться к нам за разовой услугой - решением одного,
+            конкретного вопроса.
+          </p>
+          <h2>
+            Правовая помощь всегда начинается с консультации, во время которой:
+          </h2>
+          <div class="profitsList">
+            <ul>
+              <li>
+                <img src="./img/arrow.svg" alt="arrow" /><span
+                  >определяется проблематика,
+                </span>
+              </li>
+              <li>
+                <img src="./img/arrow.svg" alt="arrow" /><span
+                  >оценивается ситуация,</span
+                >
+              </li>
+              <li>
+                <img src="./img/arrow.svg" alt="arrow" /><span
+                  >разъясняются возможные риски и шансы на победу,</span
+                >
+              </li>
+              <li>
+                <img src="./img/arrow.svg" alt="arrow" /><span
+                  >вырабатывается стратегия и тактика.</span
+                >
+              </li>
+            </ul>
+            <div class="profitImage">
+              <img src="./img/prof-1.svg" alt="profitImage1" />
+            </div>
+          </div>
+          <p>
+            Также во время юридической консультации бизнес-юрист просматривает
+            имеющиеся у клиента на руках документы и объясняет, какие документы
+            нужно получить дополнительно, чтобы подготовить исковое заявление в
+            суд. Если после консультации вы придете к решению нанять юриста и
+            передать ему ведение дела, он приступит ко второй стадии своей
+            работы – попробует решить возникший у вашей компании конфликт в
+            досудебном порядке. Как показывает практика, в большом количестве
+            споров переговоров, которые ведет опытный юрист, бывает достаточно.
+          </p>
+          <p>
+            Когда переговоры невозможны или зашли в тупик, начинается судебное
+            разбирательство. Здесь уже оказание юридических услуг юридическим
+            лицам необходимо. Представительство юриста в суде возможно без
+            вашего участия. Юрист будет аргументированно и четко отстаивать вашу
+            позицию. Только юристы могут говорить с судом на одном языке – языке
+            законов. Также в юридические услуги входит обжалование судебного
+            решения, если оно Вас не удовлетворило.
+          </p>
+          <p>
+            В некоторых делах к юридическим услугам относится работа с судебными
+            приставами, например, когда речь идет о взыскании задолженностей по
+            договорам, потому как мало выиграть дело в суде, нужно еще и
+            получить причитающиеся деньги на руки. Крупные фирмы обычно имеют в
+            штате своего юриста или даже не одного. Однако не все компании могут
+            себе позволить такую роскошь. В таких случаях лучше прибегнуть к
+            поддержке уже существующей юридической компании. Впрочем, даже если
+            в вашей компании есть свой юрист, проконсультироваться с другим
+            специалистом будет не лишним, так как юристы предприятий обычно
+            имеют опыт в каком-то одном вопросе. Юридическая же компания
+            предоставляет полный спектр юридических услуг во всех областях
+            права.
+          </p>
+          <p>
+            Важно отметить, что компания, кроме разового оказания юридических
+            услуг, также предоставляет абонентское обслуживание или комплексное
+            ведение дел компании.
+          </p>
+          <h2>То есть специалист:</h2>
+          <div class="profitsList">
+            <div class="profitImage">
+              <img src="./img/prof-2.svg" alt="profitImage1" />
+            </div>
+            <ul>
+              <li>
+                <img src="./img/arrow.svg" alt="arrow" /><span
+                  >Будем вести бухучет вашей фирмы;</span
+                >
+              </li>
+              <li>
+                <img src="./img/arrow.svg" alt="arrow" /><span
+                  >Не допустим ошибок и штрафов;</span
+                >
+              </li>
+              <li>
+                <img src="./img/arrow.svg" alt="arrow" /><span
+                  >Предоставляем полную отчетность;</span
+                >
+              </li>
+              <li>
+                <img src="./img/arrow.svg" alt="arrow" /><span
+                  >Оптимизируем налогообложение;</span
+                >
+              </li>
+              <li>
+                <img src="./img/arrow.svg" alt="arrow" /><span
+                  >Проконсультируем по любому вопросу.</span
+                >
+              </li>
+            </ul>
+          </div>
+          <p>
+            Стоимость услуг зависит от множества факторов, в первую очередь, от
+            объема работы, сложности дела, позиции противоборствующей стороны,
+            количества инстанций, которые предстоит пройти юристу, и
+            многого-многого другого.
+          </p>
+        </div>
+      </section>
+      <section class="requestConsultation second">
+        <div class="wrapper">
+          <div class="left-right-columns">
+            <div class="left-column">
+              <span class="title">У Вас остались вопросы?</span>
+              <span class="lower-title">Свяжитесь с нами</span>
+              <div class="inputQuestion">
+                <input
+                  type="text"
+                  name="questionInputName"
+                  class="questionInputName"
+                  value="Имя"
+                />
+                <input
+                  type="text"
+                  name="questionInputPhone"
+                  class="questionInputPhone"
+                  value="Телефон"
+                />
+              </div>
+              <div class="questionButton">
+                <button class="requestQuestionButton">
+                  Получить консультацию
+                </button>
+                <img
+                  src="./img/consultationImage.svg"
+                  alt="consultationImage"
+                />
+              </div>
+            </div>
+            <div class="right-column">
+              <img src="./img/questionsImage.svg" alt="questionsImage" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrapper">
+        <div class="footer-upper">
+          <div class="footer-logo">
+            <img src="./img/siteLogo.svg" alt="siteLogo" />
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Бухгалтерские услуги</a></li>
+              <li><a href="#">Юридические услуги для бизнеса</a></li>
+              <li><a href="#">Юридические услуги для физических лиц</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Личный кабинет</a></li>
+            </ul>
+          </div>
+          <div class="consultation-contacts">
+            <button class="footer-button">Получить консультацию</button>
+            <span class="footer-phone">+7 (999) 999-99-99</span>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="socials">
+            <a href="#"><img src="./img/instagram.svg" alt="instagram" /></a>
+            <a href="#"><img src="./img/telegram.svg" alt="telegram" /></a>
+            <a href="#"><img src="./img/facebook.svg" alt="facebook" /></a>
+          </div>
+          <div class="politics">
+            <span>Политика конфединциальности</span>
+            <span>Соглашение на обработку персональных данных</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
