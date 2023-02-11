@@ -169,7 +169,7 @@ section {
 .consultation .wrapper {
     background-image: url("../img/consultationBackground.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     justify-content: space-between;
     padding: 70px 90px;
     border-radius: 20px;
@@ -194,6 +194,7 @@ section {
     background: #FFFFFF;
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
+    font-size: 18px;
 }
 .consultation .orderServiceButton {
     width: 212px;
@@ -202,6 +203,7 @@ section {
     background: #FDD21B;
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
+    font-size: 18px;
 }
 .howDoWeWork {
     margin-top: 64px;
