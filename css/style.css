@@ -233,6 +233,11 @@ section {
     flex-direction: column;
     align-items: flex-start;
 }
+.howDoWeWork .howDoWeWorkTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .howDoWeWork .columns {
     margin-top: 20px;
     width: 100%;
@@ -389,6 +394,7 @@ section {
     background: #FDD21B;
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
+    font-size: 18px;
 }
 .rates {
     margin-top: 64px;
@@ -856,7 +862,7 @@ section {
 .requestConsultation .wrapper {
     justify-content: center;
     align-items: center;
-    padding: 90px 80px;
+    padding: 45px 80px;
 }
 .requestConsultation .left-right-columns {
     width: 100%;

@@ -39,6 +39,10 @@
     .howDoWeWork .leftColumn img {
         display: none;
     }
+    .howDoWeWork .howDoWeWorkTitle {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
     .howDoWeWork .leftColumn {
         background-image: url("../img/howDoWeWorkAdaptiveImage.svg");
         background-repeat: no-repeat;
@@ -51,7 +55,7 @@
         gap: 40px;
     }
     .directors .left-right-column {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
     }
     .directors .right-column {
@@ -83,19 +87,33 @@
     .activeServiceItem {
         font-size: 15px !important;
     }
-    .requestConsultation img {
+    .second .left-right-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .second .questionButton img {
         display: none;
+    }
+    .second img {
+        margin-top: 30px;
+        width: 90%;
     }
     .requestConsultation .left-column {
         width: 100%;
         align-items: center;
+    }
+    .requestConsultation .yellowCloudsImage {
+        display: none;
+    }
+    .requestConsultation .consultationArrowImage {
+        display: none;
     }
     .requestConsultation .inputQuestion, .requestConsultation .questionButton {
         justify-content: center;
         align-items: center;
     }
     .requestConsultation .wrapper {
-        border-radius: 50px;
+        border-radius: 20px;
     }
     .directors .left-column {
         width: 100%;
@@ -329,6 +347,15 @@
         flex-direction: column;
         align-items: center;
     }
+    .requestConsultation .wrapper {
+        padding: 30px 20px;
+    }
+    .requestConsultation .getConsultationButton {
+        width: 100%;
+    }
+    .requestConsultation .nameInput, .requestConsultation .phoneInput {
+        width: 100%;
+    }
     .profit .profitsList {
         width: 100%;
     }
@@ -357,13 +384,16 @@
         height: fit-content;
     }
     .consultation .counsultationHeader {
-        font-size: 24px;
+        font-size: 18px;
     }
     .consultation .orderServiceButton {
         width: 260px
     }
+    .consultation .leftColumn {
+        gap: 0;
+    }
     .consultation .wrapper {
-        padding: 70px 20px;
+        padding: 70px 10px;
     }
     .consultation .getConsultationButton {
         width: 260px;
@@ -391,11 +421,19 @@
     .directors .upper span {
         font-size: 14px;
     }
-    .requestConsultation .title {
-        text-align: center;
+    .second .title {
+        font-size: 21px;
+        text-align: left;
+        height: 10px;
+        width: 100%;
+    }
+    .second .lower-title {
+        width: 100%;
+        text-align: left;
+        font-size: 18px;
     }
     .second .wrapper {
-        padding: 90px 20px;
+        padding: 40px 20px;
     }
     .plans .titleItem {
         text-align: center;

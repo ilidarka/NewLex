@@ -51,7 +51,7 @@
 }
 .menu-bg, #menu {
     top: 0;
-    left: 0;
+    right: 73px;
     position: absolute;
 }
 .menu-bg {
