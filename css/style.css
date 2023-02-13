@@ -308,6 +308,7 @@ section {
 .calculator .bottom {
     width: 100%;
     display: flex;
+    flex-wrap: wrap !important;
     justify-content: flex-start;
     gap: 20px;
 }
@@ -1064,4 +1065,33 @@ footer .politics {
 .show-howDoWeWorkItem{
     transition: .2s ease-in-out;
     display: none;
+}
+.custom-checkbox{
+    display: none;
+    z-index: -1;
+}
+
+.custom-checkbox+.label-for-custom-checkbox::before {
+    content: '';
+    display: inline-block;
+    width: 39px;
+    height: 37px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    background-color: #505ACC;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.label-for-custom-checkbox{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap:15px;
+    font-size: 18px;
+}
+.custom-checkbox:checked+.label-for-custom-checkbox::before{
+    transition-property: color;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    background-image: url('../img/crossCheckbox.svg');
 }
