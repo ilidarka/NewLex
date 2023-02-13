@@ -351,3 +351,19 @@
     gap: 5px;
     display: flex;
 }
+.button-show-howToStartWorlWithUsItems, .button-show-profitLists-info{
+    display: none;
+    background-color: #FDD21B;
+    width: 178px;
+    height: 58px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.profit .profitsList:nth-child(even) {
+    flex-direction: row;
+}

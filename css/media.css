@@ -261,6 +261,18 @@
         align-items: center;
         gap: 30px;
     }
+    .button-show-howToStartWorlWithUsItems, .button-show-profitLists-info{
+        display: block;
+    }
+    .howToStartWorkWithUs .howToStartWorkWithUsItem:not(:first-child) {
+        display: none;
+    }
+    .profit p:nth-child(n+5){
+        display: none;
+    }
+    .profit .profitsList{
+        display: none;
+    }
     .rates .ratePrice span {
         font-size: 15px;
     }
