@@ -1058,3 +1058,12 @@ footer .politics {
 .profit .profitsList:nth-child(even) {
     flex-direction: row;
 }
+.howDoWeWork li{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.show-howDoWeWorkItem{
+    transition: .2s ease-in-out;
+    display: none;
+}
