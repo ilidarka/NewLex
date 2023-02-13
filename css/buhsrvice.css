@@ -137,7 +137,7 @@
   font-size: 24px;
   line-height: 140%;
   color: #11243e;
-  padding-bottom: 18px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #515ccd;
 }
 .list-wrapper li .left-column {
@@ -168,13 +168,12 @@
 .nested {
   display: flex;
   flex-direction: column;
-  gap: 16px;
   display: none;
   margin-top: 16px;
 }
 .nested .left-column {
   border-bottom: 1px solid #ff4f9c;
-  margin-left: 3%;
+  margin-left: 5%;
   padding-bottom: 1px;
 }
 .nested li{
@@ -201,7 +200,7 @@
     display: none;
   }
   .list-wrapper li {
-    font-size: 16px;
+    font-size: 10px;
     line-height: 140%;
   }
   .list-wrapper li .left-column {

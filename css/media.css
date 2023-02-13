@@ -358,6 +358,10 @@
     .howToStartWorkWithUs .headerSpan {
         font-size: 40px;
     }
+    .howToStartWorkWithUs h3 {
+        font-size: 19px;
+        line-height: 30px;
+    }
     .profit h3 {
         font-size: 33px !important;
     }
@@ -402,7 +406,7 @@
         height: fit-content;
     }
     .consultation .counsultationHeader {
-        font-size: 18px;
+        font-size: 25px;
     }
     .consultation .orderServiceButton {
         width: 260px
@@ -411,7 +415,7 @@
         gap: 0;
     }
     .consultation .wrapper {
-        padding: 70px 10px;
+        padding: 25px 10px;
     }
     .consultation .getConsultationButton {
         width: 260px;
