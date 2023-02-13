@@ -1,0 +1,14 @@
+@media (max-width: 1250px) {
+    header, section, footer {
+        padding: 0 30px !important;
+    }
+}
+@media (max-width: 1000px) {
+    .pricesPrice {
+        display: none;
+    }
+    .pricesTitle {
+        justify-content: flex-start;
+    }
+    
+}

@@ -1,0 +1,69 @@
+:root {
+    --main-purple: #505ACC;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    color: #000000;
+    line-height: 140%;
+}
+html, body, section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pricesName {
+    font-weight: 500;
+    font-size: 35px;
+}
+.pricesPrice {
+    font-weight: 400;
+    font-size: 30px;
+}
+.pricesTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 35px;
+    border-bottom: 1px solid var(--main-purple);
+}
+.employee, .pricesItemName, .pricesItemPrice {
+    font-weight: 400;
+    font-size: 24px;
+    padding: 10px 10px;
+    border-bottom: 1px solid var(--main-purple);
+}
+.employee {
+    width: 18%;
+    text-align: center;
+}
+.pricesItemPrice {
+    width: 11%;
+    text-align: center;
+}
+.pricesItemName {
+    width: 65%;
+}
+.pricesItems {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pricesItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
