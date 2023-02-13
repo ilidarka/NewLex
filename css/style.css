@@ -960,7 +960,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #FBFBFB;
-    padding: 55px 0 20px 0;
+    padding: 55px 0 0 0;
 }
 footer .wrapper {
     flex-direction: column;
@@ -1024,7 +1024,7 @@ footer .footer-bottom {
     display: flex;
     align-items: center;
     gap: 200px;
-    height: 50px;
+    height: 150px;
 }
 footer .socials {
     display: flex;
@@ -1039,6 +1039,18 @@ footer .politics {
     font-size: 14px;
     line-height: 144%;
     color: #9CA4AC;
+}
+footer .developerLogo a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    color: #000;
+    text-decoration: none;
+}
+footer .developerLogo a span {
+    color: #000;
+    text-decoration: none;
 }
 .button-show-howToStartWorlWithUsItems, .button-show-profitLists-info{
     display: none;
@@ -1064,4 +1076,50 @@ footer .politics {
 .show-howDoWeWorkItem{
     transition: .2s ease-in-out;
     display: none;
+}
+.outerFeedback {
+    width:100%;
+    height:800px;
+    position:relative;
+}
+#iframeFeedback {
+    width:100%;
+    height:100%;
+    border:1px solid #e6e6e6;
+    border-radius:8px;
+    box-sizing:border-box
+}
+.outerFeedbackLink {
+    box-sizing:border-box;
+    text-decoration:none;
+    color:#b3b3b3;
+    font-size:10px;
+    font-family:YS Text,sans-serif;
+    padding:0 20px;
+    position:absolute;
+    bottom:8px;
+    width:100%;
+    text-align:center;
+    left:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:block;
+    max-height:14px;
+    white-space:nowrap;
+    padding:0 16px;
+    box-sizing:border-box
+}
+#map {
+    width: 100%;
+    height: 100%;
+}
+.feedBackContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ymaps-2-1-79-map {
+    width: 100% !important;
+    height: 100% !important;
 }

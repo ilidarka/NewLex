@@ -1,8 +1,4 @@
-$("#iframeFeedback").on("load", () => {
-
-});
-
-let iframeHead = $("#iframeFeedback").contents();
-console.log(iframeHead);
-/*let iframeCSS = "<style>.badge {max-width: unset;}</style>";
-$(iframeHead).append(iframeCSS);*/
+var $head = $("iframe").contents().find("head");       
+console.log($head);         
+$head.append($("", 
+    { rel: "stylesheet", href: "file://css/style.css", type: "text/css" }));
