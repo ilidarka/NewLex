@@ -163,9 +163,6 @@ section {
 .services .serviceItem:hover .serviceItemImage {
     filter: brightness(10);
 }
-.consultation {
-    margin-top: 64px;
-}
 .consultation .wrapper {
     background-image: url("../img/consultationBackground.png");
     background-repeat: no-repeat;
@@ -204,9 +201,6 @@ section {
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
     font-size: 18px;
-}
-.howDoWeWork {
-    margin-top: 64px;
 }
 .howDoWeWork span {
     margin-top: 20px;
@@ -334,6 +328,7 @@ section {
     text-align: center;
     border-radius: 5px;
     text-transform: uppercase;
+    box-shadow: 2px 5px 21px rgba(80, 90, 204, 0.46);
 }
 .calculator .bottomItemText {
     font-weight: 400 !important;
