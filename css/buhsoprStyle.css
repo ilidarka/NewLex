@@ -46,6 +46,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-image: url("../img/plansBackground.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,6 +117,8 @@
     display: none;
     width: 180px;
     height: 61px;
+    font-size: 18px;
+    border: none;
     background: #FDD21B;
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
@@ -124,6 +127,8 @@
     width: 210px;
     height: 61px;
     background: #FDD21B;
+    font-size: 18px;
+    border: none;
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
 }
