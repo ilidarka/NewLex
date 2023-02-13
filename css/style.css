@@ -163,6 +163,9 @@ section {
 .services .serviceItem:hover .serviceItemImage {
     filter: brightness(10);
 }
+.consultation {
+    margin: 40px 0;
+}
 .consultation .wrapper {
     background-image: url("../img/consultationBackground.png");
     background-repeat: no-repeat;

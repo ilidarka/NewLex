@@ -51,6 +51,9 @@
   flex-direction: row;
   width: 100%;
   align-items: center;
+  background-image: url("../img/calculatorPriceBackgroundImage.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .calculator .cost {
   flex-direction: row;
@@ -88,6 +91,7 @@
   box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
   border-radius: 5px;
   cursor: pointer;
+  border: none;
 }
 .workWithUs .wrapper .workWithUs-item {
   display: flex;
