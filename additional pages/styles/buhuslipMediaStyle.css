@@ -1,0 +1,59 @@
+@media (max-width: 1250px) {
+    header, section, footer {
+        padding: 0 30px !important;
+    }
+}
+@media (max-width: 1000px) {
+    .buhuslipSection .pricesPrice {
+        display: none;
+    }
+    .buhuslipSection .pricesTitle {
+        justify-content: flex-start;
+    }
+    .buhuslipSection .pricesItemContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .buhuslipSection .employee, .buhuslipSection .pricesItemName, .buhuslipSection .pricesItemPrice {
+        border-bottom: none;    
+        width: 100%;    
+        text-align: left;
+    }
+    .buhuslipSection .pricesItemPrice {
+        text-align: right;
+        display: flex;
+        align-items: flex-end;        
+    }
+    .buhuslipSection .pricesItem {
+        border-bottom: 1px solid var(--main-purple);
+        gap: 0;
+    }
+    .buhuslipSection .employee::before {
+        content: url("../img/person.svg");
+        margin-right: 10px;
+    }
+}
+@media (max-width: 540px) {
+    .buhuslipSection .pricesTitle {
+        padding: 10px 0;
+    }
+    .buhuslipSection .pricesName {
+        font-size: 20px;
+        text-align: left;
+    }
+    .buhuslipSection .employee, .buhuslipSection .pricesItemName, .buhuslipSection .pricesItemPrice {
+        font-size: 16px;
+    }
+    .buhuslipSection .pricesItemPrice {
+        width: 50%;
+    }
+    .buhuslipSection .employee {
+        padding-bottom: 5px;
+    }
+    .buhuslipSection .pricesItemName {
+        padding-top: 5px;
+    }
+    .buhuslipSection .staredMessage {
+        display: flex;
+    }
+}

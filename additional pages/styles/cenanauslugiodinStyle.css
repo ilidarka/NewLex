@@ -1,0 +1,93 @@
+:root {
+    --main-purple: #505ACC;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    color: #000000;
+    line-height: 140%;
+}
+html, body, section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.serviceTopName {
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    width: 55%;
+}
+.servicePrice, .serviceFastPrice, .servicesPriceSpecial {
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    width: 25%;
+}
+.servicesPriceTop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--main-purple);
+    padding: 20px 0;
+}
+.servicesItemName {
+    font-weight: 400;
+    font-size: 24px;
+    border-bottom: 1px solid var(--main-purple);
+    width: 47%;
+    text-align: left;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.serviceItemPrice, .serviceItemFastPrise, .serviceItemSpecialPrice {
+    font-weight: 600;
+    font-size: 24px;
+    border-bottom: 1px solid var(--main-purple);
+    width: 20%;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servicesPriceItems {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.servicesPriceItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.servicesPriceItem span {
+    height: 122px;
+}
+.staredMessage {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.stars {
+    color: #FF4F9C;
+}

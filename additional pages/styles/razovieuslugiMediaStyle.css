@@ -1,0 +1,49 @@
+@media (max-width: 1250px) {
+    header, section, footer {
+        padding: 0 30px !important;
+    }
+}
+@media (max-width: 1000px) {
+    .pricesPrice {
+        display: none;
+    }
+    .pricesTitle {
+        justify-content: flex-start;
+    }
+    .pricesItemName, .pricesItemPrice {
+        border-bottom: none;    
+        width: 100%;    
+        text-align: left;
+        justify-content: end;
+    }
+    .pricesItemPrice {
+        text-align: right;
+        display: flex;
+        align-items: flex-end;        
+    }
+    .pricesItem {
+        border-bottom: 1px solid var(--main-purple);
+        gap: 0;
+    }
+}
+@media (max-width: 540px) {
+    .pricesTitle {
+        padding: 10px 0;
+    }
+    .pricesName {
+        font-size: 20px;
+        text-align: left;
+    }
+    .pricesItemName, .pricesItemPrice {
+        font-size: 16px;
+    }
+    .pricesItemPrice {
+        width: 50%;
+    }
+    .employee {
+        padding-bottom: 5px;
+    }
+    .pricesItemName {
+        padding-top: 5px;
+    }
+}

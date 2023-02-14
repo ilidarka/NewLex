@@ -46,15 +46,15 @@ html, body, section {
     border-bottom: 1px solid var(--main-purple);
 }
 .employee {
-    width: 18%;
+    width: 25%;
     text-align: center;
 }
 .pricesItemPrice {
-    width: 11%;
+    width: 15%;
     text-align: center;
 }
 .pricesItemName {
-    width: 65%;
+    width: 72%;
 }
 .pricesItems {
     width: 100%;
@@ -66,4 +66,18 @@ html, body, section {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 40px;
+}
+.pricesItemContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.staredMessage {
+    display: none;
+    font-weight: 400;
+    font-size: 16px;
+}
+.stars {
+    color: #FF4F9C;
 }
