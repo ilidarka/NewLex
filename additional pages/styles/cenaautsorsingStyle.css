@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  font-family: "Monrope", sans-serif;
+  padding: 20px 0 20px 0;
+}
+
+.price {
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 15px;
+}
+.price .price-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.price .price-content .price-header h1 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 140%;
+  color: #000000;
+  text-align: center;
+}
+.price .price-content .price-bottom span {
+  color: rgb(255, 79, 156);
+}
+.price .price-content .price-bottom p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+}
+.price .price-content .price-item {
+  width: 100%;
+  border: 1px solid #505acc;
+  border-radius: 20px;
+}
+.price .price-content .price-item h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: #000000;
+  margin-top: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #505acc;
+}
+.price .price-content .price-item .column-container {
+  display: flex;
+  border-bottom: 1px dashed #505acc;
+  justify-content: space-between;
+}
+.price .price-content .price-item .column-container .column {
+  padding: 20px 20px 20px 25px;
+}
+.price .price-content .price-item .column-container .column p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #000000;
+  margin-left: 5%;
+}
+.price .price-content .price-item .column-container .column .column-header {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 11px;
+}
+.price .price-content .price-item .column-container .column .column-header img {
+  max-width: 40px;
+  max-height: 40px;
+}
+.price .price-content .price-item .column-container .column .column-header h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #000000;
+}
+.price .price-content .price-item .column-container .right-column {
+  max-width: 40%;
+  padding-left: 20px;
+  border-left: 1px dashed #505acc;
+}
+.price .price-content .price-item .item-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 25px;
+}
+.price .price-content .price-item .item-bottom .bottom-item {
+  padding: 30px 0 30px 0;
+}
+.price .price-content .price-item .item-bottom .bottom-item .bottom-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 11px;
+}
+.price .price-content .price-item .item-bottom .bottom-item .bottom-header img {
+  width: 33px;
+  height: 24px;
+}
+.price .price-content .price-item .item-bottom .bottom-item .bottom-header h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #000000;
+}
+.price .price-content .price-item .item-bottom .bottom-item .price-text p {
+  font-size: 35px;
+  line-height: 140%;
+  color: #000000;
+}
+.price .price-content .price-item .item-bottom .bottom-item .price-text span {
+  font-weight: 400;
+  font-size: 35px;
+}
+.price .price-content .price-item .item-bottom .bottom-item .bottom-text p {
+  font-size: 24px;
+}
+.price .price-content .price-item .item-bottom .center-bottom-item {
+  border-right: 1px dashed #505acc;
+  border-left: 1px dashed #505acc;
+  padding-right: 5%;
+  padding-left: 12px;
+}
+
+.adaptiv-price {
+  display: none;
+  margin: 0 15px;
+}
+.adaptiv-price .adaptiv-price-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.adaptiv-price .adaptiv-price-content .price-header h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000000;
+}
+.adaptiv-price .adaptiv-price-content .price-bottom p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+.adaptiv-price .adaptiv-price-content .price-bottom span {
+  color: rgb(255, 79, 156);
+}
+.adaptiv-price .adaptiv-price-content .item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.adaptiv-price .adaptiv-price-content .price-item {
+  border: 2px solid #505acc;
+  border-radius: 10px;
+}
+.adaptiv-price .adaptiv-price-content .price-item .item-header {
+  padding: 10px 13px;
+  border-bottom: 2px dashed #505acc;
+}
+.adaptiv-price .adaptiv-price-content .price-item .item-header h2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+.adaptiv-price .adaptiv-price-content .price-item .columns-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px dashed #505acc;
+  flex: 0 1 100%;
+}
+.adaptiv-price .adaptiv-price-content .price-item .columns-container .column {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+}
+.adaptiv-price .adaptiv-price-content .price-item .columns-container .column img {
+  max-width: 20px;
+  max-height: 20px;
+}
+.adaptiv-price .adaptiv-price-content .price-item .columns-container .column p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+.adaptiv-price .adaptiv-price-content .price-item .columns-container .column span {
+  font-weight: 400;
+}
+.adaptiv-price .adaptiv-price-content .price-item .columns-container .right-column {
+  width: 50%;
+  border-left: 2px dashed #505acc;
+}
+.adaptiv-price .adaptiv-price-content .price-item .item-bottom {
+  display: flex;
+  gap: 5px;
+  padding: 5px 10px 10px 10px;
+}
+.adaptiv-price .adaptiv-price-content .price-item .item-bottom img {
+  max-width: 20px;
+  max-height: 20px;
+}
+.adaptiv-price .adaptiv-price-content .price-item .item-bottom p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+.adaptiv-price .adaptiv-price-content .price-item .item-bottom span {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1000px) {
+  .price {
+    display: none;
+  }
+  .adaptiv-price {
+    display: block;
+  }
+}/*# sourceMappingURL=section.css.map */
