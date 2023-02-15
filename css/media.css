@@ -479,6 +479,17 @@
     .rates .rateButton {
         font-size: 10px;
     }
+    .rates .ratePrice {
+        height: 90px;
+    }
+    .rates .ratePrice .ratePriceName {
+        font-size: 16px;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .rates .ratePrice span {
+        width: 62%;
+    }
     .connectWithUs .connectWithUsItem {
         width: 100%;
     }

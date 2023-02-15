@@ -174,18 +174,29 @@ section {
     padding: 70px 90px;
     border-radius: 20px;
 }
+.consultation .leftColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
 .consultation span {
+    width: 100%;
     font-weight: 400;
     font-size: 45px;
     line-height: 61px;
     color: #FFFFFF;
 }
 .consultation .contactButtons {
-    margin-top: 42px;
+    height: fit-content;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
+}
+.consultation .contactButtons img {
+    margin-bottom: 30px;
 }
 .consultation .getConsultationButton {
     width: 285px;
@@ -206,7 +217,6 @@ section {
     font-size: 18px;
 }
 .howDoWeWork span {
-    margin-top: 20px;
     font-weight: 400;
     font-size: 30px;
     line-height: 140%;
@@ -218,7 +228,6 @@ section {
     line-height: 36px;
     color: var(--main-purple);
     list-style-type: none;
-    margin-top: 10px;
 }
 .howDoWeWork p {
     font-weight: 400;
@@ -434,6 +443,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 .rates .ratePrice {
     width: 100%;
@@ -443,9 +453,11 @@ section {
     align-items: center;
     border-bottom: 0.5px solid #515CCD;
 }
-.rates .ratePrice .ratePriceName:first-child::before {
-    content: url("../img/pricesIcon.svg");
-    margin-right: 10px;
+.rates .ratePrice span {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #000000;
 }
 .rates .ratePrice .ratePriceName {
     font-weight: 400;
@@ -453,6 +465,9 @@ section {
     line-height: 140%;
     color: #000000;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .rates .ratePrice .ratePriceName:first-child {
     text-align: left;
@@ -479,6 +494,9 @@ section {
     align-items: center;
     border-radius: 20px;
     gap: 20px;
+}
+.requestConsultation .wrapper img:nth-child() {
+    margin-bottom: 25px;
 }
 .requestConsultation .getConsultationButton {
     display: flex;
@@ -889,6 +907,9 @@ section {
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
+}
+.requestConsultation .left-column img {
+    margin-bottom: 25px;
 }
 .requestConsultation .questionInputName, .requestConsultation .questionInputPhone {
     width: 259px;
