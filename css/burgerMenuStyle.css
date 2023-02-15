@@ -67,6 +67,7 @@
 .change {
     display: block;
     position: fixed;
+    right: 20px;
 }
 .change .bar {
     background-color: #fff;
@@ -84,4 +85,5 @@
     width: 1080px;
     height: 820px;
     transform: translate(-60%,-30%);
+    right: -70rem;
 }
