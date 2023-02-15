@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/stickySectionStyle.css">
+    <link rel="stylesheet" href="./styles/stickySectionMediaStyle.css">
+    <script src="./js/plansSwitcherScript.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="plans">
+        <div class="wrapper">
+            <div class="sticky-content">
+                <div class="servicesTitle">
+                    <span data-planNumber="1" class="titleItem activeServiceTitle">НКО Ноль</span>
+                    <span data-planNumber="2" class="titleItem">НКО Фонд</span>
+                    <span data-planNumber="3" class="titleItem">НКО УСН</span>
+                    <span data-planNumber="4" class="titleItem">НКО ОСНО</span>
+                </div>
+            </div>
+            <div data-accessiblePlan="1" class="accessiblePlan activePlan">
+                <div class="firstService">
+                    <div class="firstblock">
+                        <span class="name">НКО Ноль</span>
+                        <span class="price">3 000 ₽/мес</span>
+                        <div class="aditionalInfoBlock">
+                            <span class="aditionalInfo">УСН 6%, 15%</span>
+                            <span class="aditionalInfo">Нет штатных сотрудников</span>
+                            <span class="aditionalInfo">До 10 документов</span>
+                        </div>
+                    </div>
+                    <div class="thirdblock">
+                        <div class="thirdblock-list">
+                            <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, Росстат и Минюст</span>
+                            <span><img src="./img/galka.svg" alt="galka">Составление СМЕТ доходов и расходов</span>
+                        </div>
+                        <button class="requestHelpButton">Подробнее</button>
+                        <button class="requestServiceButton">Заказать услугу</button>
+                    </div>
+                </div>
+                <div class="secondService">
+                    <div class="firstblock">
+                        <span class="name">«НКО нольПроф»</span>
+                        <span class="price">6 000 ₽/мес</span>
+                        <div class="aditionalInfoBlock">
+                            <span class="aditionalInfo">ОСНО</span>
+                            <span class="aditionalInfo">Нет штатных сотрудников</span>
+                            <span class="aditionalInfo">До 10 документов</span>
+                        </div>
+                    </div>
+                    <div class="thirdblock">
+                        <div class="thirdblock-list">
+                            <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС, Росстат и Минюст</span>
+                            <span><img src="./img/galka.svg" alt="galka">Составление СМЕТ доходов и расходов</span>
+                        </div>
+                        <button class="requestHelpButton">Подробнее</button>
+                        <button class="requestServiceButton">Заказать услугу</button>
+                    </div>
+                </div>
+            </div>
+            <div data-accessiblePlan="2" class="accessiblePlan">
+                <div class="firstService">
+                    <div class="firstblock">
+                        <span class="name">НКО Фонд</span>
+                        <span class="price">2 500 ₽/мес</span>
+                        <div class="aditionalInfoBlock">
+                            <span class="aditionalInfo">Только некоммерческая деятельность</span>
+                            <span class="aditionalInfo">До 10 штатных сотрудников</span>
+                            <span class="aditionalInfo">До 50 документов</span>
+                        </div>
+                    </div>
+                    <div class="thirdblock">
+                        <div class="thirdblock-list">
+                            <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС, Росстат и Минюст</span>
+                            <span><img src="./img/galka.svg" alt="galka">Составление СМЕТ доходов и расходов</span>
+                            <span><img src="./img/galka.svg" alt="galka">Составление Отчетов об исполнении смет</span>
+                            <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                            <span><img src="./img/galka.svg" alt="galka">Расчет зарплаты и взносов в фонды</span>
+                        </div>
+                        <button class="requestHelpButton">Подробнее</button>
+                        <button class="requestServiceButton">Заказать услугу</button>
+                    </div>
+                </div>
+            </div>
+            <div data-accessiblePlan="3" class="accessiblePlan">
+                <div class="firstService">
+                    <div class="firstblock">
+                        <span class="name">«НКО+УСН 6%»</span>
+                        <span class="price">2 800 ₽/мес</span>
+                        <div class="aditionalInfoBlock">
+                            <span class="aditionalInfo">НК деятельность + ком.деятельность (УСН 6%)</span>
+                            <span class="aditionalInfo">До 10 штатных сотрудников</span>
+                            <span class="aditionalInfo">До 50 документов</span>
+                        </div>
+                    </div>
+                    <div class="thirdblock">
+                        <div class="thirdblock-list">
+                            <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС, Росстат и Минюст</span>
+                            <span><img src="./img/galka.svg" alt="galka">Составление СМЕТ доходов и расходов</span>
+                            <span><img src="./img/galka.svg" alt="galka">Составление Отчетов об исполнении смет</span>
+                            <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                            <span><img src="./img/galka.svg" alt="galka">Расчет зарплаты и взносов в фонды</span>
+                            <span><img src="./img/galka.svg" alt="galka">Раздельный учет НКО и Ком.деятельность</span>
+                        </div>
+                        <button class="requestHelpButton">Подробнее</button>
+                        <button class="requestServiceButton">Заказать услугу</button>
+                    </div>
+                </div>
+                <div class="secondService">
+                    <div class="firstblock">
+                        <span class="name">«НКО+УСН 15%»</span>
+                        <span class="price">2 900 ₽/мес</span>
+                        <div class="aditionalInfoBlock">
+                            <span class="aditionalInfo">НК деятельность + ком.деятельность(УСН 6%)</span>
+                            <span class="aditionalInfo">До 10 штатных сотрудников</span>
+                            <span class="aditionalInfo">До 50 документов</span>
+                        </div>
+                    </div>
+                    <div class="thirdblock">
+                        <div class="thirdblock-list">
+                            <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС, Росстат и Минюст</span>
+                            <span><img src="./img/galka.svg" alt="galka">Составление СМЕТ доходов и расходов</span>
+                            <span><img src="./img/galka.svg" alt="galka">Составление Отчетов об исполнении смет</span>
+                            <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                            <span><img src="./img/galka.svg" alt="galka">Расчет зарплаты и взносов в фонды</span>
+                            <span><img src="./img/galka.svg" alt="galka">Раздельный учет НКО и Ком.деятельность</span>
+                        </div>
+                        <button class="requestHelpButton">Подробнее</button>
+                        <button class="requestServiceButton">Заказать услугу</button>
+                    </div>
+                </div>
+            </div>
+            <div data-accessiblePlan="4" class="accessiblePlan">
+                <div class="firstService">
+                    <div class="firstblock">
+                        <span class="name">«НКО+ОСНО»</span>
+                        <span class="price">3 000 ₽/мес</span>
+                        <div class="aditionalInfoBlock">
+                            <span class="aditionalInfo">НК деятельность + ком.деятельность (ОСНО)</span>
+                            <span class="aditionalInfo">До 10 штатных сотрудников</span>
+                            <span class="aditionalInfo">До 50 документов</span>
+                        </div>
+                    </div>
+                    <div class="thirdblock">
+                        <div class="thirdblock-list">
+                            <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС, Росстат и Минюст</span>
+                            <span><img src="./img/galka.svg" alt="galka">Составление СМЕТ доходов и расходов</span>
+                            <span><img src="./img/galka.svg" alt="galka">Составление Отчетов об исполнении смет</span>
+                            <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
+                            <span><img src="./img/galka.svg" alt="galka">Расчет зарплаты и взносов в фонды</span>
+                            <span><img src="./img/galka.svg" alt="galka">Раздельный учет НКО и Ком.деятельность</span>
+                        </div>
+                        <button class="requestHelpButton">Подробнее</button>
+                        <button class="requestServiceButton">Заказать услугу</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

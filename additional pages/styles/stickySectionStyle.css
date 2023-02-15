@@ -1,0 +1,224 @@
+:root {
+    --main-purple: #505ACC;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    color: #000000;
+    line-height: 140%;
+}
+html, body, section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plans {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px !important;
+    gap: 20px;
+}
+.plans .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.plans .servicesTitle {
+    padding: 10px 15px;
+    border: 1px solid #505ACC;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plans .servicesTitle .titleItem {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #11243E;
+    padding: 10px 65px;
+}
+.plans .servicesTitle .titleItem:last-child {
+    padding: 10px 30px;
+}
+.activeServiceTitle {
+    background: #505ACC;
+    box-shadow: 2px 5px 21px rgba(80, 90, 204, 0.46);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF !important;
+    padding: 10px 40px;
+}
+.plans .firstService, .plans .secondService, .plans .thirdService, .plans .fourthService {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../img/plansBackground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 35px 40px;
+    border-radius: 50px;
+}
+.plans .name {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 48px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.plans .price {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+.plans .month {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.plans .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-align: left;
+}
+.plans .secondblock span, .plans .thirdblock span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+.plans .firstblock, .plans .secondblock, .plans .thirdblock {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plans .firstblock {
+    gap: 50px;
+}
+.plans .thirdblock {
+    gap: 30px;
+    width: 60%;
+    align-items: flex-end;
+}
+.plans .thirdblock-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.plans .thirdblock span {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.plans .requestHelpButton {
+    display: none;
+    width: 180px;
+    height: 61px;
+    font-size: 18px;
+    border: none;
+    background: #FDD21B;
+    box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+}
+.plans .requestServiceButton {
+    width: 210px;
+    height: 61px;
+    background: #FDD21B;
+    font-size: 18px;
+    border: none;
+    box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+}
+.plans .price-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.plans .secondblock {
+    align-items: flex-start;
+    gap: 30px;
+    padding-right: 30px;
+}
+.plans .not-item {
+    margin-left: 43px;
+}
+.plans .secondblock, .plans .firstblock {
+    border-right: 1px dashed #fff;
+}
+.plans .secondblock span {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #fff;
+}
+.plans .secondblock span:last-child {
+    border: none;
+}
+.plans .aditionalInfoBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.plans .aditionalInfo {
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+    text-align: center;
+    width: 70%;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+}
+.plans .aditionalInfo:last-child {
+    border-bottom: none;
+}
+.plans .allPricesSpan {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+}
+.plans .accessiblePlan {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.activePlan {
+    display: flex !important;
+}
+.sticky-content {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+}

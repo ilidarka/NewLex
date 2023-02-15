@@ -1,0 +1,70 @@
+@media (max-width: 1250px) {
+    header, section, footer {
+        padding: 0 30px !important;
+    }
+}
+@media (max-width: 1100) {
+    .plans .name {
+        font-size: 30px !important;
+    }
+}
+@media (max-width: 1000px) {
+    .plans .secondblock {
+        display: none !important;
+    }
+    .plans .servicesTitle {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .plans .titleItem {
+        width: 50%;
+        text-align: center;
+        padding: 10px 0 !important;
+    }
+    .plans .firstblock {
+        border-right: none !important;
+        width: 100% !important;
+    }
+    .plans .aditionalInfoBlock{
+        padding-top: 16px;
+        border-top: 1px dashed #fff;
+    }
+    .plans .aditionalInfo {
+        width: 100%;
+    }
+    .plans .thirdblock {
+        width: 100% !important;
+        align-items: center !important;
+    }
+    .plans .thirdblock .thirdblock-list {
+        display: none;
+    }
+    .plans .description {
+        text-align: center !important;
+    }
+    .plans .requestHelpButton {
+        display: block !important;
+    }
+    .plans .firstService, .plans .secondService, .plans .thirdService, .plans .fourthService, .plans .fifthService {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+@media (max-width: 930px) {
+    .plans .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 590px) {
+    .plans .titleItem {
+        text-align: center;
+    }
+    .plans .price {
+        font-size: 30px !important;
+    }
+    .plans .name {
+        font-size: 25px !important;
+    }
+}
