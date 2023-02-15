@@ -91,12 +91,3 @@ html, body, section {
 .servicesPriceItem span {
     height: 122px;
 }
-.staredMessage {
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-.stars {
-    color: #FF4F9C;
-}

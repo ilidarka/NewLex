@@ -1,0 +1,91 @@
+@media (max-width: 1250px) {
+    header, section, footer {
+        padding: 0 30px !important;
+    }
+}
+@media (max-width: 1000px) {
+    .pricesPrice {
+        display: none;
+    }
+    .pricesTitle {
+        justify-content: flex-start;
+    }
+    .pricesItemContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .employee, .pricesItemName, .pricesItemPrice {
+        border-bottom: none;    
+        width: 100%;    
+        text-align: left;
+    }
+    .pricesItemPrice {
+        width: 20%;
+        text-align: right;
+        display: flex;
+        align-items: flex-end; 
+        justify-content: flex-end;       
+    }
+    .pricesItem {
+        border-bottom: 1px solid var(--main-purple);
+        gap: 0;
+    }
+    .underlined {
+        display: flex;
+        align-items: center;
+    }
+    .underlined::before {
+        content: url("../img/person.svg");
+        margin-right: 10px;
+    }
+    .pricesItemType {
+        border-bottom: none;
+        width: 55%;
+        display: flex;
+        align-items: center;
+    }
+    .pricesItemType::before {
+        content: url("../img/apartment.svg");
+    }
+    .pricesItemContainerOrg {
+        width: 100%;
+    }
+}
+@media (max-width: 540px) {
+    .pricesTitle {
+        padding: 10px 0;
+    }
+    .employee {
+        display: none;
+    }
+    .underlined {
+        display: flex;
+        padding: 0;
+    }
+    .pricesName {
+        font-size: 20px;
+        text-align: left;
+    }
+    .employee, .pricesItemName, .pricesItemPrice, .pricesItemType {
+        font-size: 13px;
+    }
+    .pricesItemPrice {
+        width: 40%;
+    }
+    .pricesItemType {
+        width: 71%;
+        padding: 0;
+    }
+    .employee {
+        padding-bottom: 5px;
+    }
+    .pricesItemName {
+        padding-top: 5px;
+    }
+    .pricesItemContainer {
+        gap: 0;
+    }
+    .staredMessage {
+        display: flex;
+    }
+}
