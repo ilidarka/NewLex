@@ -295,6 +295,12 @@
     .howDoWeWork .leftColumn {
         height: 250px;
     }
+    .howDoWeWork .rightColumn ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
     .pricesTableSection {
         padding: 0 10px !important;
     }

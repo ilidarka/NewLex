@@ -246,6 +246,8 @@
     display: none;
     width: 180px;
     height: 61px;
+    border: none;
+    font-size: 18px;
     background: #FDD21B;
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
@@ -253,6 +255,8 @@
 .plans .requestServiceButton {
     width: 210px;
     height: 61px;
+    border: none;
+    font-size: 18px;
     background: #FDD21B;
     box-shadow: 1px 1px 38px rgba(0, 0, 0, 0.09);
     border-radius: 5px;
