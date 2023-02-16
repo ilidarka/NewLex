@@ -491,7 +491,8 @@ section {
     margin-top: 64px;
 }
 .requestConsultation .wrapper {
-    background-color: var(--main-purple);
+    background: rgb(80,90,204);
+    background: linear-gradient(125deg, rgba(80,90,204,1) 74%, rgba(199,203,246,1) 125%);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px 33px;
