@@ -169,9 +169,6 @@ html, body, section {
 .plans .not-item {
     margin-left: 43px;
 }
-.plans .secondblock, .plans .firstblock {
-    border-right: 1px dashed #fff;
-}
 .plans .secondblock span {
     width: 100%;
     padding-bottom: 10px;
@@ -189,13 +186,18 @@ html, body, section {
 }
 .plans .aditionalInfo {
     color: #fff;
-    border-bottom: 1px dashed #fff;
     text-align: center;
     width: 70%;
     padding-bottom: 10px;
     font-weight: 500;
     font-size: 18px;
     line-height: 140%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plans .aditionalInfo::after {
+    content: url("../img/dashedLineRotated.svg");
 }
 .plans .aditionalInfo:last-child {
     border-bottom: none;
