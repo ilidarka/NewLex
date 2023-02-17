@@ -1,6 +1,6 @@
 const judicialWork = document.querySelector("#judicial-work");
 
-var labels = { 0: '0', 10: '10', 20: '20', 30: '30', 40: '40+', };
+var labels = { 0: '0', 5: '5', 10: '10', 15: '15', 20: '20+', };
 noUiSlider.create(judicialWork, {
   start: 20,
   connect: [true, false],
@@ -11,10 +11,10 @@ noUiSlider.create(judicialWork, {
   },
   range: {
     'min': 0,
-    '25%': 10,
-    '50%': 20,
-    '75%': 30,
-    'max': 40,
+    '25%': 5,
+    '50%': 10,
+    '75%': 15,
+    'max': 20,
   },
   pips: {
     mode: 'steps',

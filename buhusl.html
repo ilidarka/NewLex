@@ -30,6 +30,7 @@
     <script src="./scripts/showHowDoWeWorkScript.js" defer></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<5aada0ba-da69-4525-a3f8-44aa4851b0d8>" type="text/javascript" defer></script>
     <script src="./scripts/yandexMapScript.js" type="text/javascript" defer></script>
+    <script src="./scripts/phoneMaskScript.js" defer></script>
 </head>
 <body>
     <div id="menu">
@@ -43,7 +44,6 @@
                     <li><a href="#">Бухгалтерские услуги</a></li>
                     <li><a href="#">Юридические услуги для бизнеса</a></li>
                     <li><a href="#">Юридические услуги для физических лиц</a></li>
-                    <li><a href="#">О компании</a></li>
                     <li><a href="#">Блог</a></li>
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Личный кабинет</a></li>
@@ -61,7 +61,6 @@
                 <li><a class="hover-underline-animation" href="#">Бухгалтерские услуги</a></li>
                 <li><a class="hover-underline-animation" href="#">Юридические услуги для бизнеса</a></li>
                 <li><a class="hover-underline-animation" href="#">Юридические услуги для физических лиц</a></li>
-                <li><a class="hover-underline-animation" href="#">О компании</a></li>
                 <li><a class="hover-underline-animation" href="#">Блог</a></li>
                 <li><a class="hover-underline-animation" href="#">Контакты</a></li>
             </nav>
@@ -244,7 +243,8 @@
                     <div class="ratePrice">
                         <a href="#" class="ratePriceName hover-underline-animation">
                             <img src="./img/pricesIcon.svg" alt="pricesIcon">
-                            Ведение учёта организацией в сфере услуг</a>
+                            Ведение учёта организацией в сфере услуг
+                        </a>
                         <span>от <span style="font-weight: 700;">3 000</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
@@ -280,80 +280,134 @@
                 </div>
                 <div data-ratesPrices="2" class="ratesPrices unactiveRate">
                     <div class="ratePrice">
-                        <span>Ведение учёта организацией в сфере услуг</span>
-                        <span>от 5 000 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            Ведение учёта организацией в сфере услуг
+                        </a>
+                        <span>от <span style="font-weight: 700;">5 000</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Бухгалтерские услуги для ИП</span>
-                        <span>от 3 500 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Бухгалтерские услуги для ИП</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">3 500</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Ведение бухгалтерского учёта в торговле</span>
-                        <span>от 5 500 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Ведение бухгалтерского учёта в торговле</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">5 500</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
-                        <span>от 6 000 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">6 000</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Бухгалтерское сопровождение производственных компаний</span>
-                        <span>от 7 000 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Бухгалтерское сопровождение производственных компаний</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">7 000</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Аутсорсинг бухгалтерии строительных компаний</span>
-                        <span>от 5 500 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Аутсорсинг бухгалтерии строительных компаний</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">5 500</span> ₽/мес</span>
                     </div>
                 </div>
                 <div data-ratesPrices="3" class="ratesPrices unactiveRate">
                     <div class="ratePrice">
-                        <span>Ведение учёта организацией в сфере услуг</span>
-                        <span>от 5 500 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Ведение учёта организацией в сфере услуг</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">5 500</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Бухгалтерские услуги для ИП</span>
-                        <span>от 5 000 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Бухгалтерские услуги для ИП</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">5 000</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Ведение бухгалтерского учёта в торговле</span>
-                        <span>от 6 500 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Ведение бухгалтерского учёта в торговле</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">6 500</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
-                        <span>от 6 500 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">6 500</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Бухгалтерское сопровождение производственных компаний</span>
-                        <span>от 7 500 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Бухгалтерское сопровождение производственных компаний</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">7 500</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Аутсорсинг бухгалтерии строительных компаний</span>
-                        <span>от 8 000 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Аутсорсинг бухгалтерии строительных компаний</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">8 000</span> ₽/мес</span>
                     </div>
                 </div>
                 <div data-ratesPrices="4" class="ratesPrices unactiveRate">
                     <div class="ratePrice">
-                        <span>Ведение учёта организацией в сфере услуг</span>
-                        <span>от 3 500 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Ведение учёта организацией в сфере услуг</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">3 500</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Бухгалтерские услуги для ИП</span>
-                        <span>от 3 000 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Бухгалтерские услуги для ИП</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">3 000</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Ведение бухгалтерского учёта в торговле</span>
-                        <span>от 3 000 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Ведение бухгалтерского учёта в торговле</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">3 000</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
-                        <span>от 6 500 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Бухгалтерское обслуживание некоммерческих организаций (НКО)</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">6 500</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Бухгалтерское сопровождение производственных компаний</span>
-                        <span>от 4 500 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Бухгалтерское сопровождение производственных компаний</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">4 500</span> ₽/мес</span>
                     </div>
                     <div class="ratePrice">
-                        <span>Аутсорсинг бухгалтерии строительных компаний</span>
-                        <span>от 5 000 ₽/мес</span>
+                        <a href="#" class="ratePriceName hover-underline-animation">
+                            <img src="./img/pricesIcon.svg" alt="pricesIcon">
+                            <span>Аутсорсинг бухгалтерии строительных компаний</span>
+                        </a>
+                        <span>от <span style="font-weight: 700;">5 000</span> ₽/мес</span>
                     </div>
                 </div>
             </div>
@@ -361,7 +415,7 @@
         <section class="requestConsultation">
             <div class="wrapper">
                 <img class="yellowCloudsImage" src="./img/yellowClouds.svg" alt="yellowClouds">
-                <input type="text" class="nameInput" value="Имя">
+                <input type="text" class="nameInput" placeholder="Имя">
                 <input type="text" class="phoneInput" placeholder="+7 (999) 999 99 99">
                 <button class="getConsultationButton">Получить консультацию</button>
                 <img class="consultationArrowImage" src="./img/consultationImage.svg" alt="consultationImage">
@@ -451,7 +505,7 @@
                     <div class="right-column">
                         <div class="upper">
                             <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
-                            <span>“1Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                            <span>“Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
                         </div>
                         <div class="bottom">
                             <span>Ключевые навыки:</span>
@@ -474,7 +528,7 @@
                     <div class="right-column">
                         <div class="upper">
                             <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
-                            <span>“2Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                            <span>“Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
                         </div>
                         <div class="bottom">
                             <span>Ключевые навыки:</span>
@@ -497,7 +551,7 @@
                     <div class="right-column">
                         <div class="upper">
                             <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
-                            <span>“3Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                            <span>“Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
                         </div>
                         <div class="bottom">
                             <span>Ключевые навыки:</span>
@@ -520,7 +574,7 @@
                     <div class="right-column">
                         <div class="upper">
                             <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
-                            <span>“4Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                            <span>“Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
                         </div>
                         <div class="bottom">
                             <span>Ключевые навыки:</span>
@@ -543,7 +597,7 @@
                     <div class="right-column">
                         <div class="upper">
                             <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
-                            <span>“5Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                            <span>“Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
                         </div>
                         <div class="bottom">
                             <span>Ключевые навыки:</span>
@@ -566,7 +620,7 @@
                     <div class="right-column">
                         <div class="upper">
                             <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
-                            <span>“6Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                            <span>“Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
                         </div>
                         <div class="bottom">
                             <span>Ключевые навыки:</span>
@@ -621,25 +675,25 @@
                 <h3>Как осуществляется<br>Взаимодействие с бухгалтером</h3>
                 <div class="connectWithUsItems">
                     <div class="connectWithUsItem">
-                        <img src="./img/connectionWithUsImage.svg" alt="connectionWithUsImage">
+                        <img src="./img/connectionWithUsImage1.svg" alt="connectionWithUsImage">
                         <span>
                             После заключения договора с Вами связывается бухгалтер, который будет осуществлять обслуживание Вашей компании
                         </span>
                     </div>
                     <div class="connectWithUsItem">
-                        <img src="./img/connectionWithUsImage.svg" alt="connectionWithUsImage">
+                        <img src="./img/connectionWithUsImage2.svg" alt="connectionWithUsImage">
                         <span>
                             Сложные вопросы передаются для решения консультантам
                         </span>
                     </div>
                     <div class="connectWithUsItem">
-                        <img src="./img/connectionWithUsImage.svg" alt="connectionWithUsImage">
+                        <img src="./img/connectionWithUsImage3.svg" alt="connectionWithUsImage">
                         <span>
                             Виды связи с бухгалтером: электронная почта, телефон, WatsApp
                         </span>
                     </div>
                     <div class="connectWithUsItem">
-                        <img src="./img/connectionWithUsImage.svg" alt="connectionWithUsImage">
+                        <img src="./img/connectionWithUsImage4.svg" alt="connectionWithUsImage">
                         <span>
                             Время подготовки первичных документов — 1 час
                         </span>

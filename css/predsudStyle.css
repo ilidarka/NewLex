@@ -1,5 +1,8 @@
 .servicesPrice {
     margin-top: 54px;
+    background-color: #FBFBFB;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 .servicesPrice .wrapper {
     flex-direction: column;

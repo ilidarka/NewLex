@@ -139,6 +139,13 @@
     align-items: center;
     gap: 20px;
 }
+.plans .plansBottomButtons {
+    height: 71px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .plans .secondblock {
     align-items: flex-start;
     gap: 30px;

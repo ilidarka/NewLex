@@ -30,6 +30,7 @@
     <script src="./scripts/showHowDoWeWorkScript.js" defer></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<5aada0ba-da69-4525-a3f8-44aa4851b0d8>" type="text/javascript" defer></script>
     <script src="./scripts/yandexMapScript.js" type="text/javascript" defer></script>
+    <script src="./scripts/phoneMaskScript.js" defer></script>
 </head>
 <body>
     <div id="menu">
@@ -43,7 +44,6 @@
                     <li><a href="#">Бухгалтерские услуги</a></li>
                     <li><a href="#">Юридические услуги для бизнеса</a></li>
                     <li><a href="#">Юридические услуги для физических лиц</a></li>
-                    <li><a href="#">О компании</a></li>
                     <li><a href="#">Блог</a></li>
                     <li><a href="#">Контакты</a></li>
                     <li><a href="#">Личный кабинет</a></li>
@@ -61,7 +61,6 @@
                 <li><a class="hover-underline-animation" href="#">Бухгалтерские услуги</a></li>
                 <li><a class="hover-underline-animation" href="#">Юридические услуги для бизнеса</a></li>
                 <li><a class="hover-underline-animation" href="#">Юридические услуги для физических лиц</a></li>
-                <li><a class="hover-underline-animation" href="#">О компании</a></li>
                 <li><a class="hover-underline-animation" href="#">Блог</a></li>
                 <li><a class="hover-underline-animation" href="#">Контакты</a></li>
             </nav>
@@ -257,8 +256,13 @@
         <section class="requestConsultation">
             <div class="wrapper">
                 <img class="yellowCloudsImage" src="./img/yellowClouds.svg" alt="yellowClouds">
-                <input type="text" class="nameInput" value="Имя">
-                <input type="text" class="phoneInput" placeholder="+7 (999) 999 99 99">
+                <div class="requestConsultationInputsContainer">
+                    <span>Остались вопросы?</span>
+                    <div class="requestConsultationInputs">
+                        <input type="text" class="nameInput" placeholder="Имя">
+                        <input type="text" class="phoneInput" placeholder="+7 (999) 999 99 99">
+                    </div>
+                </div>
                 <button class="getConsultationButton">Получить консультацию</button>
                 <img class="consultationArrowImage" src="./img/consultationImage.svg" alt="consultationImage">
             </div>
@@ -327,7 +331,7 @@
                     <div class="right-column">
                         <div class="upper">
                             <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
-                            <span>“1Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                            <span>“Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
                         </div>
                         <div class="bottom">
                             <span>Ключевые навыки:</span>
@@ -350,7 +354,7 @@
                     <div class="right-column">
                         <div class="upper">
                             <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
-                            <span>“2Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                            <span>“Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
                         </div>
                         <div class="bottom">
                             <span>Ключевые навыки:</span>
@@ -373,7 +377,7 @@
                     <div class="right-column">
                         <div class="upper">
                             <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
-                            <span>“3Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                            <span>“Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
                         </div>
                         <div class="bottom">
                             <span>Ключевые навыки:</span>
@@ -396,7 +400,7 @@
                     <div class="right-column">
                         <div class="upper">
                             <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
-                            <span>“4Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                            <span>“Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
                         </div>
                         <div class="bottom">
                             <span>Ключевые навыки:</span>
@@ -419,7 +423,7 @@
                     <div class="right-column">
                         <div class="upper">
                             <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
-                            <span>“5Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                            <span>“Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
                         </div>
                         <div class="bottom">
                             <span>Ключевые навыки:</span>
@@ -442,7 +446,7 @@
                     <div class="right-column">
                         <div class="upper">
                             <img src="./img/directorsUpperImage.svg" alt="directorsUpperImage">
-                            <span>“6Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
+                            <span>“Корректно рассчитаю и вовремя уплачу за вас налоги. Без рисков, просрочек и штрафов”</span>
                         </div>
                         <div class="bottom">
                             <span>Ключевые навыки:</span>

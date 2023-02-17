@@ -12,7 +12,7 @@ html, body, header, main, footer, section {
     width: 100%;
 }
 button:hover {
-    margin-bottom: 10px;
+    transform: translateY(-10px);
     transition: 0.25s all;
 }
 h3 {
@@ -88,6 +88,7 @@ header nav {
 }
 header li {
     list-style-type: none;
+    font-size: 18px;
 }
 header a {
     color: #11243E;
@@ -247,6 +248,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
 }
 .howDoWeWork .columns {
     margin-top: 20px;
@@ -418,6 +420,9 @@ section {
     justify-content: space-between;
     align-items: center;
 }
+.rates button:hover {
+    transform: translateY(0px);
+}
 .rates .ratesButtons {
     width: 40%;
     display: flex;
@@ -474,6 +479,9 @@ section {
     align-items: center;
     gap: 5px;
 }
+.rates .wrapper .ratesTitle button:hover {
+    margin-bottom: 0;
+}
 .rates .ratePrice .ratePriceName:first-child {
     text-align: left;
 }
@@ -504,6 +512,22 @@ section {
 .requestConsultation .wrapper img:nth-child() {
     margin-bottom: 25px;
 }
+.requestConsultation .requestConsultationInputsContainer {
+    color: #fff;
+    font-size: 18px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.requestConsultation .requestConsultationInputsContainer .requestConsultationInputs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 .requestConsultation .getConsultationButton {
     display: flex;
     justify-content: center;
@@ -520,7 +544,7 @@ section {
     color: #11243E;
 }
 .requestConsultation .nameInput, .requestConsultation .phoneInput {
-    width: 260px;
+    width: 230px;
     height: 56px;
     background-color: var(--main-purple);
     border: 1px solid #fff;
@@ -531,7 +555,7 @@ section {
     color: rgba(255, 255, 255, 0.7);
     padding: 0 20px;
 }
-.phoneInput::placeholder {
+.phoneInput::placeholder, .nameInput::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
 .workWithUs {
@@ -833,6 +857,7 @@ section {
     justify-content: space-between;
     gap: 40px;
     padding: 20px;
+    background-color: #fff;
 }
 .directors .bottom {
     width: 100%;
@@ -886,6 +911,9 @@ section {
 .directorSwitcherControll {
     display: flex;
     gap: 20px;
+}
+.directors .upper img {
+    width: 40%;
 }
 .hideContent {
     display: none !important;
@@ -992,6 +1020,10 @@ section {
     line-height: 34px;
     color: #11243E;
     text-align: center;
+}
+.connectWithUs .connectWithUsItem img {
+    width: 380px;
+    height: 280px;
 }
 footer {
     margin-top: 128px;

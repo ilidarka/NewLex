@@ -122,6 +122,9 @@
 
 .list-container {
   margin-top: 80px;
+  background-color: #FBFBFB;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 .list-container .wrapper {
   display: flex;

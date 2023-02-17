@@ -171,6 +171,15 @@
     .plans .requestHelpButton {
         display: block !important;
     }
+    .plans img {
+        display: none;
+    }
+    .plans .plansBottomButtons {
+        height: 142px !important;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
     .plans .firstService, .plans .secondService, .plans .thirdService, .plans .fourthService, .plans .fifthService {
         width: 80% !important;
         flex-direction: column;
@@ -212,6 +221,17 @@
     .requestConsultation .wrapper {
         flex-direction: column;
         align-items: center;
+    }
+    .requestConsultation .requestConsultationInputs {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .requestConsultation .requestConsultationInputsContainer {
+        width: 100%;
+    }
+    .requestConsultation .nameInput, .requestConsultation .phoneInput {
+        width: 260px;
     }
     .profit .profitImage, .profit .hideContent {
         display: none;
@@ -450,8 +470,7 @@
     }
     .directors .upper {
         flex-direction: column-reverse;
-        padding: 40px 20px 0 20px;
-        align-items: flex-start;
+        padding: 40px 20px 10px 20px;
     }
     .directors .upper span {
         font-size: 14px;
@@ -498,6 +517,10 @@
     }
     .connectWithUs .connectWithUsItem {
         width: 100%;
+    }
+    .connectWithUs .connectWithUsItem img { 
+        width: 310px;
+        height: 210px;
     }
     .howToStartWorkWithUs .lastItem a {
         width: 100% !important;
