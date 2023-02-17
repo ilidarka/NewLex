@@ -11,6 +11,9 @@
 html, body, header, main, footer, section {
     width: 100%;
 }
+body {
+    position: relative;
+}
 button:hover {
     transform: translateY(-10px);
     transition: 0.25s all;
@@ -858,6 +861,7 @@ section {
     gap: 40px;
     padding: 20px;
     background-color: #fff;
+    border-radius: 10px;
 }
 .directors .bottom {
     width: 100%;

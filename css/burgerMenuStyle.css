@@ -13,6 +13,8 @@
     cursor: pointer;
     position: fixed; 
     z-index: 12; 
+    right: 25px;
+    top: 10px;
 }
 .bar {
     height: 5px;
@@ -52,7 +54,8 @@
 .menu-bg, #menu {
     top: 0;
     right: 73px;
-    position: absolute;
+    position: sticky;
+    z-index: 12;
 }
 .menu-bg {
     z-index: 1;
@@ -86,4 +89,5 @@
     height: 820px;
     transform: translate(-60%,-30%);
     right: -70rem;
+    z-index: 11;
 }
