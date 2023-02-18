@@ -92,6 +92,7 @@ header nav {
 header li {
     list-style-type: none;
     font-size: 18px;
+    font-weight: 700;
 }
 header a {
     color: #11243E;
