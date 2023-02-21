@@ -141,6 +141,16 @@ section {
     height: 130px;
     text-decoration: none;
 }
+.services .serviceItemLinkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+}
+.services .serviceItem:hover .serviceItemLinkContainer {
+    color: #fff;
+}
 .services .serviceItem .serviceItemImage {
     width: 38px;
     height: 38px;
