@@ -139,6 +139,7 @@ section {
     align-items: center;
     gap: 8px;
     height: 130px;
+    text-decoration: none;
 }
 .services .serviceItem .serviceItemImage {
     width: 38px;

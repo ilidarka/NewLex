@@ -46,3 +46,6 @@
     align-items: flex-start;
     gap: 20px;
 }
+.services .serviceItem button:hover {
+    transform: translateY(0);
+}
