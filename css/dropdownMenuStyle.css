@@ -34,7 +34,7 @@
     gap: 20px;
     background-color: var(--main-purple);
     border-radius: 8px;
-    top: 40px;
+    top: 7rem;
 }
 .hidenDropdownContent {
     display: none;
