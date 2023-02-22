@@ -79,7 +79,7 @@
                             <span>Юридическое сопровождение бизнеса</span>
                         </a>
                         <div class="serviceItem dropdown">
-                            <a href="#" class="serviceItem dropdown">
+                            <a class="serviceItemLinkContainer" href="#">
                                 <button data-menuButton="1" class="dropdownMenuButton">
                                     <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
                                     <img class="dropdownArrow" src="./img/dropdownArrow.svg" alt="dropdownArrow">
@@ -110,15 +110,18 @@
                         </a>
                     </div>
                     <div class="bottomItems">
-                        <a href="#" class="serviceItem">
+                        <a class="serviceItem" href="#">
                             <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
                             <span>Юридическая экспертиза договоров</span>
                         </a>
                         <div class="serviceItem dropdown">
-                            <button data-menuButton="2" class="dropdownMenuButton">
-                                <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
-                                <img class="dropdownArrow" src="./img/dropdownArrow.svg" alt="dropdownArrow">
-                            </button>
+                            <a href="#" class="serviceItemLinkContainer">
+                                <button data-menuButton="2" class="dropdownMenuButton">
+                                    <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
+                                    <img class="dropdownArrow" src="./img/dropdownArrow.svg" alt="dropdownArrow">
+                                </button>
+                                <span>Регистрация бизнеса</span>
+                            </a>
                             <div data-menu="2" class="dropdownContent hidenDropdownContent">
                                 <a href="#">Услуга 1</a>
                                 <a href="#">Услуга 2</a>
@@ -128,7 +131,6 @@
                                 <a href="#">Услуга 6</a>
                                 <a href="#">Услуга 7</a>
                             </div>
-                            <span>Регистрация бизнеса</span>
                         </div>
                         <a href="#" class="serviceItem">
                             <img class="serviceItemImage" src="./img/servicesIcon.svg" alt="servicesIcon">
@@ -188,7 +190,6 @@
                             <p>В нашей команде сотрудники специализируются в определенных направлениях, что позволяет решать широкий спектр вопросов в рамках одного обращения</p>
                             <li><span>Профессионализм и ответственность</span><img src="./img/showHowDoWeWork.svg" alt="" class="show-howDoWeWorkItem"></li>
                             <p>Профессионализм предполагает не только наличие знаний, но и ответственность за принимаемые решения</p>
-                        
                         </ul>
                     </div>
                 </div>
@@ -202,21 +203,18 @@
                         <div class="firstblock">
                             <span class="name">«Старт»</span>
                             <span class="price">10 000 ₽</span>
-                            <!-- <span class="working-hours">5 часов работы юристов</span> -->
                             <div class="aditionalInfoBlock">
                                 <span class="aditionalInfo">5 часов работы юристов</span>
-                                <!-- <span class="aditionalInfo">Нет штатных сотрудников</span>
-                                <span class="aditionalInfo">До 15 документов</span> -->
                             </div>
                         </div>
                         <div class="thirdblock">
                             <div class="thirdblock-list">
                                 <span><img src="./img/galka.svg" alt="galka">Подойдет владельцам бизнеса, которые только начинают путь к успеху, либо тем, кому юрист нужен всего пару раз в месяц.</span>
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                     <div class="secondService">
@@ -231,10 +229,10 @@
                             <div class="thirdblock-list">
                                 <span><img src="./img/galka.svg" alt="galka">Идеально для малого бизнеса, либо тем, кому юрист нужен не чаще, чем раз в неделю.</span>
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                     <div class="thirdService">
@@ -243,24 +241,17 @@
                             <span class="price">33 000 ₽</span>
                             <div class="aditionalInfoBlock">
                                 <span class="aditionalInfo">25 часов работы юристов</span>
-                                <!-- <span class="aditionalInfo">Нет штатных сотрудников</span>
-                                <span class="aditionalInfo">До 15 документов</span> -->
+
                             </div>
                         </div>
                         <div class="thirdblock">
                             <div class="thirdblock-list">
                                 <span><img src="./img/galka.svg" alt="galka">Подходит тем, у кого периодически возникает необходимость в юридическом сопровождении, но нет надобности в оформлении юриста в штат.</span>
-                                <!-- <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
-                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
-                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
-                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
-                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
-                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span> -->
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                     <div class="fourthService">
@@ -269,50 +260,31 @@
                             <span class="price">60 000 ₽</span>
                             <div class="aditionalInfoBlock">
                                 <span class="aditionalInfo">50 часов работы юристов</span>
-                                <!-- <span class="aditionalInfo">Нет штатных сотрудников</span>
-                                <span class="aditionalInfo">До 15 документов</span> -->
                             </div>
                         </div>
                         <div class="thirdblock">
                             <div class="thirdblock-list">
                                 <span><img src="./img/galka.svg" alt="galka">Подойдёт тем, у кого объём юридических задач довольно обширный, а также тем, кому обращения к юристу необходимы ежедневно.</span>
-                                <!-- <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
-                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
-                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
-                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
-                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
-                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span> -->
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                     <div class="fifthService">
                         <div class="firstblock">
                             <span class="name">«Персональный»</span>
                             <span class="price">от 3 000 ₽</span>
-                            <!-- <div class="aditionalInfoBlock">
-                                <span class="aditionalInfo">50 часов работы юристов</span>
-                                <span class="aditionalInfo">Нет штатных сотрудников</span>
-                                <span class="aditionalInfo">До 15 документов</span>
-                            </div> -->
                         </div>
                         <div class="thirdblock">
                             <div class="thirdblock-list">
                                 <span><img src="./img/galka.svg" alt="galka">Данный тариф подойдёт тем, кому необходимо проектное сопровождение, либо тем, кто хочет выбрать тариф на индивидуальных условиях.</span>
-                                <!-- <span><img src="./img/galka.svg" alt="galka">Отражение в бухгалтерской базе всех первичных документов предоставленных клиентом;</span>
-                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат.</span>
-                                <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
-                                <span><img src="./img/galka.svg" alt="galka">Ведение кадровых документов</span>
-                                <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
-                                <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span> -->
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -334,10 +306,10 @@
                                 <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат;</span>
                                 <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                     <div class="secondService">
@@ -360,10 +332,10 @@
                                 <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
                                 <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                     <div class="thirdService">
@@ -386,10 +358,10 @@
                                 <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
                                 <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -411,10 +383,10 @@
                                 <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача бухгалтерских отчетов в ФНС, ПФР, ФСС и Росстат;</span>
                                 <span><img src="./img/galka.svg" alt="galka">Консультация по вопросам ведения учета организации</span>
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                     <div class="secondService">
@@ -437,10 +409,10 @@
                                 <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
                                 <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                     <div class="thirdService">
@@ -463,10 +435,10 @@
                                 <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы и расчет всех налогов в фонды;</span>
                                 <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -491,10 +463,10 @@
                                 <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы;</span>
                                 <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                     <div class="secondService">
@@ -517,10 +489,10 @@
                                 <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы;</span>
                                 <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                     <div class="thirdService">
@@ -543,10 +515,10 @@
                                 <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы;</span>
                                 <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                     <div class="fourthService">
@@ -569,10 +541,10 @@
                                 <span><img src="./img/galka.svg" alt="galka">Расчет заработной платы;</span>
                                 <span><img src="./img/galka.svg" alt="galka">Подготовка и сдача отчетов по кадрам в ПФР.</span>
                             </div>
-<div class="plansBottomButtons">
-                            <button class="requestHelpButton">Подробнее</button>
-                            <button class="requestServiceButton">Заказать услугу</button>
-</div>
+                            <div class="plansBottomButtons">
+                                <button class="requestHelpButton">Подробнее</button>
+                                <button class="requestServiceButton">Заказать услугу</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -701,7 +673,8 @@
                     <div class="howToStartWorkWithUsItem">
                         <span class="item-caption">Юр. мониторинг и аналитика</span>
                         <span class="text">
-                            Анализ и мониторинг изменений в области права и анализ существующих правовых подходов                        </span>
+                            Анализ и мониторинг изменений в области права и анализ существующих правовых подходов                        
+                        </span>
                     </div>
                     <div class="howToStartWorkWithUsItem">
                         <span class="item-caption">Правовой аудит</span>
@@ -719,10 +692,6 @@
                 <button class="button-show-howToStartWorlWithUsItems">Показать еще</button>
             </div>
         </section>
-
-        
-
-        
         <section class="directors">
             <div class="wrapper">
                 <h3>Руководители направлений нашей команды</h3>

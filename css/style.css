@@ -141,6 +141,10 @@ section {
     height: 130px;
     text-decoration: none;
 }
+.services .serviceItem button:hover {
+    transform: translateY(0);
+}
+
 .services .serviceItemLinkContainer {
     display: flex;
     flex-direction: column;
