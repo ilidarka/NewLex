@@ -1,27 +1,9 @@
-:root {
-    --swiper-navigation-color: #505ACC;
-}
-.slider {
-    margin: 0 auto;
+.swiper {
     width: 100%;
     position: relative;
-    overflow-x: hidden; 
+    display: none;
 }
-.swiper-wrapper {
-    padding: 10px;
-}
-.swiper-scrollbar {
-    background: #E8E8E8;
-}
-.swiper-container-horizontal > .swiper-scrollbar {
-    border-radius: 2px;
-    height: 5px;
-    width: 200px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.swiper-button-prev, .swiper-button-next, .swiper-scrollbar-horizontal {
+.swiper-button-prev, .swiper-button-next {
     position: unset !important;
 }
 .swiper-controll {
@@ -41,60 +23,28 @@
     content: unset !important;
 }
 .swiper-slide {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 18.629px;
-    height: initial !important;
-}
-.swiper-scrollbar {
-    background: #E8E8E8 !important;
-}
-.swiper-scrollbar-drag {
-    background: var(--swiper-navigation-color) !important;
-}
-.slider .slide-content {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 30px 25px;
 }
-.slider .slideUpper {
-    width: 100%;
+.slider-controll {
+    position: absolute;
+    width: fit-content;
+    height: 100px;
+    top: 0;
+    right: 0;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
 }
-.slider .slider-info {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
+.slider-controll img {
+    width: 50%;
 }
-.slider .name {
+.slider-column {
+    display: none !important;
+}
+.directors .directorsNameSlider {
     font-weight: 600;
-    font-size: 16px;
-    line-height: 151.1%;
-    color: #000000;
-}
-.slider .date {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 151.1%;
-    color: #6A6A6A;
-}
-.slider .stars {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5px;
-}
-.slider p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 151.1%;
-    color: #000000;
+    font-size: 18px;
+    line-height: 25px;
+    color: #505ACC;
 }

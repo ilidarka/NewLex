@@ -18,6 +18,15 @@
     #menu {
         display: block !important;
     }
+    .directors .directorSwitcherAdaptive, .directors .directorSwitcherAdaptive, .directors .directorSwitcher, .directors .left-right-column {
+        display: none;
+    }
+    .swiper {
+        display: block;
+    }
+    .slider-column {
+        display: flex !important;
+    }
     .consultation .wrapper {
         flex-direction: column;
         align-items: center;
@@ -64,9 +73,6 @@
     }
     .directors .directorSwitcher {
         display: none;
-    }
-    .directors .directorSwitcherAdaptive {
-        display: flex;
     }
     .directors .left-column img {
         width: 100%;

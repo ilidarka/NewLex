@@ -854,6 +854,23 @@ section {
 }
 .directors .left-column {
     width: 50%;
+    position: relative;
+}
+.directors .directorInfo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+.directors .directorName {
+    font-size: calc(13px + (8 + 8 * 0.7) * ((100vw - 360px) / 1280));
+}
+.directors .directorExperience {
+    font-size: calc(11px + (6 + 6 * 0.7) * ((100vw - 360px) / 1280));
 }
 .directors .right-column {
     width: 50%;
