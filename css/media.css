@@ -81,17 +81,18 @@
         flex-direction: column;
         align-items: center;
     }
+    .services .serviceItemLinkContainer {
+        justify-content: center;
+        gap: 20px;
+    }
     .services .servicesList {
         flex-direction: row;
     }
     .services .serviceItem {
-        width: 50%;
+        width: 100%;
     }
     .services .serviceItem span {
         width: unset;
-    }
-    .activeServiceItem {
-        font-size: 15px !important;
     }
     .second .left-right-columns {
         flex-direction: column;
@@ -316,7 +317,6 @@
     }
     .howDoWeWork .columns {
         flex-direction: column;
-        /* align-items: center; */
     }
     .howDoWeWork .leftColumn {
         height: 250px;
@@ -506,6 +506,15 @@
     }
     .services .serviceItem {
         width: 100%;
+        height: 100px;
+        padding: 0 10px;
+    }
+    .services .servicesList {
+        justify-content: space-between;
+        gap: unset;
+    }
+    .services .upperItems, .services .bottomItems {
+        width: 48%;
     }
     .rates .rateButton {
         font-size: 10px;

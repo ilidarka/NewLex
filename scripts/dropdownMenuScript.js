@@ -1,10 +1,9 @@
-const dropdownButtons = document.querySelectorAll('.dropdownMenuButton');
-const dropdownMenus = document.querySelectorAll('.dropdownContent');
+$(document).on('mouseover','.dropdown',function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).find(".dropdownContent").removeClass("hidenDropdownContent");
+}); 
 
-dropdownButtons.forEach((elem) => {
-    elem.addEventListener('click', (event) => toggleDropDownMenu(event, elem.dataset.menubutton));
-});
-
-const toggleDropDownMenu = (event, buttonNumber) => {
-    dropdownMenus[buttonNumber - 1].classList.toggle('hidenDropdownContent');
-};
+$(document).on('mouseleave','.serviceItem.dropdown',function(e) {
+    $(this).find('.dropdownContent').addClass('hidenDropdownContent');
+}); 

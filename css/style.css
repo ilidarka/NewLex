@@ -120,72 +120,56 @@ section {
 .services .servicesList {
     width: 100%;
     display: flex;
-    flex-direction: column;
     gap: 20px;
 }
 .services .upperItems, .services .bottomItems {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 40px;
 }
 .services .serviceItem {
     font-weight: 600;
     font-size: 18px;
     line-height: 140%;
     color: #11243E;
-    width: 20%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 8px;
-    height: 130px;
     text-decoration: none;
+    border: 1px solid rgba(80, 90, 204, 0.24);
+    border-radius: 8px;
+    position: relative;
+    background-image: url("../img/serviceItemImage.svg");
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.services .serviceItem span {
+    width: 100%;
+    text-align: left;
 }
 .services .serviceItem button:hover {
     transform: translateY(0);
 }
-
+.services .serviceItem:last-child {
+    width: 100%;
+}
 .services .serviceItemLinkContainer {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
+    justify-content: space-between;
     color: #000;
     text-decoration: none;
-}
-.services .serviceItem:hover .serviceItemLinkContainer {
-    color: #fff;
 }
 .services .serviceItem .serviceItemImage {
     width: 38px;
     height: 38px;
-}
-.services .serviceItem span {
-    text-align: center;
-    width: 190px;
-}
-.activeServiceItem {
-    background-color: var(--main-purple);
-    padding: 10px;
-    color: #fff !important;
-    font-size: 19px !important;
-    border-radius: 10px;
-    justify-content: center;
-}
-.activeServiceItem .serviceItemImage {
-    filter: brightness(10);
-}
-.services .serviceItem:hover {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--main-purple);
-    padding: 10px;
-    color: #fff;
-    border-radius: 10px;
-}
-.services .serviceItem:hover .serviceItemImage {
-    filter: brightness(10);
 }
 .consultation {
     margin: 40px 0;
