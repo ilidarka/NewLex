@@ -77,6 +77,9 @@
     .directors .left-column img {
         width: 100%;
     }
+    .directors .directorInfo {
+        top: 11rem;
+    }
     .services .upperItems, .services .bottomItems {
         flex-direction: column;
         align-items: center;
@@ -365,6 +368,10 @@
     .outerFeedback {
         height: 1320px;
     }
+    .directors .directorInfo {
+        top: 8rem;
+        right: 3rem;
+    }
     footer .footer-bottom {
         flex-direction: column;
         align-items: flex-start;
@@ -480,6 +487,10 @@
     }
     .directors .upper span {
         font-size: 14px;
+    }
+    .directors .directorInfo {
+        top: 4rem;
+        right: 0rem;
     }
     .second .title {
         font-size: 21px;
